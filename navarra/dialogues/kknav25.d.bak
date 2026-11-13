@@ -1,0 +1,87 @@
+// Fatespirit //
+
+EXTEND_TOP FATESP 6
++ ~!Dead("KKNavar")
+     !InMyArea("KKNavar")
+     Global("KKNavarSummoned","GLOBAL",0)~ + ~Bring me Navarra, the Barbarian.~ DO ~CreateVisualEffect("SPPORTAL",[1999.1218])
+         Wait(2)
+         CreateCreature("KKNav25",[1999.1218],0)
+         SetGlobal("KKNavarSummoned","GLOBAL",1)~ + 8
++ ~!Dead("KKNavar")
+   !InMyArea("KKNavar")
+   Gender(Player1,MALE)
+  !Alignment(Player1,MASK_EVIL)
+  OR(3)
+  Race(Player1,HUMAN)
+  Race(Player1,HALF_ELF)
+  Race(Player1,ELF)
+  Global("KKNavarSummoned","GLOBAL",0)~ + ~Bring me Navarra, my lover.~ DO ~CreateVisualEffect("SPPORTAL",[1999.1218])
+         Wait(2)
+         CreateCreature("KKNav25",[1999.1218],0)
+         SetGlobal("KKNavarSummoned","GLOBAL",1)
+         SetGlobal("KKNavarMatch", "GLOBAL",1)~ + 8
+END
+         
+BEGIN KKNav25
+
+IF ~Global("KKNavarMatch","GLOBAL",1) Global("KKNavarSummoned","GLOBAL",1)~ THEN KKNav25_0a
+SAY ~<CHARNAME>! It is so good to see you, my love, I was worried.~
+++ ~I am very happy to see you too, I missed you.~  DO ~SetGlobal("KKNavarSummoned","GLOBAL",2)
+      SetGlobal("KKNavarRomanceActive","GLOBAL",2)
+      RealSetGlobalTimer("KKNLovTalkTimeTOB","GLOBAL",Nav_TIME)~ GOTO KKNav25_1
+++ ~I brought you here because I thought I might need your help. I have changed my mind for now, but do not go anywhere, alright?~ + KKNav25_2      
+++ ~I need your help, if you are willing.~ DO ~SetGlobal("KKNavarSummoned","GLOBAL",2)
+      SetGlobal("KKNavarRomanceActive","GLOBAL",2)
+      RealSetGlobalTimer("KKNLovTalkTimeTOB","GLOBAL",Nav_TIME)
+      SetGlobal("KKNavarJoined","LOCALS",1)
+      JoinParty()~ EXIT
+END
+
+IF ~Global("KKNavarMatch","GLOBAL",0) Global("KKNavarSummoned","GLOBAL",1)~ THEN KKNav25_0b
+SAY ~Hello, <CHARNAME>. It is good to see you, but why have you brought me here? I had nearly reached Narfell...~
+++ ~Good to see you as well, my friend. I brought you here because I need your help.~ DO ~SetGlobal("KKNavarSummoned","GLOBAL",2)
+      RealSetGlobalTimer("KKNFriendTalkTimeTOB","GLOBAL",2500)~ GOTO KKNav25_3
+++ ~I brought you here because I thought I might need your help. I have changed my mind, but do not go anywhere, alright?~ + KKNav25_2  
+++ ~You were actually going back? I am so sorry, if I had known...~ DO ~SetGlobal("KKNavarSummoned","GLOBAL",2)
+      RealSetGlobalTimer("KKCFriendTalkTimeTOB","GLOBAL",Nav_TIME)~ + KKNav25_4
+++ ~I need your help, if you're willing.~ DO ~SetGlobal("KKNavarSummoned","GLOBAL",2)
+      RealSetGlobalTimer("KKNFriendTalkTimeTOB","GLOBAL",Nav_TIME)
+      SetGlobal("KKNavarJoined","LOCALS",1)
+      JoinParty()~ EXIT
+END
+
+IF ~~ KKNav25_1
+SAY ~I missed you too, my love. Shall we?~
+++ ~Certainly We have a lot to catch up on.~ DO ~SetGlobal("KKNavarJoined","LOCALS",1) JoinParty()~ EXIT
+++ ~I have changed my mind, but do not go anywhere, alright?~ + KKNav25_2  
+END
+
+
+IF ~~ KKNav25_3
+SAY ~Well then, of course I'll help you my friend.~
+++ ~Thank you, I was hoping I could count on you.~ DO ~SetGlobal("KKNavarJoined","LOCALS",1) JoinParty()~ EXIT
+++ ~I have changed my mind, but do not go anywhere, alright?~ + KKNav25_2  
+END
+
+IF ~~ KKNav25_2
+SAY ~I suppose I have no choice, but please do not leave me standing here too long.~
+IF ~~ THEN DO ~MoveToPointNoInterrupt([1450.1405])~ EXIT
+END
+
+IF ~~ KKNav25_4
+SAY ~I understand. You can count on me.~
+++ ~Thank you, I was hoping I could count on you.~ DO ~SetGlobal("KKNavarJoined","LOCALS",1) JoinParty()~ EXIT
+END
+
+BEGIN KKNav25P
+
+IF ~Global("KKNavarKicked","LOCALS",0) Global("KKNavarJoined","LOCALS",1)~ KKNav25P_0
+SAY ~Are you sure you want me to leave?~ 
+++ ~No, please stay.~ DO ~JoinParty()~ EXIT
+IF ~~ GOTO KKNav25P_1
+END
+
+IF ~~ KKNav25P_1
+SAY ~I suppose I have no choice, but please do not leave me standing here too long.~
+IF ~~ THEN DO ~MoveToPointNoInterrupt([1450.1405])~ EXIT
+END

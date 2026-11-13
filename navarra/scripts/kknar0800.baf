@@ -1,0 +1,9 @@
+IF
+	Global("ShaelahExists","AR0800",0)
+	Global("ToldElhanAboutBodhi","GLOBAL",1)
+	Global("KKMissingWarriors","GLOBAL",3)	
+THEN
+	RESPONSE #100
+		SetGlobal("ShaelahExists","AR0800",1)
+		CreateCreature("KKShael",[1946.1646],3) 
+END

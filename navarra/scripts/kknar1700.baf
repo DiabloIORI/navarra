@@ -1,0 +1,35 @@
+// KKNar1700.baf 
+
+
+
+IF
+Global("KKDeliaExists","AR1700",0)
+	THEN
+	RESPONSE #100
+		SetGlobal("KKDeliaExists","AR1700",1)
+		CreateCreature("KKDelia",[3333.265],3) 
+END
+
+IF
+Global("KKTressExists","AR1700",0)
+	THEN
+	RESPONSE #100
+		SetGlobal("KKTressExists","AR1700",1)
+		CreateCreature("KKTress",[3398.269],3) 	
+END
+
+IF
+	Global("KKCelinExists","AR1700",0)
+THEN
+	RESPONSE #100
+		SetGlobal("KKCelinExists","AR1700",1)
+		CreateCreature("KKCelin",[3330.241],3) 
+	END
+
+IF
+	Global("KKAmanaExists","AR1700",0)
+THEN
+	RESPONSE #100
+		SetGlobal("KKAmanaExists","AR1700",1)
+		CreateCreature("KKAmana",[3330.241],3)
+END

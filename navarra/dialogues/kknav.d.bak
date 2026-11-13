@@ -1,0 +1,104 @@
+BEGIN ~KKNAVAR~
+
+IF ~NumTimesTalkedTo(0)~ THEN BEGIN FirstMeeting
+SAY ~Some reason you're bothering me, stranger?~
++ ~Gender(Player1,FEMALE)~ + ~I'm sorry, you look like a warrior. I thought maybe you were looking for work.~ + KKFM1a
++ ~Gender(Player1,MALE)~ + ~I'm sorry, you look like a warrior. I thought maybe you were looking for work.~ + KKFM1e
++ ~Gender(Player1,MALE)~ + ~There's no reason to be rude about it, just trying to be friendly.~ + KKFM1h
++ ~Gender(Player1,MALE)~ + ~Just wondering what a pretty girl like you is doing in this dump.~ + KKFM1i
+++ ~None, sorry to have bothered you.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+IF ~~ KKFM1a
+SAY ~I have a mission of my own to deal with, though maybe we can help eachother.~
+= ~I'm searching for some missing women from my tribe, one in particular who stole our chieftain's sword.~
+++ ~I'm also searching for someone, a powerful mage named Irenicus, he and I have much to discuss.~ + KKFM1c
+++ ~I'm willing to help you look for them, but my first priority is finding a friend who was captured by the Cowled Wizards.~ + KKFM1b
+END
+
+IF ~~ THEN BEGIN KKFM1b
+SAY ~Ah yes, I've seen those cowled fools running around. Typical male idiots flaunting their power.~ 
+= ~If they took your friend, I have to assume it was for using magic without paying their bribe money.~
+++ ~She didn't know any better, we are new to this area. We were escaping from a dungeon where we were being held prisoners.~ + KKFM1c
+++ ~Something like that. It wasn't her fault, however, and I have to save her.~ + KKFM1c
+++ ~Then you understand what I'm up against.~ + KKFM1c
+END
+
+IF ~~ THEN BEGIN KKFM1c
+SAY ~This gets more interesting by the minute. My name is Navarra by the way, and you are?~
+++ ~My name is <CHARNAME>, pleased to meet you Navarra. Interested in joining me?~ + KKFM1d
+++ ~It's <CHARNAME>, if you must know. Have any interest in joining me?~ + KKFM1d
+END
+
+IF ~~ THEN BEGIN KKFM1d
+SAY ~Of course. I'd be happy to help you while I search for my clansmen.~
+++ ~Good, it's settled then. Welcome.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",1) JoinParty()~ EXIT
+++ ~Just wait here. I'll be back when I need you.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+++ ~I've changed my mind, I don't need your help. Goodbye.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+IF ~~ THEN BEGIN KKFM1e
+SAY ~I am a warrior, a barbarian, fool. I have a mission of my own to deal with, one of great importance.~ 
+= ~Give me one good reason why I should work for a man, much less take orders from one.~
+++ ~How about the fact that my friend was taken captive by the Cowled Wizards and I need to save her? Good enough reason for you?~ + KKFM1f
+++ ~I'm after a mage named Irenicus. He's a powerful mage and I intend to kill him, I can use the help if you're interested.~ + KKFM1f
+++ ~I'm after a powerful mage named Irenicus, he and I have much to discuss. I can use the help if you're interested.~ + KKFM1f
+++ ~I'd be willing to help you with whatever it is you need to do. Sometimes a group has a better chance at succeeding than a single person.~ + KKFM1j
+++ ~Forget I said anything, I'd rather not have someone in my group who doesn't follow orders.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+IF ~~ THEN BEGIN KKFM1f
+SAY ~I can see why you are in need of help... very well. It goes against every law of my tribe as well as my own, but I'll help you.~
+= ~But, if you try to interfere with my mission... I'll leave. I'm searching for some missing women from my tribe, one in particular who stole our chieftain's sword, and I have strict orders to retrieve the sword.~
+++ ~Good, it's settled then. Welcome.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",1) JoinParty()~ EXIT
+++ ~Just wait here. I'll be back when I need you.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+++ ~I've changed my mind, I don't need your help. Goodbye.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+IF ~~ THEN BEGIN KKFM1h
+SAY ~I'm not interested in making friends. What do you want?~
+++ ~I'm sorry, you look like a warrior. I thought maybe you were looking for work.~ + KKFM1e
+++ ~Just wondering what a pretty girl like you is doing in this dump.~ + KKFM1i
+++ ~Nothing, just forget it. I've had my fill of unpleasant people for today.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+IF ~~ THEN BEGIN KKFM1i
+SAY ~Trying to avoid idiot males with stupid pick-up lines. Though I haven't killed anyone yet today... you could be my first.~
+++ ~I'm sorry, you look like a warrior. I thought maybe you were looking for work.~ + KKFM1e
+++ ~You won't find me as easy to kill as you think. Fortunately for you, I didn't come here to fight. I thought maybe you were looking for work.~ + KKFM1e
+++ ~I see.... well, excuse me for bothering you.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+IF ~~ THEN BEGIN KKFM1j
+SAY ~You have a point... very well. It goes against every law of my tribe as well as my own, but I'll help you.~
+= ~But, if you try to interfere with my mission... I'll leave. I'm searching for some missing women from my tribe, one in particular who stole our chieftain's sword, and I have strict orders to retrieve the sword.~
+++ ~Good, it's settled then. Welcome.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",1) JoinParty()~ EXIT
+++ ~Just wait here. I'll be back when I need you.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+++ ~I've changed my mind, I don't need your help. Goodbye.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+
+BEGIN KKNavP
+
+IF ~Global("KKNavarraJoined","LOCALS",1)~ THEN BEGIN KickOut
+SAY ~Are you sure you no longer need my help?~
+++ ~Actually, please stay Navarra.~ DO ~JoinParty()~ EXIT
+++ ~I'm sorry, I have no need of you right now.~ + Goodbye
+++ ~Please just wait here, I'll be back for you shortly.~ + Wait
+END
+
+IF ~~ THEN BEGIN Goodbye
+SAY ~Fine. I'll be back at the Den of Seven Vales if you change your mind.~ 
+IF ~~ THEN DO ~EscapeAreaMove("AR0709",607,509,3)~ EXIT 
+END
+
+IF ~~ THEN BEGIN Wait
+SAY ~Fine, but if you make me stand here too long, I'm going to leave.~ 
+IF ~~ THEN DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END
+
+IF ~Global("KKNavarraJoined","LOCALS",0)~ THEN BEGIN NavarRejoin
+SAY ~Shall I rejoin you?~
+++ ~Please rejoin the party.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",1) JoinParty()~ EXIT
+++ ~No, I changed my mind. Goodbye.~ DO ~SetGlobal("KKNavarraJoined","LOCALS",0)~ EXIT
+END

@@ -1,0 +1,199 @@
+BEGIN KKVMPNAV
+
+EXTEND_BOTTOM BODHIAMB 5
+IF ~Global("KKNavBodhiAbduction","GLOBAL",0)
+      Global("KKNavarRomanceActive","GLOBAL",2) 
+      InParty("KKNavar")~ THEN DO ~SetGlobal("KKNavBodhiAbduction","GLOBAL",1)~ + KKNBA
+END
+
+APPEND BODHIAMB
+IF ~~ THEN KKNBA
+SAY ~You follow in the hopes of retrieving something dear to you. I say that the longer you keep this up, the more you will lose.~ 
+IF ~OR(2)
+      !InPartyAllowDead("KKNavar")
+      Dead("KKNavar")~ THEN GOTO 6
+IF ~InPartyAllowDead("KKNavar")
+      !Dead("KKNavar")~ THEN GOTO KKNBAa
+END
+
+END
+
+CHAIN
+IF ~~ THEN BODHIAMB KKNBAa
+~Consider young Navarra here.  Fearsome little warrior but misdirected. I think she'd be of more use fighting on my side.~
+== ~KKNavJ~ IF ~InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~I will never do your bidding, foul creature!~
+== BODHIAMB ~I don't think you understand, you barbaric fool, you have no choice! Pay attention <CHARNAME>.  Follow me further and you will lose more than you can imagine!  Starting now!~
+END
+  IF ~~ THEN DO ~ClearAllActions()
+StartCutSceneMode()
+StartCutScene("KKNCUT01")
+~ UNSOLVED_JOURNAL ~The Final Battle with Bodhi.
+
+Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Navarra. Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible. I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!~ EXIT
+
+EXTEND_BOTTOM C6BODHI 21
+IF ~Global("KKNavarVampire","GLOBAL",2)~ THEN GOTO 23
+END
+
+EXTEND_BOTTOM C6BODHI 23
+IF ~Global("KKNavarVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already!  You will return both Imoen's soul and Navarra!~ + KKNBAb
+IF ~Global("KKNavarVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Navarra and perhaps I will be merciful.~ + KKNBAb
+IF ~Global("KKNavarVampire","GLOBAL",2)~ THEN REPLY ~I would have hunted you for your theft of Navarra alone. she is very important to me.~ + KKNBAb
+IF ~Global("KKNavarVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment. The theft of Navarra will not save you.~ + KKNBAc
+END
+
+APPEND C6BODHI 
+
+IF ~~ THEN KKNBAb
+  SAY ~She is lost to you, <CHARNAME>.  Navarra was quite receptive to my discipline.  I doubt your fumbling could have inspired the loyalty I have taken with a bite and a gaze.~
+IF ~~ THEN UNSOLVED_JOURNAL ~The Final Battle with Bodhi.
+
+Bodhi has turned Navarra into a vampire!  Or... or very nearly. The process may not have been completed in the short time Bodhi has had her. Hopefully something can be done or I will have lost her. Perhaps the elven war sage might know some way of restoration... or Elhan... ~ EXTERN KKVMPNAV KKNBAd
+END
+
+IF ~~ THEN KKNBAc
+SAY ~An interesting ploy, though I am sure his fate will still serve as an example, whether you wish her back or not.~
+IF ~~ THEN + KKNBAb
+END
+
+END //APPEND C6BODHI
+
+CHAIN KKVMPNAV KKNBAd
+~I am here to do your bidding mistress.~
+== C6BODHI ~Don't you see, <CHARNAME>? She is not even fully turned and she has betrayed you.  Prepare to die at your lover's hand!~
+END C6BODHI 28
+
+EXTEND_BOTTOM C6ELHAN2 70
++ ~PartyHasItem("KKNavBDY")~ + ~Elhan!  I've the half vampire body of Navarra here because of you!  You'll tell me now!~ GOTO 76
+END
+
+EXTEND_BOTTOM DOGHMA 0 #5
++ ~Global("RevealUmar","GLOBAL",1)
+PartyHasItem("KKNavBDY")~ + ~A friend is afflicted by vampirism.  An old book suggested that followers of Oghma might know something about that.~ GOTO 10
+END
+
+EXTEND_BOTTOM DOGHMA 3 7 9 #4
++ ~Global("RevealUmar","GLOBAL",1)
+PartyHasItem("KKNavBDY")~ + ~A friend is afflicted by vampirism.  An old book suggested that followers of Oghma might know something about that.~ GOTO 10
+END
+
+EXTEND_BOTTOM IMNBOOK1 0
++ ~Global("RevealUmar","GLOBAL",1)
+PartyHasItem("KKNavBDY")~ + ~I'm looking for information about a tome that details the curing of Vampirism.~ GOTO 4
+END
+
+ADD_STATE_TRIGGER OGHMONK1 0 ~!PartyHasItem("KKNavBDY")~ 1 2 3
+
+APPEND OGHMONK1
+
+IF WEIGHT #-1 ~Global("RevealUmar","GLOBAL",1)
+PartyHasItem("KKNavBDY")~ THEN BEGIN OghmaMonk#1.1
+SAY ~Have you come seeking wisdom from the Binder of What is Known? The Wise God stands ready.~
+++ ~No, thank you, I have no need of help at the moment.~ GOTO 5
+++ ~A friend is afflicted by vampirism.  An old book suggested that followers of Oghma might know something about that.~ GOTO 6
+END
+
+END
+
+EXTEND_BOTTOM SUDEMIN 2
++ ~PartyHasItem("KKNavBDY")~ + ~I lost a loved one in a battle with his sister, Bodhi.  I seek a means of curing her.~ GOTO 3
+END
+
+EXTEND_BOTTOM WARSAGE 0
++ ~!Dead("c6bodhi")
+Global("KKNavarVampire","GLOBAL",2)~ + ~A loved one was taken by a vampire. What can I expect when I find them?~ GOTO 6
++ ~PartyHasItem("KKNavBDY")~ + ~Someone I care about has fallen to a vampire. Is there any way to save them?~ GOTO 5
+END
+
+APPEND ~KKNavP~
+
+IF WEIGHT #-1 ~Global("KKNavarVampireTalk","GLOBAL",1)~ THEN BEGIN KKNBA2
+SAY ~What..is happening?~
+= ~(Navarra's eyes regain focus and she looks at you, clearly shaken.)~
+= ~I...was dead, no much worse than dead. Sshe turned me into one of them, a disgusting vampire and I tried to kill you! I tried to fight sher <CHARNAME> and I'm ashamed of myself because I couldn't.~
+= ~And inspite of all that, you saved me.~
+++ ~It's all right, Navarra. It's over now.~ DO ~EraseJournalEntry(32084)
+EraseJournalEntry(32085)
+EraseJournalEntry(16351)
+EraseJournalEntry(%The Final Battle with Bodhi.
+
+Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Navarra. Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible. I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!%)
+EraseJournalEntry(15710)
+EraseJournalEntry(6589)
+EraseJournalEntry(%The Final Battle with Bodhi.
+
+Bodhi has turned Navarra into a vampire!  Or... or very nearly. The process may not have been completed in the short time Bodhi has had her. Hopefully something can be done or I will have lost her. Perhaps the elven war sage might know some way of restoration... or Elhan...%)
+SetGlobal("KKNavarVampire","GLOBAL",5) SetGlobal("KKNavarVampireTalk","GLOBAL",2)~ SOLVED_JOURNAL ~The Final Battle with Bodhi.
+
+While I had feared for some time that Bodhi's final revenge on me would be to take away Navarra forever, it seems that the information in the lorebook was right...  Amaunator's idol has restored Navarra not only to life, but has removed the vampiric curse from her, as well.~ + KKNBA2a
+++ ~Of course I did! I couldn't....wouldn't lose you! I was so worried....so afraid but I had to save you.~ DO ~EraseJournalEntry(32084)
+EraseJournalEntry(32085)
+EraseJournalEntry(16351)
+EraseJournalEntry(%The Final Battle with Bodhi.
+
+Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Navarra. Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible. I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!%)
+EraseJournalEntry(15710)
+EraseJournalEntry(6589)
+EraseJournalEntry(%The Final Battle with Bodhi.
+
+Bodhi has turned Navarra into a vampire!  Or... or very nearly. The process may not have been completed in the short time Bodhi has had her. Hopefully something can be done or I will have lost her. Perhaps the elven war sage might know some way of restoration... or Elhan...%)
+SetGlobal("KKNavarVampire","GLOBAL",5)~ SOLVED_JOURNAL ~The Final Battle with Bodhi.
+
+While I had feared for some time that Bodhi's final revenge on me would be to take away Navarra forever, it seems that the information in the lorebook was right...  Amaunator's idol has restored Navarra not only to life, but has removed the vampiric curse from her, as well.~ + KKNBA2d
+++ ~Well, it's over now and your alive. I got she Lanthorn and that's what matters most.~ DO ~EraseJournalEntry(32084)
+EraseJournalEntry(32085)
+EraseJournalEntry(16351)
+EraseJournalEntry(%The Final Battle with Bodhi.
+
+Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Navarra. Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible. I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!%)
+EraseJournalEntry(15710)
+EraseJournalEntry(6589)
+EraseJournalEntry(%The Final Battle with Bodhi.
+
+Bodhi has turned Navarra into a vampire!  Or... or very nearly. The process may not have been completed in the short time Bodhi has had her. Hopefully something can be done or I will have lost her. Perhaps the elven war sage might know some way of restoration... or Elhan...%)
+SetGlobal("KKNavarVampire","GLOBAL",5)~
+SOLVED_JOURNAL ~The Final Battle with Bodhi.
+
+While I had feared for some time that Bodhi's final revenge on me would be to take away Navarra forever, it seems that the information in the lorebook was right...  Amaunator's idol has restored Navarra not only to life, but has removed the vampiric curse from her, as well.~ + KKNBA2e
+END
+
+IF ~~ THEN BEGIN KKNBA2a
+SAY ~It may be over, but it doesn't excuse the fact that I tried...wanted to hurt you.~
+= ~I saw you and all I could think about was blood. I am so sorry my love.~
+++ ~There's no need to apologize, it wasn't your fault. I'm just glad you're alright.~ + KKNBA2b
+++ ~I'm sorry, but I don't have room for you in the party right now.~ + KKNBA2c
+END
+
+IF ~~ THEN BEGIN KKNBA2b
+SAY ~Maybe it wasn't, but it doesn't lessen the guilt. I'm just grateful that I didn't hurt you, my love.~
+IF ~~ THEN DO ~JoinParty()~ EXIT
+END
+
+IF ~~ THEN BEGIN KKNBA2c
+SAY ~You....you don't have *room* for me? After everything we've been through you now choose to throw that all away? So be it!~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3) SetGlobal("NavarraJoined","LOCALS",0) LeaveParty() EscapeArea()~ EXIT
+END
+
+IF ~~ THEN BEGIN KKNBA2d
+SAY ~I was just as afraid, my love. If anything ever happened to you because of me...~
+= ~I can't bear the thought. Let's just get out of here, please.~
+IF ~~ THEN DO ~JoinParty()~ EXIT
+END
+
+IF ~~ THEN BEGIN KKNBA2e
+SAY ~What are you saying? After all we've been through, you were more concerned about that than me?~
+++ ~Of course not! If I didn't love you, I wouldn't have saved you. But the Lanthorn is important, Irenicus must be stopped.~ + KKNBA2f
+++ ~Of course, the Lanthorn is what's most important. Irenicus must be stopped and my soul returned.~ + KKNBA2g
+END
+
+IF ~~ THEN BEGIN KKNBA2f
+SAY ~I love you too. And I agree completely, Irenicus will be stopped. I will slit his throat personally if I get the chance.~
+IF ~~ THEN DO ~JoinParty()~ EXIT
+END
+
+IF ~~ THEN BEGIN KKNBA2g
+SAY ~I can't believe what I'm hearing, after all we've been through. Fine, if that's the way you want it! Goodbye, <CHARNAME>.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3) SetGlobal("NavarraJoined","LOCALS",0) LeaveParty() EscapeArea()~ EXIT
+END
+
+END

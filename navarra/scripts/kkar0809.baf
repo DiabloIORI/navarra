@@ -1,0 +1,7 @@
+IF
+Global("KKNavarVampire","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("KKNavarVampire","GLOBAL",2)
+CreateCreature("KKVMPNAV",[1473.332],2)
+END

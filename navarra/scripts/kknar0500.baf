@@ -1,0 +1,7 @@
+IF
+Global("KKShaelExists","AR0500",0)
+THEN
+RESPONSE #100
+	SetGlobal("KKShaelExists","AR0500",1)		
+	CreateCreature("KKShael",[4071.286],3)
+END

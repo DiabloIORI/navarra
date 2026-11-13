@@ -1,0 +1,12 @@
+IF
+	Global("KKNavarExists","AR0709",0)
+	OR(3)
+	!Global("Chapter","GLOBAL",3)
+	!Global("Chapter","GLOBAL",4)
+	!Global("Chapter","GLOBAL",5)
+	!Global("Chapter","GLOBAL",6)
+THEN
+	RESPONSE #100
+		SetGlobal("KKNavarExists","AR0709",1)
+		CreateCreature("KKNavar",[607.509],3) 
+END

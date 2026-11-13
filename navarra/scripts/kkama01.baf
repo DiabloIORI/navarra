@@ -1,0 +1,13 @@
+//Extends cut218g.bcs //
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+CreateVisualEffect("SPFLESHS",[1454.1398])
+Wait(1)
+CreateCreature("KKAmana",[1454.1398],14)
+Wait(1)
+ActionOverride("KKAmana",StartDialogueNoSet(Player1))
+END

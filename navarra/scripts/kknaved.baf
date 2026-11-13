@@ -1,0 +1,197 @@
+IF
+InParty(Myself)
+  InParty("Edwin") 
+  See("Edwin")
+  Global("KKEDRomTalk","GLOBAL",0)
+  Global("KKEDRomanceActive","GLOBAL",0)
+  OR(2)
+Global("RenalJob","GLOBAL",2) 
+Global("RenalJob","GLOBAL",3)
+Dead("MaeVar")
+THEN
+  RESPONSE #100
+    RealSetGlobalTimer("KKNavEdTimer","GLOBAL",900)
+    SetGlobal("KKEDRomanceActive","GLOBAL",1)
+    SetGlobal("KKEDRomTalk","GLOBAL",1)
+END
+
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",1)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",2)
+  PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END
+
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",3)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",4)
+  PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END
+   
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",7)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",8)
+   PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END   
+   
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",9)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",10)
+   PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END   
+   
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",11)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",12)
+   PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END   
+   
+IF
+PartyRested()
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",15)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",16)
+   PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END  
+
+IF   
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",17)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",18)
+    PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END  
+   
+IF   
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",19)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",20)
+    PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END     
+   
+IF   
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",21)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",22)
+   PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END      
+
+IF   
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDRomTalk","GLOBAL",25)
+InParty("Edwin")
+Gender("Edwin",MALE)
+CombatCounter(0)
+!AreaType(DUNGEON)
+See("Edwin")
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDRomTalk","GLOBAL",26)
+   PlaySong(0)
+      PlaySound("KKNavarEM")
+ StartDialogueNoSet("Edwin")
+   END 

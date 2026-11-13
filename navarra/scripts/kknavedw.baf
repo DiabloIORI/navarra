@@ -1,0 +1,259 @@
+IF 
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",FEMALE)
+!StateCheck("Edwin",STATE_SLEEPING) 
+Global("KKEDWoman","GLOBAL",0)
+!Global("KKEDSex","GLOBAL",1)
+THEN
+  RESPONSE #100
+  RealSetGlobalTimer("KKNavEdTimer","GLOBAL",900)
+  SetGlobal("KKEDWoman","GLOBAL",1)
+ END 
+
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+    InParty(Myself)  
+    InParty("Edwin") 
+    Gender("Edwin",FEMALE)
+    Global("KKEDWoman","GLOBAL",1)
+    !StateCheck("Edwin",CD_STATE_NOTVALID) 
+       !StateCheck("KKNavar",CD_STATE_NOTVALID) 
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+    RESPONSE #100
+    SetGlobal("KKEDWoman","GLOBAL",2)
+     StartDialogueNoSet("KKNavar")
+END
+   
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman","GLOBAL",5)
+CombatCounter(0)
+AreaType(OUTDOOR)
+AreaType(FOREST)
+InParty("KKNavar")
+InParty("Edwin")
+Gender("Edwin",FEMALE)
+See("KKNavar")
+ !StateCheck("Edwin",CD_STATE_NOTVALID) 
+ !StateCheck("KKNavar",CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman","GLOBAL",6)
+ StartDialogueNoSet("KKNavar")
+   END
+   
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman","GLOBAL",7)
+CombatCounter(0)
+!AreaType(DUNGEON)
+InParty("KKNavar")
+InParty("Edwin")
+Gender("Edwin",FEMALE)
+See("KKNavar")
+ !StateCheck("Edwin",CD_STATE_NOTVALID) 
+ !StateCheck("KKNavar",CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman","GLOBAL",8)
+ StartDialogueNoSet("KKNavar")
+   END 
+
+IF
+ RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman","GLOBAL",9)
+CombatCounter(0)
+!AreaType(DUNGEON)
+InParty("KKNavar")
+InParty("Edwin")
+Gender("Edwin",FEMALE)
+See("KKNavar")
+ !StateCheck("Edwin",CD_STATE_NOTVALID) 
+ !StateCheck("KKNavar",CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman","GLOBAL",10)
+ StartDialogueNoSet("KKNavar")
+   END 
+
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("TalkedDegardan","GLOBAL",4)
+Global("KKEDWoman","GLOBAL",11)
+CombatCounter(0)
+!AreaType(DUNGEON)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",MALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100
+  SetGlobal("KKEDWoman","GLOBAL",12)
+   PlaySong(0)
+      PlaySound("KKNavE1")
+    StartDialogueNoSet("Edwin") 
+END           
+   
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman","GLOBAL",15)
+CombatCounter(0)
+!AreaType(DUNGEON)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",MALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100
+  SetGlobal("KKEDWoman","GLOBAL",16)
+  SetGlobal("KKEDRomanceActive","GLOBAL",2)
+   PlaySong(0)
+      PlaySound("KKNavE1")
+    StartDialogueNoSet("Edwin") 
+END
+
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",0)
+Global("KKEDSex","GLOBAL",1)
+CombatCounter(0)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",FEMALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100
+RealSetGlobalTimer("KKNavEdTimer","GLOBAL",900)
+  SetGlobal("KKEDWoman2","GLOBAL",1)
+ END 
+ 
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",1)
+CombatCounter(0)
+!AreaType(DUNGEON)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",FEMALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman2","GLOBAL",2)
+  StartDialogueNoSet("Edwin") 
+END     
+ 
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",3)
+AreaType(OUTDOOR)
+CombatCounter(0)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",FEMALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman2","GLOBAL",4)
+  StartDialogueNoSet("Edwin") 
+END         
+ 
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",5)
+AreaType(OUTDOOR)
+AreaType(FOREST)
+CombatCounter(0)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",FEMALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman2","GLOBAL",6)
+  StartDialogueNoSet("Edwin") 
+END    
+
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",7)
+CombatCounter(0)
+!AreaType(DUNGEON)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",FEMALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman2","GLOBAL",8)
+  StartDialogueNoSet("Edwin") 
+END     
+
+IF
+PartyRested()
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",11)
+CombatCounter(0)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",FEMALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100 
+  SetGlobal("KKEDWoman2","GLOBAL",12)
+  StartDialogueNoSet("Edwin") 
+END  
+ 
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",13)
+CombatCounter(0)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",MALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100
+  SetGlobal("KKEDWoman2","GLOBAL",14)
+   PlaySong(0)
+      PlaySound("KKNavE1")
+    StartDialogueNoSet("Edwin") 
+END      
+   
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("KKEDWoman2","GLOBAL",15)
+CombatCounter(0)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",MALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100
+  SetGlobal("KKEDWoman2","GLOBAL",16)
+   PlaySong(0)
+      PlaySound("KKNavE1")
+    StartDialogueNoSet("Edwin") 
+END 
+
+IF
+RealGlobalTimerExpired("KKNavEdTimer","GLOBAL")
+Global("TalkedDegardan","GLOBAL",4)
+Global("KKEDWoman2","GLOBAL",19)
+CombatCounter(0)
+!AreaType(DUNGEON)
+InParty("Edwin")
+See("Edwin")
+Gender("Edwin",MALE)
+!StateCheck("Edwin",STATE_SLEEPING)
+THEN
+  RESPONSE #100
+  SetGlobal("KKEDWoman2","GLOBAL",20)
+  PlaySong(0)
+      PlaySound("KKNavE1")
+    StartDialogueNoSet("Edwin") 
+END    

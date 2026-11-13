@@ -1,0 +1,3751 @@
+BEGIN ~KKNavJ~
+
+I_C_T EDWIN 0 KNEdwin
+== ~KKNAVJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Well this is an interesting surprise... a Thayvian.~
+END
+
+I_C_T RENAL 70 KNstronghold
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Wise decision, <CHARNAME>. There is a lot of money to made, especially in slavery.~
+END
+
+I_C_T RENAL 71 KNstronghold2
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Personally, I think you are making a mistake, <CHARNAME>. There is a lot of money to made, especially in slavery. You would have the money to get to Imoen in no time.~
+END
+
+I_C_T2 FIRKRA01 5 KNFirk
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~For that kind of coin, I would use caution trusting this male.~
+END
+
+I_C_T HENDAK 2 KNHendaka
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~I would not do that, <CHARNAME>, he belongs to his owner. Slave owners do not like having their property come up missing.~
+END
+
+I_C_T HENDAK 9 KNHendakb
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~I hope you are not seriously going to free this slave.~
+END
+
+I_C_T LEHTIN 22 KNLEHT2
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Smart move, <CHARNAME>, I admit you had me fooled into thinking you were actually going to free that slave. Insolent slaves have to be punished for such behavior.~ 
+END
+
+I_C_T2 MAEVAR 42 KNMaeVara
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~You are an arrogant male and I will take pleasure in killing you.~
+END
+
+I_C_T RENAL 43 KNRenalf
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN  ~I am going to enjoy shutting that arrogant male up for good.~
+END
+
+I_C_T2 ARAN02 0 KNAran02
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Another ignorant male who thinks he can survive this.~
+END
+
+I_C_T HENDAK 1 KNHend
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~What luck! Slaves! I knew I find some somewhere.~
+END
+
+I_C_T LEHTIN 5 KNLEHT
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Interesting little surprise, this place does have something worth doing here.~
+END
+
+I_C_T SBWENCH 9 KNGracie
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~That was a side of you, I have not seen before.~
+== ~EDWINJ~ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN ~What are you prattling on about now?~
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~I can understand your being upset by being called "Eddie".~
+== ~EDWINJ~ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN ~Never call me that! My name is Edwin!~
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~You have nothing to fear, I dislike it as much as you do... If not more.~
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~But why did you pretend to not know her, and act so upset?~
+== ~EDWINJ~ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN ~That wench has a big mouth, it is no one's business who I bed. And I was NOT upset!~
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~She seems to be quite taken with you, as if she has feelings for you.~
+== ~EDWINJ~ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID)~ THEN ~I haven't the slightest idea what you are talking about, woman. Leave me be.~
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~No, I want to see the sweeter, softer side of you. You know, the one she claims to have seen.~
+== ~EDWINJ~ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID) !Global("KKEDSex","GLOBAL",1)~ THEN ~That wench has a wild imagination. I am neither soft, nor sweet.~
+== ~EDWINJ~ IF ~InParty("EDWIN") InMyArea("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID) Global("KKEDSex","GLOBAL",1)~ THEN ~Not now! You can wait until we make camp, as always.~ 
+END
+
+I_C_T  Viconi 8 KNviconi
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~How dare theses filthy males! We must save her.~
+END
+
+I_C_T2 CAMITIS 4 KNcamitis
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~This business of kidnapping and murder ends today. Be thankful <CHARNAME> would rather kill you than do to you what you did to Tirdir. ~
+END
+
+I_C_T2 PPSAEM 60 KNsaemon
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~You spineless snake! How dare you double-cross us!~
+END
+
+I_C_T  BODHI 18 KNBodhib
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Do not trust her <CHARNAME>. I cannot believe I am saying this but, the Shadow Thieve's are the lesser of two evils here.~
+END
+
+I_C_T  BHARVAL 17 KNCu
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Good idea, something is not right here.~
+END
+
+I_C_T  BHOISIG 19 KNBHOISIG
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Good idea, something is not right here.~
+END
+
+I_C_T  WELLYN 4 KNWELLYN 
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~A male child's bear? Really <CHARNAME>, we are wasting time with this.~
+END
+
+I_C_T  UHMAY01 133 KNUmar
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Perhaps checking the cabin will shed some light on the strange events here.~
+END
+
+I_C_T  RAELIS 53 KNRAELIS
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Kidnapping an actor? Who cares! We have more important things to worry about.~
+END
+
+I_C_T LEHTIN 8 KNlehtinan
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~He is lying and I am in need of a slave!~
+END
+
+I_C_T  FIRKRA02 22  KNFIRKRA02
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~A dragon? An honorable battle and a worthy opponent, to be sure. I would relish the challenge, but it is ultimately your decision.~
+END
+
+I_C_T  YOSHIMOX 2 KNYOSHIMOX
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~I cannot say that I am surprised by your treachery. Please let me kill him.~
+END
+
+I_C_T  PPSAEM2 2 KNPPSAEM2
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Trusting this male would not be the best idea.~
+END
+
+I_C_T  UDSOLA01 14 KNUDSOLA01
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~I do not care to be watched so closely. We should be cautious.~
+END
+
+I_C_T  C6DRIZZ1 38 KNC6DRIZZ1
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~You should not be so eager to trust anyone here.~
+END
+
+I_C_T  SUELHAN 6 KNSUELHAN
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~As much as I dislike cities, this one is quite pretty.~
+END
+
+I_C_T2 HELLJON 7 navcommenthelljon1
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 8 navcommenthelljon2
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 9 navcommenthelljon3
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 10 navcommenthelljon4
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 7 navcommenthelljon5
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T2 HELLJON 8 navcommenthelljon6
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T2 HELLJON 9 navcommenthelljon7
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T2 HELLJON 10 navcommenthelljon8
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T PLAYER1 25 navcommenthell1
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~<CHARNAME>! Tempus be praised! I was afraid I had lost you but I felt you...pulling me, calling out to me. I do not like this place, but I will not leave your side until that monster is dead and you are whole again.~
+END 
+
+I_C_T PLAYER1 25 navcommenthell2
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~I...I died did not I? I felt myself starting to slip away but I knew you needed me, felt you pulling me here. I do not like this place, but I will not leave your side until that monster is dead and you are whole again.~
+END 
+
+I_C_T2 HELLJON 7 navcommenthelljon1
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 8 navcommenthelljon2
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 9 navcommenthelljon3
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 10 navcommenthelljon4
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~This is the end Irenicus! You have harmed the man I love and you will pay for that with your life.~
+END 
+
+I_C_T2 HELLJON 7 navcommenthelljon5
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T2 HELLJON 8 navcommenthelljon6
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T2 HELLJON 9 navcommenthelljon7
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T2 HELLJON 10 navcommenthelljon8
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~As much as I would love to torture you first, I will take great pleasure in ending your life.~
+END 
+
+I_C_T PLAYER1 24 navcommenthell1
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~<CHARNAME>! Tempus be praised!. I was afraid I had lost you but I felt you...pulling me, calling out to me. I do not like this place, but I will not leave your side until that monster is dead and you are whole again.~
+END 
+
+I_C_T PLAYER1 24 navcommenthell2
+== ~KKNavJ~ IF ~InParty("KKNavar") InMyArea("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) !Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~I...I died did I not? I felt myself starting to slip away but I knew you needed me, felt you pulling me here. I do not like this place, but I will not leave your side until that monster is dead and you are whole again.~
+END 
+
+I_C_T PLAYER1 5 KKNavarFriendirstSlayerChange3
+== KKNavJ IF ~InParty("KKNavar") See("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Well, that was disturbing. I really hope that doesn't happen again.~
+== KKNavJ IF ~InParty("KKNavar") See("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~We need to find Irenicus, before something worse happens to you.~
+END
+
+I_C_T PLAYER1 5 KKNavarFriendirstSlayerChange3
+== KKNavJ IF ~InParty("KKNavar") See("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~What was that?? I can't say I like what's going on here.~
+== KKNavJ IF ~InParty("KKNavar") See("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2) ~ THEN ~Sit down and rest a bit, love, I won't leave your side, I promise.~
+END
+
+I_C_T PLAYER1 5 KKNavarFriendirstSlayerChange3
+== KKNavJ IF ~InParty("KKNavar") See("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",1)~ THEN ~Whatever that was, it can't be good. Are you all right <CHARNAME>?~
+== KKNavJ IF ~InParty("KKNavar") See("KKNavar") !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",1)~ THEN ~We need to get your back, and pretty quick. I'm worried about you, you can't go on much longer like this.~
+END
+
+EXTEND_BOTTOM PLAYER1 7
+IF ~Global("KKNavarRomanceActive","GLOBAL",2)
+IsValidForPartyDialogue("KKNavar")~ EXTERN KKNavJ KKNavarBhaal1
+END
+
+CHAIN KKNavJ KKNavarBhaal1
+~What's wrong, love? You do not look well.~
+END
+++ ~I... I do not know, I feel...~ DO ~SetGlobal("KKEndangerNavarra","GLOBAL",1)~ EXTERN KKNavJ KKNavarBhaal1.control
+++ ~No, no! Stay back, you've got to...~ DO ~SetGlobal("KKEndangerNavarra","GLOBAL",1)~ EXTERN KKNavJ KKNavarBhaal1.control
+++ ~Run Navarra! Please! Get away from me!~ DO ~SetGlobal("KKEndangerNavarra","GLOBAL",1)~ EXTERN KKNavJ KKNavarBhaal1.control
+
+CHAIN KKNavJ KKNavarBhaal1.control
+~What are you trying to say, <CHARNAME>? Speak up, love... why do you have such a strange look on your....oh no. Not again!~
+DO ~ActionOverride(Player1,ReallyForceSpell(Myself,SLAYER_CHANGE))~
+EXIT
+
+EXTEND_BOTTOM PLAYER1 10
+IF ~Global("KKEndangerNavarra","GLOBAL",1) !Detect("KKNavar")~ DO ~SetGlobal("DrowTalk","GLOBAL",5)~ GOTO 12
+IF ~Global("KKEndangerNavarra","GLOBAL",1) Detect("KKNavar")~ DO ~SetGlobal("DrowTalk","GLOBAL",5)~ EXTERN KKNavJ KKNavarBhaal2
+END
+
+CHAIN KKNavJ KKNavarBhaal2
+~Well, this cannot be a good rhink. Can't say I'm fond of the new look, either.~
+END
+++ ~I do not think I've ever been so scared in my life...~ EXTERN KKNavJ KKNavarBhaal2.2
+++ ~Sure, I'm scared to death and you are making jokes. Is that your way of telling me you can't handle it? Because I need you now more than ever.~ EXTERN KKNavJ KKNavarBhaal2.3
+++ ~I felt so powerful! I wonder if I can learn to control that, harness it when I want to.~ EXTERN KKNavJ KKNavarBhaal2.4
+
+CHAIN KKNavJ KKNavarBhaal2.2
+~(Navarra wraps her arms arm around you tightly)~
+~It's over now. I have to admit, it scared me, too. We need to find Irenicus and soon. I'm going to enjoy tearing him a part, piece by piece!~
+EXIT
+
+CHAIN KKNavJ KKNavarBhaal2.3
+~I'm sorry, I'm afraid too, you know. You should know by now I'll never abandon you. I love you, <CHARNAME>. We need to find Irenicus quickly, however, before something worse happens to you.~
+EXIT
+
+CHAIN KKNavJ KKNavarBhaal2.4
+~You can't possibly mean that, you are starting to scare me. You must see that using this... power... it is evil..  Let's go get your soul back, before anything worse happens to you.~
+EXIT
+
+INTERJECT Player1 3 KKNavarSpellholdDizzy0
+== KKNavJ IF ~InParty("KKNavar") Range("KKNavar",15) !StateCheck("KKNavar",CD_STATE_NOTVALID)~ THEN ~Easy there, <CHARNAME>. Are you ill? Maybe you should stop and rest a bit.~
+END
+++ ~I felt dizzy for a moment. Nothing to worry about, it is over now.~  EXTERN KKNavJ KKNavarSpellholdDizzy2
+++ ~I seemed to have lost control of myself for a minute, I'm fine now though, thanks.~   EXTERN KKNavJ KKNavarSpellholdDizzy1
+++ ~I'm...not sure. I felt myself slipping, losing control.~ EXTERN KKNavJ KKNavarSpellholdDizzy1
+++ ~I'm fine Navarra, thanks for asking.~  EXTERN KKNavJ KKNavarSpellholdDizzy2
+
+CHAIN KKNavJ KKNavarSpellholdDizzy1
+~No one will fault you for stopping and resting a while, you've been through quite an ordeal.~
+EXIT
+
+CHAIN KKNavJ KKNavarSpellholdDizzy2
+ ~If you are sure. Our chances of getting out of here in one piece aren't too great, if you can't even walk.~
+EXIT
+
+INTERJECT Player1 3 KKNavarSpellholdDizzy3
+== KKNavJ IF ~InParty("KKNavar") Range("KKNavar",15) !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",2)~ THEN ~(Navarra puts his arm around your waist for fear you'll fall) What's wrong, love? You look pale.~
+END
+++ ~I felt dizzy for a moment. I do not know what came over me.~  EXTERN KKNavJ KKNavarSpellholdDizzy4
+++ ~I seemed to have lost control of myself for a minute. I'm very glad you are here, that was a bit unnerving.~   EXTERN KKNavJ KKNavarSpellholdDizzy5
+++ ~I'm...not sure. I felt myself slipping, losing control. I have to admit it scared me a little.~ EXTERN KKNavJ KKNavarSpellholdDizzy5
+++ ~I'm fine Navarra, thanks for asking.~  EXTERN KKNavJ KKNavarSpellholdDizzy4
+
+CHAIN KKNavJ KKNavarSpellholdDizzy4
+~You really should stop and rest. you are going to need all your strength.~
+EXIT
+
+CHAIN KKNavJ KKNavarSpellholdDizzy5
+~I'm going to make Irenicus deeply regret ever hurting you.~
+EXIT
+
+INTERJECT Player1 3 KKNavarSpellholdDizzy6
+== KKNavJ IF ~InParty("KKNavar") Range("KKNavar",15) !StateCheck("KKNavar",CD_STATE_NOTVALID) Global("KKNavarRomanceActive","GLOBAL",1)~ THEN ~What's wrong, <CHARNAME>? Y look a bit pale. Here, take my arm unyil you are steady.~
+END
+++ ~I felt dizzy for a moment. I do not know what came over me.~  EXTERN KKNavJ KKNavarSpellholdDizzy7
+++ ~I seemed to have lost control of myself for a minute. I'm very glad you are here, that was a bit unnerving.~   EXTERN KKNavJ KKNavarSpellholdDizzy8
+++ ~I'm...not sure. I felt myself slipping, losing control. I have to admit, it scared me a little.~ EXTERN KKNavJ KKNavarSpellholdDizzy8
+++ ~I'm fine Navarra, thanks for asking.~  EXTERN KKNavJ KKNavarSpellholdDizzy7
+
+CHAIN KKNavJ KKNavarSpellholdDizzy7
+~You really should stop and rest. I'm here for you, if you need me.~
+EXIT
+
+CHAIN KKNavJ KKNavarSpellholdDizzy8
+~This can't be a good thing. Please, if you need anything at all... I'm here for you.~
+EXIT
+
+INTERJECT PLAYER1 33 TreeofLifeVariableForNavarra
+== PLAYER1 IF ~IsValidForPartyDialog("KKNavar")~ THEN ~(You turn to Navarra, the fiery barbarian who has remained by your side from the beginning, can you ask her to risk her life yet again?)~
+END
+++ ~Navarra, there is no reason for you to risk your life and follow me where I must go now. You have seen how powerful Irenicus is, I won't blame you if you choose to go home.~ EXTERN KKNavJ Option1
+++ ~Navarra, I need to know if you ready for this. You won't abandon me now will you?~ EXTERN KKNavJ Option2
+IF ~Global("KKNavarRomanceActive","GLOBAL",2)~ THEN REPLY ~Navarra, I....~ EXTERN KKNavJ Option3
+++ ~Navarra, you've done so much for me already...You can still walk away. There is a chance you could die and I can't make you take that risk.~ EXTERN KKNavJ Option4
+IF ~Global("KKNavarRomanceActive","GLOBAL",3)~ THEN REPLY ~Navarra, there is no reason for you to risk your life and follow me where I must go now. You have seen how powerful Irenicus is, I won't blame you if you choose to go home.~ EXTERN KKNavJ Option5
+
+APPEND KKNAVJ
+
+IF ~~ THEN BEGIN Option1
+SAY ~There is every reason for me to follow you, <CHARNAME>. You have been a good friend, and I will gladly risk my life to see your soul returned to you.~ COPY_TRANS PLAYER1 33
+END
+
+IF ~~ THEN BEGIN Option2
+SAY ~I won't abandon you, <CHARNAME>. That monster is in possession of your soul, and I'll help you no matter what happens.~ COPY_TRANS PLAYER1 33
+END
+
+IF ~~ THEN BEGIN Option3
+SAY ~No, my love, I refuse to leave your side. I love you,<CHARNAME>, and we haven't come this far together, just to have me walk away now. We will get your soul back, and I will take pleasure in making that monster suffer for ever hurting you.~ COPY_TRANS PLAYER1 33
+END
+
+IF ~~ THEN BEGIN Option4
+SAY ~You do not need to even ask me that, <CHARNAME>. For me to walk away, knowing your soul is gone, would be wrong.~ COPY_TRANS PLAYER1 33
+END
+
+IF ~~ THEN BEGIN Option5
+SAY ~There is every reason for me to follow you, <CHARNAME>. Things may not have turned out the way I had hoped between us, but you have been a good friend, and I will gladly risk my life to see your soul returned to you.~ COPY_TRANS PLAYER1 33
+END
+
+IF ~Global("KKNThief","LOCALS",1)~ THEN BEGIN KKNF
+SAY ~Is every city over-run with thieves?~
+++ ~Pretty much. It is easy for them to operate and control a city.~ DO ~SetGlobal("KKNThief","LOCALS",2)~ + KKNFa
+++ ~From what I've seen, yes. People are afraid to stand up to them.~ DO ~SetGlobal("KKNThief","LOCALS",2)~ + KKNFe
+++ ~You seem surprised, never spent much time in a city before?~ DO ~SetGlobal("KKNThief","LOCALS",2)~ + KKNFf
++ ~CLASS(Player1,THIEF_ALL)~ + ~Of course, we always operate in cities, there's a lot of money to be made. Especially with the slave trade.~ DO ~SetGlobal("KKNThief","LOCALS",2)~  + KKNFf
+++ ~That's to be expected, now let's go.~ DO ~SetGlobal("KKNThief","LOCALS",2)~ EXIT
+END
+
+IF ~~ THEN KKNFa
+SAY ~I cannot imagine it would be that easy with all the guards around.~
+++ ~Not all guards are honest. A simple bribe, on a regular basis, is all it takes for them to look the other way.~ + KKNFb
+++ ~Perhaps they fear a dagger in their back, and choose to ignore them.~ + KKNFc
+++ ~It is easier than you think. I am sure most of their business is conducted at night.~ + KKNFd
+++ ~I really would not know, nor do I care.~ EXIT
+END
+
+IF ~~ THEN KKNFb
+SAY ~Obviously all the guards are male, females have more honor and would never allow such a thing.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNFc
+SAY ~I suppose you are right. Still, those deviants should not be allowed to cause such fear.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNFd
+SAY ~True, though hiding in the shadows is for cowards.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNFe
+SAY ~I suppose I can understand that. These people seem incapable of a confrontation on the scale needed to put an end to them.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNFf
+SAY ~No, I have not. On my journey here, I chose to make camp rather than enter a city.~
+= ~Now I am very glad I did.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNFg
+SAY ~I may not agree with the actions of thieves, but I agree that everyone needs access to slaves.~
+= ~I still need to replace mine.~
+IF ~~ THEN EXIT
+END
+
+IF ~Global("KKNHorseTalk","LOCALS",1)~ THEN BEGIN KKHT
+SAY ~How is it that everyone is happy to just walk everywhere! I have not seen even one horse.~ 
+++ ~Because there are no horses here. You cannot miss what you've never had.~ DO ~SetGlobal("KKNHorseTalk","LOCALS",2)~ + KKHTa
+++ ~Why would not they? It is a fine day today, perfect for a nice walk.~ DO ~SetGlobal("KKNHorseTalk","LOCALS",2)~ + KKHTe
+++ ~Great more whining, are you ever happy?~ DO ~SetGlobal("KKNHorseTalk","LOCALS",2)~ + KKHTf
+++ ~We do not have time for this, I have things to do.~ DO ~SetGlobal("KKNHorseTalk","LOCALS",2)~ EXIT
+END
+
+IF ~~ THEN KKHTa
+SAY ~Perhaps it is just because we are in the city. I can only hope we find some elsewhere. I cannot imagine not being able to replace the one I had.~
++ ~Gender(Player1,MALE)~ + ~Too good to walk, or are you so spoiled that you will not be able to keep up?~ + KKHTb
+++ ~I am sure you will be fine. Walking is good for you.~ + KKHTc
+++ ~We can stop and rest if you are tired.~ + KKHTd
+++ ~You can walk just like the rest of us. Do try to keep up.~ EXIT
+END
+
+IF ~~ THEN KKHTb
+SAY ~I am quite capable of walking, and you should be careful of how you speak to me.~
+IF ~~ THEN EXIT
+END 
+
+IF ~~ THEN KKHTc
+SAY ~I do not mind walking, but riding is much more pleasurable.~
+IF ~~ THEN EXIT
+END 
+
+IF ~~ THEN KKHTd
+SAY ~I am fine, I just miss my horse.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKHTe
+SAY ~Yes, it is. I am just not used to being somewhere where there aren't any.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKHTf
+SAY ~We can talk later, if your sour mood improves.~
+IF ~~ THEN EXIT
+END
+
+IF ~Global("KKNUmar","LOCALS",1)~ THEN BEGIN KKNU
+SAY ~It is so beautiful here. It is amazing how the land flourishs, when it isnt frozen solid.~
++ ~Class(Player1,RANGER)~ + ~There is nothing more peaceful or wonderous as the forest.~ DO ~SetGlobal("KKNUmar","LOCALS",2)~ + KKNUa
+++ ~It is nice, I suppose.~ DO ~SetGlobal("KKNUmar","LOCALS",2)~ + KKNUb
+++ ~Is Narfell really that bad? is there no warmth at all?~ + KKNUc
++ ~Class(Player1,THIEF)~ + ~Too much nature for me, I prefer the city.~ DO ~SetGlobal("KKNUmar","LOCALS",2)~ + KKNUd
+++ ~Whatever, let's go.~ DO ~SetGlobal("KKNUmar","LOCALS",2)~ EXIT
+END
+
+IF ~~ THEN KKNUa
+SAY ~I can see why you chose to be a ranger.~
+++ ~Is Narfell really that bad? is there no warmth at all?~ + KKNUc
++ ~!Global("KKNavarRomanceActive","GLOBAL",1) Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUh
++ ~Global("KKNavarRomanceActive","GLOBAL",1) !Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUi
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUj
++ ~Global("KKEDRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUk
+++ ~Indeed, shall we catch up with the others now?~ EXIT
+END
+
+IF ~~ THEN KKNUb
+SAY ~Nice? Well, it is not for everyone I guess.~
+++ ~Sorry, I just prefer the city.~ + KKNUe
++ ~!Global("KKNavarRomanceActive","GLOBAL",1) Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUh
++ ~Global("KKNavarRomanceActive","GLOBAL",1) !Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUi
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUj
++ ~Global("KKEDRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUk
+++ ~True enough. Let's go.~ EXIT
+END
+
+
+IF ~~ THEN KKNUc
+SAY ~Certainly. The spring is quite pretty, watching the land come alive.~ 
+= ~It is not always frigid, but it definitely does not look like this.~
++ ~Class(Player1,RANGER)~ + ~I know what you mean, it is a sight to behold.~ + KKNUf
++ ~!Global("KKNavarRomanceActive","GLOBAL",1) Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUh
++ ~Global("KKNavarRomanceActive","GLOBAL",1) !Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUi
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUj
++ ~Global("KKEDRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUk
+++ ~Even so, I would much rather be in the city.~ + KKNUe
+++ ~Sounds nice, but we should get going.~ EXIT
+END
+
+IF ~~ THEN KKNUd
+SAY ~Of course, that is understandable. Still, it is a nice change.~
+++ ~Yes, it is. For a visit, but I would not care to live here.~ + KKNUg
++ ~!Global("KKNavarRomanceActive","GLOBAL",1) Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUh
++ ~Global("KKNavarRomanceActive","GLOBAL",1) !Global("KKEDRomanceActive","GLOBAL",1)~ + ~Could you see yourself living here?~ + KKNUi
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUj
++ ~Global("KKEDRomanceActive","GLOBAL",2)~ + ~Could you see yourself living here?~ + KKNUk
+++ ~True, but we should get going.~ EXIT
+END
+
+IF ~~ THEN KKNUe
+SAY ~We all have our preferences. I grew up in open spaces, so to me this paradise.~
++ ~!Global("KKNavarRomanceActive","GLOBAL",1) Global("KKEDRomanceActive","GLOBAL",1)~ + ~Makes sense. Could you see yourself living here?~ + KKNUh
++ ~Global("KKNavarRomanceActive","GLOBAL",1) !Global("KKEDRomanceActive","GLOBAL",1)~ + ~Makes sense. Could you see yourself living here?~ + KKNUi
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~Makes sense. Could you see yourself living here?~ + KKNUj
++ ~Global("KKEDRomanceActive","GLOBAL",2)~ + ~Makes sense. Could you see yourself living here?~ + KKNUk
+++ ~Is Narfell really that bad? is there no warmth at all?~ + KKNUc
+++ ~True, but we should get going.~ EXIT
+END
+
+IF ~~ THEN KKNUf
+SAY ~That it is, I am glad to have met someone who appreciates it as much as I do.~
++ ~!Global("KKNavarRomanceActive","GLOBAL",1) Global("KKEDRomanceActive","GLOBAL",1)~ + ~I am glad to have met you as well. I wonder, could you see yourself living here?~ + KKNUh
++ ~Global("KKNavarRomanceActive","GLOBAL",1) !Global("KKEDRomanceActive","GLOBAL",1)~ + ~I am glad to have met you as well. I wonder, could you see yourself living here?~ + KKNUi
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~I am glad to have met you as well. I wonder, could you see yourself living here?~ + KKNUj
++ ~Global("KKEDRomanceActive","GLOBAL",2)~ + ~I am glad to have met you as well. I wonder, could you see yourself living here?~ + KKNUk
+++ ~The feeling is mutual. We have much to do, however, let's go.~ EXIT
+END
+
+IF ~~ THEN KKNUg
+SAY ~That is a shame, but I understand.~
+IF ~~ THEN EXIT
+END 
+
+IF ~~ THEN KKNUh
+SAY ~I am unsure, but my first priority is to complete my mission.~
+IF ~~ THEN EXIT
+END 
+
+IF ~~ THEN KKNUi
+SAY ~Perhaps, but my first priority is to complete my mission.~
+IF ~~ THEN EXIT
+END 
+
+IF ~~ THEN KKNUj
+SAY ~I know I could, as long as I am with you.~
+IF ~~ THEN EXIT
+END 
+
+IF ~~ THEN KKNUk
+SAY ~Edwin and I have not discussed it yet.~
+IF ~~ THEN EXIT
+END 
+
+IF ~Global("KKNavarDrow","LOCALS",1)~ THEN BEGIN KKNavDROW
+SAY ~I am not sure how I feel about this.~
+++ ~Neither do I, but we will have to make the best of it.~ DO ~SetGlobal("KKNavarDrow","LOCALS",2)~ + KKNavDROWa
+++ ~It could be worse, If it makes you feel any better, I think you look beautiful.~ DO ~SetGlobal("KKNavarDrow","LOCALS",2)~ + KKNavDROWg
+++ ~Please, Navarra, keep your voice down. We cannot afford to be discovered.~ DO ~SetGlobal("KKNavarDrow","LOCALS",2)~ EXIT
+END
+
+IF ~~ THEN KKNavDROWa
+SAY ~I agree, the last thing we need is to be discovered in the city. It does not mean, however, that I have to like it.~
+++ ~That would be very dangerous. I doubt we would make it out in one piece.~ + KKNavDROWb
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~I am glad you agree. Besides, we could visit the lust chambers while we are here.~ + KKNavDROWd
+++ ~It could be worse, If it makes you feel any better, I think you look beautiful.~ + KKNavDROWg
+++ ~I am glad you see how serious this is. Now please stop talking, the sooner we get this over with the better.~ EXIT
+END
+
+IF ~~ THEN KKNavDROWb
+SAY ~We will make it out without incident, I promise you. We just have to act like we belong there.~
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~Well, we could visit the lust chambers while we are here.~ + KKNavDROWd
+++ ~I suppose that means you get to order me around and I cannot argue about it.~ + KKNavDROWe
+++ ~I am sure we will. But I wonder if there is something for males to do besides be slaves.~ + KKNavDROWf
+END
+
+IF ~~ THEN KKNavDROWc
+SAY ~Well now, there's an offer I can't refuse. I look forward to it with great anticipation, my lady.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNavDROWd
+SAY ~I have not heard of it. I cannot wait to experience it with you. my love.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNavDROWe
+SAY ~I had not thought of that. This should be fun, provided I can do it now that I love you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNavDROWf
+SAY ~I hope so, I am uncertain if I can treat you as such.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNavDROWg
+SAY ~I have to admit, you look rather handsome in that form. It may difficult for me to keep my hands off you.~
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~Hold that thought, unless we visit the lust chambers.~ + KKNavDROWc
+++ ~I suggest you restrain yourself, I cannot have you acting like that in front of anyone and risk getting us caught.~ + KKNavDROWh
+++ ~I suggest you find a way to make sure you keep your hands to yourself.~ + KKNavDROWi
+++ ~Let us get this over with, shall we?~ EXIT
+END
+
+IF ~~ THEN KKNavDROWh
+SAY ~Since you put it that way, I promise to be on my best behavior.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN KKNavDROWi
+SAY ~I am perfectly capable of doing just that.~
+IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-1 ~Global("KKDeadWarriors","LOCALS",0)~ THEN KKDW1
+SAY ~I...it should not have come to that.~ 
+++ ~I am sorry it turned out that way, but they left you no choice.~ DO ~SetGlobal("KKDeadWarriors","LOCALS",1)~ + KKDW1a
+++ ~Power and greed drive people to do terrible things, if they let it. It wasn't your fault.~ DO ~SetGlobal("KKDeadWarriors","LOCALS",1)~ + KKDW1a
+++ ~I agree, but at least you got the sword back.~ DO ~SetGlobal("KKDeadWarriors","LOCALS",1)~ + KKDW1a
++ ~Alignment(Player1,MASK_EVIL)~ + ~You are a barbarian, you should be used to killing. Celebrate your victory, not mourn the deaths of enemies who deserved to die.~ DO ~SetGlobal("KKDeadWarriors","LOCALS",1)~ + KKDW1t
+END
+
+IF ~~ KKDW1a
+SAY ~I know, though it makes their deaths no easier to accept.~ 
+IF ~~ THEN + KKDW1b
+END
+
+IF ~~ KKDW1b
+SAY ~I want to thank you for what you did. Because of Shaelah and Tressa's betrayal...~
+= ~I could not have done it without you and I appreciate it.~
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~I would do just about anything for you, you know that.~ + KKDW1h
++ ~Global("KKNavarRomanceActive","GLOBAL",2)~ + ~I love you, Navarra, I was not going to let you face this alone.~ + KKDW1c
++ ~Global("KKNavarRomanceActive","GLOBAL",1)~ + ~There is no need to thank me, I told you I would help you.~ + KKDW1i
++ ~Global("KKNavarRomanceActive","GLOBAL",3)~ + ~You are welcome. It was the least I could do for all the help you have given me.~ + KKDW1o
++ ~Global("KKNavarMFriendActive","GLOBAL",1)~ + ~There is no need to thank me, I told you I would help you.~ + KKDW1o
++ ~Global("KKNavarRomanceActive","GLOBAL",3)~ + ~You are welcome. It was the least I could do for all the help you have given me.~ + KKDW1q
++ ~Global("KKNavarFFriendActive","GLOBAL",1)~ + ~That is what friends do, they help eachother.~ + KKDW1q
+END
+
+IF ~~ KKDW1c
+SAY ~I know, and I love you too. It is sad that Amana's love for me was a lie. It would have prevented her from betraying me, and our tribe.~
+IF ~~ THEN + KKDW1d
+END
+
+IF ~~ KKDW1d
+SAY ~Amana was...my sister and Chieftain Osarena is our birth mother.~ 
+= ~Amana was consumed by jealousy and rage because I am to become the next Chieftain of our tribe, I just never realized it angered her until she stole the sword.~
+++ ~Does that mean you are going to leave now? I know you are suppose to return the sword but I had hoped...~ + KKDW1e
+++ ~So that means your destiny lies in Narfell and you need to go back.~ + KKDW1e
+++ ~Dare I hope that you have another sister who can take your place as the future Chieftain?~ + KKDW1f
+++ ~I do not want to lose you, but I will not stand in your way if you need to go.~ + KKDW1e
+END
+
+IF ~~ KKDW1e
+SAY ~I know it is my duty to return, but I cannot. Not yet anyway... I love you too much to ever leave your side.~
+= ~Unless you want me to go...~
+++ ~Of course not, I do not want you to ever leave.~ + KKDW1l
+++ ~You are right, Navarra, it is your duty and your destiny. You have to go back, I can finish this without you.~ + KKDW1n
+END
+
+IF ~~ KKDW1f
+SAY ~No, I have no other sisters. And I know it is my duty to return, but I cannot. Not yet anyway...unless you agree to go with me when all of this is over.~ 
+= ~We can return her sword and she will have to choose another to take her place, if you do not wish to stay. I love you too much to ever leave your side.~
+IF ~~ DO ~SetGlobal("KKNavSword","GLOBAL",1)~ EXIT
+END
+
+IF ~~ KKDW1g
+SAY ~There is every need, my love. You are the only one who did not deceive and betray me...the only one who claimed to love and meant it.~
+= ~Amana may have meant it once, but no longer...~ 
+IF ~~ THEN + KKDW1d
+END
+
+IF ~~ KKDW1h
+SAY ~I do know that, and I love you even more for it. I just wish Amana had still felt that way, she would still be alive.~
+IF ~~ THEN + KKDW1d
+END
+
+IF ~~ KKDW1i
+SAY ~There is every need. I was too trusting to suspect Shaelah and Tressa of betrayal. And I never thought Amana would actually try to kill someone she claimed to love and care about.~
+IF ~~ THEN + KKDW1j
+END
+
+IF ~~ KKDW1j
+SAY ~Amana was...my sister and Chieftain Osarena is our mother.~ 
+= ~Amana was consumed by jealousy and rage, because I am to become the next Chieftain of our tribe. I just never realized it angered her until, she stole the sword.~
+++ ~Does that mean you are going to leave now?~ + KKDW1k
+++ ~So that means your destiny lies in Narfell and you need to go back.~ + KKDW1k
+END
+
+IF ~~ KKDW1k
+SAY ~I know it is my duty to return, but I cannot. Not yet anyway...I have come to care about you and would rather stay and see this through with you.~
+= ~Unless you want me to go...~
+++ ~No, I want you stay! I was afraid that you did not have any feelings for me and would leave. Knowing that you do, makes me very happy.~ + KKDW1l
+++ ~You are right, Navarra, it is your duty and your destiny. You have to go back, I can finish this without you.~ + KKDW1m
+END
+
+IF ~~ KKDW1l
+SAY ~Then I shall stay. Maybe when this is over, we can go to Narfell together and return the sword.~ 
+IF ~~ DO ~SetGlobal("KKNavSword","GLOBAL",1)~ EXIT
+END
+
+IF ~~ KKDW1m
+SAY ~If that is your wish, I will go.~
+IF ~~ DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3) LeaveParty() EscapeArea()~ EXIT
+END
+
+IF ~~ KKDW1n
+SAY ~I cannot believe I was foolish enough to trust a man, much less give my heart to one! You are a vile creature and I am glad to be rid of you!~
+IF ~~ DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3) LeaveParty() EscapeArea()~ EXIT
+END
+
+IF ~~ KKDW1o
+SAY ~I know it is my duty to return, but I cannot. Not yet anyway...You are my friend and I owe you a great deal.~ 
+= ~I would rather stay and see this through with you. Unless you want me to go...~
+++ ~Of course not, I was hoping you would stay.~ + KKDW1p
+++ ~You are right, Navarra, it is your duty and your destiny. You have to go back, I can finish this without you.~ + KKDW1m
+END
+
+IF ~~ KKDW1p
+SAY ~Then I will stay and help you. But I must return to Narfell when it is over.~
+IF ~~ DO ~SetGlobal("KKNavSword","GLOBAL",1)~ EXIT
+END
+
+IF ~~ KKDW1q
+SAY ~That was the plan, you knew that from the start.~
+++ ~True, but I was hoping you would change your mind and help me until all of this is over.~ + KKDW1p
+++ ~Yes I did, and you should go back. It is your duty and your destiny, I can finish this without you.~ + KKDW1r
+END
+
+IF ~~ KKDW1r
+SAY ~If that is your wish, I will go.~
+IF ~~ THEN DO ~LeaveParty() EscapeArea()~  EXIT
+END
+
+IF ~~ KKDW1t
+SAY ~Regardless of they did, they did not deserve to die.~
+IF ~~ DO ~SetGlobal("KKNavSword","GLOBAL",1)~ EXIT
+END
+
+IF ~ReputationLT(Player1,7) Gender(Player1,MALE) Global("KKBadMale","LOCALS",0)~ THEN BEGIN badrep
+SAY ~You have proven that men should be beaten and kept in chains. There is no honor in your behavior.~
+= ~I wish you luck, you will need it.~ 
+IF ~~ THEN DO ~SetGlobal("KKBadMale","LOCALS",1) LeaveParty()EscapeArea()~ EXIT
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",2)~ THEN BEGIN LT1
+SAY ~You, sla...uh male, do you know where your friend was taken?~
+++ ~You'll find me easier to get along with if you call me by my name, instead of insulting me.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",3) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT1a
+++ ~You do not really expect me to answer you when you speak to me that way, I hope.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",3) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT1f
+++ ~Ask me later. When, or if you develop some manners.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",3) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ LT1a
+SAY ~I am not interested in knowing your name, only the answer to my question. It is bad enough that I must lower myself to even speak you in the first place.~
+++ ~Things are different here than where you are from. Men are treated as equals and deserve the same respect.~ + LT1b
+++ ~You are making this arrangement more difficult than it has to be. We agreed to help eachother, so we need to at least try to be civil.~ + LT1c
+++ ~In that case, I see no reason for us to attempt to work together. I get the feeling I will end up with a knife in my back when I am asleep.~ + LT1d
+++ ~I am not interested in answering.~ EXIT
+END
+
+IF ~~ LT1b
+SAY ~While I agree that things are different here, I have seen no proof that men are equals. Nor do I have any respect for them, to do so would be that I saw them as something other than slaves.~
+= ~And I do not.~
+++ ~You are going to have to try to see things differently. If you pay attention to what goes on around you, you will see there is good in everyone.~ + LT1c
+++ ~If this mission you are on is as important as you say, maybe you can give me a chance to prove that I am not as bad as you think.~ + LT1e
+++ ~Well then, I guess we're done talking.~ EXIT
+END
+
+IF ~~ LT1c
+SAY ~You say that as if it is an easy thing to do. My people have lived this way for many generations and it has worked out very well.~
+= ~Other than a slave, I know no other way to treat a male.~
+IF ~~ EXIT
+END
+
+IF ~~ LT1d
+SAY ~Only a coward would do such a thing. A warrior, such as myself, would rather face her opponent to watch the life drain from their eyes as they die.~
+= ~Besides, I only kill those who give me no choice. So far, your only fault is being male.~
+IF ~~ EXIT
+END
+
+IF ~~ LT1e
+SAY ~My mission is of the utmost importance, I cannot go home until I complete it. So, if you are so determined to be given a chance, keep this in mind..~
+= ~Respect is not freely given, it is something that must be earned.~
+IF ~~ EXIT
+END
+
+IF ~~ LT1f
+SAY ~Of course I expect an answer, I did not ask a question just to hear myself talk.~
+++ ~Do you treat everyone you meet with such hostility?~ + LT1g
+++ ~If this mission you are on is as important and you say, maybe this once you can make an exception and give me a chance to prove I am not as bad as you think.~ + LT1e
+++ ~Do us a both a favor and be quiet.~ EXIT
+END
+
+IF ~~ LT1g
+SAY ~I treat every male the same way, my people have lived this way for many generations and it has worked out very well.~
+= ~Other than a slave, I know no other way to treat you.~
+IF ~~ EXIT
+END
+
+IF ~~ LT1h
+SAY ~Nonsense. Men exist to serve, there is no other purpose for them.~
+IF ~~ EXIT
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",4)~ THEN BEGIN LT2
+SAY ~Tell me your name.~
+++ ~That's how you ask me?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",5) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT2a
+++ ~Say please.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",5) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT2b
+++ ~I thought you were not interested in knowing my name.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",5) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT2b
+++ ~I changed my mind, I have no interest in telling you.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",5) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT2b
+++ ~No. Stop talking to me or go away.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",5) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~  EXIT
+END
+
+IF ~~ LT2a
+SAY ~I gave what you said some thought, and though I do not agree with most of it, you do have a point. For the sake of both our missions, some civility is necessary.~
+++ ~I am glad you finally agree. Now, if you ask me nicely instead of ordering me to, I will tell you what my name is.~ + LT2b
+++ ~It is a start, I suppose. My name is <CHARNAME>, and you are?~ + LT2i
+++ ~I will tell you mine if you tell me yours.~ + LT2k
+++ ~I do not really care who you are as long as you do what you are told.~ + LT2s
+++ ~I do not have time for this right now.~ EXIT
+END
+
+IF ~~ LT2b
+SAY ~You want me to be civil and yet you provoke me? I will not beg, especially to a man.~
+++ ~I am not asking you to beg, just for a little consideration. Is being nice that hard for you?~ + LT2c
+++ ~I give up, being nice must be an unknown concept to you. My name is <CHARNAME>, and I would prefer you call me that than slave or male. Think you can manage that?~ + LT2l
+++ ~You are the most infuriating woman I have ever met! Just forget I said anything, we do not need to be on a first name basis.~ + LT2m
+++ ~Have it your way, I really do not care anymore.~  EXIT
+END
+
+IF ~~ LT2c
+SAY ~I am being civil and that should be enough for you. You cannot expect me to treat you as I would another female, even if I wanted to.~ 
+IF ~~ THEN + LT2j
+END
+
+IF ~~ LT2d
+SAY ~Just getting through one day is more difficult than you realize. Since I was born, I have had slaves to do everything for me.~
+= ~I was never taught everyday menial things, none of us were. There was never a need to with a steady supply of slaves.~
+++ ~Surely there are some things you do on your own. Like dressing or bathing.~ + LT2e
+++ ~Then why did you not bring a slave with you?~ + LT2r
+++ ~Well, your going to learn real quick traveling with me. Especially on the occasions when we have to make camp because there are no inns around.~ + LT2o
+++ ~I hope you are a fast learner because I have no intention of becoming your new slave.~ + LT2p
+++ ~Good thing I do not have to rely on you to do the cooking.~  EXIT
+END
+
+IF ~~ LT2e
+SAY ~If you must know, I prefer to dress myself. I do, however, have a slave to aid me with my bath. At least I did until recently.~
+= ~I will again soon once I buy another slave.~
++ ~Global("HendakTold","GLOBAL",1)~ + ~You cannot buy a slave!~ + LT2f
++ ~Global("HendakReleased","AR0406",2)~ + ~I released those slaves, remember? Hendak will not allow that to go on at the Copper Coronet anymore.~ + LT2q
+++ ~What do you mean, until recently? What happened to the slave you had?~ + LT2r
+++ ~Slave trading is illegal here. You'll just have to learn to get by on your own while you are here.~ + LT2g
+++ ~This is not a subject that you and I will ever agree on so, back to the original one. My name is <CHARNAME>, and you are?~ + LT2k
+++ ~I would not mind having a slave myself, of course the slave would have to be female.~ + LT2v
+++ ~I think we should get back to what we were doing now.~  EXIT
+END
+
+IF ~~ LT2f
+SAY ~Of course I can. I have already been told who the slave traders are around here and where to find them.~
+++ ~You need to understand that I will not allow you to buy a slave. If you did, I would just set him free.~ + LT2g
+++ ~Slave trading is illegal here. You'll just have to learn to get by on your own while you are here.~ + LT2g
+++ ~This is not a subject that you and I will ever agree on so, back to the original one. My name is <CHARNAME>, and you are?~ + LT2k
+++ ~I would not mind having a slave myself, of course the slave would have to be female.~ + LT2v
+++ ~I think we should get back to what we were doing now.~  EXIT
+END
+
+IF ~~ LT2g
+SAY ~You are a vile male! I will be very happy when my business is done here and I can be rid of you!~
+++ ~My name <CHARNAME>. Mind telling me yours? I like knowing who my enemies are.~ + LT2h
+++ ~No one is keeping you here, woman. You can leave at any time if I offend you so much. And my name is <CHARNAME>, in case you care.~ + LT2h
+++ ~I think you will miss me. And my name is <CHARNAME>, so you will know what to call me when you dream about me.~ + LT2h
+++ ~Not as happy as I will be.~  EXIT
+END
+
+IF ~~ LT2h
+SAY ~My name is Navarra, you wretched creature.~
+IF ~~ EXIT
+END
+
+IF ~~ LT2i
+SAY ~My name is Navarra and you are wrong, this is not the start of anything. I am only doing as you asked and being civil. You cannot expect me to treat you as I would another female, even if I wanted to.~ 
+IF ~~ THEN + LT2j
+END
+
+IF ~~ LT2j
+SAY ~That is something that would take time to adjust to after a lifetime of treating men as nothing more than slaves.~
+++ ~You have a point. I suppose if I were in your shoes, I would be that same way. Our way of life must be difficult for you to adjust to.~ + LT2d
+++ ~You are right, I am sorry. It is going to take time for both of us to adjust to eachother.~ + LT2n
+++ ~I suppose it will have to be enough, for now. My name is <CHARNAME>, and you are?~ + LT2i
+++ ~What I expect is to be treated as an equal. And until you can do that, perhaps we should just not talk to eachother.~ + LT2m
+++ ~Sooner or later, you are going to have to change that line of thinking. But, we have wasted enough time. We have things that need to be done.~  EXIT
+END
+
+IF ~~ LT2k
+SAY ~My name is Navarra, and do not think this means we are friends or anything. You cannot expect me to treat you as I would another female, even if I wanted to.~ 
+IF ~~ THEN + LT2j
+END
+
+IF ~~ LT2l
+SAY ~I am quite certain I can manage. And so that we do not need to speak to eachother further, my name is Navarra.~
+IF ~~ EXIT
+END
+
+IF ~~ LT2m
+SAY ~As you wish. I prefer calling you male than slave anyway.~
+++ ~Fine, you win. My name is <CHARNAME>, never call me anything else. Now tell me yours.~ + LT2k
+++ ~I would prefer not speaking to you at all but, you are an amusing opponent. Very well, my name is <CHARNAME>.~ + LT2k
+++ ~You are impossible to get along with. But, since I would rather not be called either of those, my name is <CHARNAME>.~ + LT2k
+++ ~I am done trying to talk to you anyway. Just shut up and walk.~  EXIT
+END
+
+IF ~~ LT2n
+SAY ~It will be a challenge, indeed.~ 
+IF ~~ EXIT
+END
+
+IF ~~ LT2o
+SAY ~I will have another slave soon enough.~
+++ ~You need to understand that I will not allow you to buy a slave. If you did, I would just set him free.~ + LT2g
+++ ~Slave trading is illegal here. You'll just have to learn to get by on your own while you are here.~ + LT2z
+++ ~This is not a subject that you and I will ever agree on so, back to the original one. My name is <CHARNAME>, and you are?~ + LT2k
+++ ~I would not mind having a slave myself, of course the slave would have to be female.~ + LT2v
+++ ~I think we should get back to what we were doing now.~  EXIT
+END
+
+IF ~~ LT2p
+SAY ~Pity, I would enjoy breaking you. But, since it seems I will not have the opportunity, I will simply find some weak-willed fool to do it willingly.~
+IF ~~ THEN + LT2o
+END
+
+IF ~~ LT2q
+SAY ~No thanks to you! Thankfully that is not the only place to buy them.~
+IF ~~ THEN + LT2o
+END
+
+IF ~~ LT2r
+SAY ~He tried to escape while I was off hunting. When I caught him, I killed him.~
+IF ~~ THEN + LT2o
+END
+
+IF ~~ LT2s
+SAY ~You cannot just order me about, I will not suffer such insolent behavior from a mere man!~
+++ ~This mere man is the leader of this group and you will do as I say or you will leave. I will not have anyone's life in danger because you cannot follow orders.~ + LT2t
+++ ~Then leave. I've had enough of you and I cannot take anymore of it.~ + LT2u
+++ ~It is you who is being insolent and insufferable! You better get used to the idea that I am in charge, and real fast if you expect me to help you.~ + LT2t
+++ ~I think we should get back to what we were doing.~  EXIT
+END
+
+IF ~~ LT2t
+SAY ~As much as I hate to admit it, you have a point. I did not think of it that way because the reversal of roles goes against everything I was taught.~
+= ~But you cannot expect me to treat you as I would another female, even if I wanted to.~
+IF ~~ THEN + LT2j
+END
+
+IF ~~ LT2u
+SAY ~Gladly, nothing would make me happier than to be rid of you!~
+IF ~~ THEN DO ~LeaveParty()EscapeArea()~  EXIT
+END
+
+IF ~~ LT2v
+SAY ~That is absurd! No female would lower themselves to be a slave.~
+++ ~That shows how much you know. The slave trade here plays no favorites, there are many female slaves.~ + LT2w
+++ ~I think I like the idea of making you my slave. I am sure it will be an amusing challenge, it is always more fun when they fight.~ + LT2x
+++ ~I cannot very well have a male slave. Unless you care to warm my bed instead?~ + LT2y
+++ ~We should catch up to others now, before I say something I might regret.~ EXIT
+END
+
+IF ~~ LT2w
+SAY ~There will be some very dead slave traders soon, if what you say is true.~
+IF ~~ EXIT
+END
+
+IF ~~ LT2x
+SAY ~You will have to kill me, because I will never allow that to happen.~
+IF ~~ EXIT
+END
+
+IF ~~ LT2y
+SAY ~I prefer more pliable slaves in my bed. The only way I would ever be in yours, is in your dreams.~
+IF ~~ EXIT
+END
+
+IF ~~ LT2z
+SAY ~You assume I have some idea of how to accomplish that! I will just have to find some weak-willed fool to do it willingly.~
+IF ~~ EXIT
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",6)~ THEN BEGIN LT3
+SAY ~Would you tell me now about your friend?~
+++ ~Her name is Imoen and she's more like a sister to me than a friend. We grew up together.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",7) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT3a
+++ ~Imoen is not my friend, we grew up together but she's more of a pain and an annoyance than a friend.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",7) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT3q
+++ ~Why? Imoen does not concern me, it is the mage I am after.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",7) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT3s
+++ ~I would rather not talk about it.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",7) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ LT3a
+SAY ~I think I understand why you are so concerned.~
+++ ~The more time that passes, the more worried I get. I've always done my best to look out for her.~ + LT3b
+++ ~I am a little worried but, Imoen can take care of herself.~ + LT3h
+++ ~I am not concerned at all. She got herself into this mess, she can get herself out of it.~ + LT3i
+++ ~Good. Let's get going, we have things to do.~ EXIT
+END
+
+IF ~~ LT3b
+SAY ~You take care of her? Should it not be the other way around? Women are hardier and more intelligent than men.~
+= ~Is she unable to look after herself in some way?~
+++ ~Are we back to this again? I thought we agreed to be nice.~ + LT3c
+++ ~You cannot possibly believe that. How do you know the men you keep as slaves aren't just as hardy and intelligent as you are?~ + LT3k
+++ ~She's a reckless little prankster who has a habit of getting into trouble. She needs someone to make sure she is safe.~ + LT3p
+++ ~I think this conversation has gone on long enough. Let's go.~ EXIT
+END
+
+IF ~~ LT3c
+SAY ~We agreed to be civil, and I am. I did not mean to offend you. I am simply trying to understand why a female, who is clearly superior to men, would need one to look after her.~
+IF ~~ THEN + LT3g
+END
+
+IF ~~ LT3d
+SAY ~Of course, we are a family....I see. Perhaps there is logic in what you say. I have always seen men as slaves so it is difficult to see them in the role you describe, but I understand your meaning now.~
+= ~I will have to think about this.~
+IF ~~ EXIT 
+END
+
+IF ~~ LT3e
+SAY ~I am not afraid! I will do as you suggest but I do not believe you will be able to prove me wrong.~
+IF ~~ EXIT 
+END
+
+IF ~~ LT3g
+SAY ~There is no logic in that unless she is impaired in some way.~
+++ ~We all need someone sooner or later. do not you, as a tribe, all look out for eachother at one time or another?~ + LT3d
+++ ~Gender does not make us any better or any worse than anyone else, Navarra. Is it so hard for you to keep an open mind and give me or any other man a chance to prove that you are wrong? Or is it that you are afraid that you might discover I am right?~ + LT3e
+++ ~I am beginning to think there is no hope for you.~ EXIT
+END
+
+IF ~~ LT3h
+SAY ~Well of course she can. I do not understand why men think that women, who are clearly superior to men, would need them to look after us.~
+IF ~~ THEN + LT3g
+END 
+
+IF ~~ LT3i
+SAY ~I am quite certain she can, she is woman after all. Not only are women hardier and more intelligent than men, but we are also quite capable of taking care of ourselves.~ 
+++ ~You cannot possibly believe that. How do you know the men you keep as slaves aren't just as hardy and intelligent as you are?~ + LT3k
+++ ~Are we back to this again? I thought we agreed to be nice.~ + LT3j
+++ ~Gender does not make us any better or any worse than anyone else, Navarra. Is it so hard for you to keep an open mind and give me or any other man a chance to prove that you are wrong? Or is it that you are afraid that you might discover I am right?~ + LT3e
+++ ~I am beginning to think there is no hope for you.~ EXIT
+END
+
+IF ~~ LT3j
+SAY ~We agreed to be civil, and I am. I did not mean to offend you, I am simply stating facts. Her captor's are male, they are not intelligent enough to hold her for long.~
+IF ~~ EXIT 
+END
+
+IF ~~ LT3k
+SAY ~Of course I believe that. They scurry about with no other purpose but to please their master, that is the way it has always been. They are inferior creatures who cannot string two thoughts together on their own.~
+= ~Their purpose is to serve and obey, nothing else. And they accept their place within the tribe.~
+++ ~Gender does not make us any better or any worse than anyone else, Navarra. Is it so hard for you to keep an open mind and give me or any other man a chance to prove that you are wrong? Or is it that you are afraid that you might discover I am right?~ + LT3e
+++ ~That is horrible and cruel to treat them like that. They are people, not animals.~ + LT3l
+++ ~do not any of them stand up for themselves and demand to be treated like people instead of animals?~ + LT3m
+++ ~I think we should talk about this later.~ EXIT
+END
+
+IF ~~ LT3l
+SAY ~Who are you to say the way we live is wrong just because it is different from yours? They have food, clothing and shelter, that is more than some have. And they are grateful for it.~
+++ ~What about their dignity, their self-respect? You stripped them of those and much more and yet you tell me they do not care? They do not even try to be free?~ + LT3n
+++ ~You have a point. It is not for me to judge how you live, even if I do not agree with it. All I ask is that you keep an open mind and give me or any other man a chance to prove that you are wrong? Or is it that you are afraid that you might discover I am right?~ + LT3e
+++ ~This is a subject that we will never agree on. I just hope you come to see that's it is wrong and men deserve to be treated as equals.~ + LT3o
+++ ~We should catch up to others now, before I say something I might regret.~ EXIT
+END
+
+IF ~~ LT3m
+SAY ~You speak of them as if they know any other way to be, they are trained to be slaves as soon as they can walk and understand.~
+= ~Some have defied orders in the past, but we have ways of making them obey. If a beating does not work, torture does. If they try to run away, they die.~
+IF ~~ EXIT 
+END
+
+IF ~~ LT3n
+SAY ~Most of them do not care because we stripe them of everything, they are trained to be slaves as soon as they can walk and understand.~
+= ~Some have defied orders in the past, but we have ways of making them obey. If a beating does not work, torture does. If they try to run away, they die.~
+IF ~~ EXIT 
+END
+
+IF ~~ LT3o
+SAY ~Anything is possible but I doubt such a thing will happen. I am going back home when my mission is completed and back to that way of life.~
+IF ~~ EXIT 
+END
+
+IF ~~ LT3p
+SAY ~I can hardly believe that is true, she is a female. We are not prone to such behavior.~
+IF ~~ THEN + LT3g
+END 
+
+IF ~~ LT3q
+SAY ~Why would you say such things? Did you feel threatened because women are hardier and more intelligent than men?~
+++ ~That is the most ridiculous thing I have ever heard! And Imoen is none of those things, a kobald has more intelligence.~ + LT3r
+++ ~I think you should keep your opinion of her to yourself until you meet her. You may find that statement in no way allies to her.~ + LT3p
+++ ~Gender does not make us any better or any worse than anyone else, Navarra. Is it so hard for you to keep an open mind and give me or any other man a chance to prove that you are wrong? Or is it that you are afraid that you might discover I am right?~ + LT3e
+++ ~You cannot possibly believe that. How do you know the men you keep as slaves aren't just as hardy and intelligent as you are?~ + LT3k
+++ ~We should catch up to others now, before I say something I might regret.~ EXIT
+END
+
+IF ~~ LT3r
+SAY ~I do not care to talk about this anymore.~
+IF ~~ EXIT 
+END
+
+IF ~~ LT3s
+SAY ~I agree, she is quite capable of taking care of herself. Her captor's are male, they are not intelligent enough to hold her for long.~
+IF ~~ EXIT 
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",8)~ THEN BEGIN LT4
+SAY ~How is it that Imoen did not know magic was illegal here?~
+++ ~My friends and I were ambushed, I woke up in a cage. We had no idea where we were so, how could she?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",9) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT4a
+++ ~She had no way of knowing that. We're new to this area, just like you are. We were captured on our way to Amn from Baldur's Gate.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",9) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT4a
+++ ~Trouble seems to find Imoen everywhere she goes. It is no surprise she'd find another way to make my life miserable.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",9) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~  EXIT
+END
+
+IF ~~ LT4a
+SAY ~It was the mage you mentioned? Why would he do that, was he planing on selling you as a slave?~
+++ ~He tortured me until I was certain he would kill me, but he did not. He healed me and started over again.~ + LT4b
+++ ~I do not really know, he cast spells on me. He said he was doing experiments.~ + LT4b
+++ ~It was not just me, he kept all of us in cages. He tortured us and killed two of my companions.~ + LT4m
+++ ~I... I am sorry, it is just too painful to talk about right now.~ + LT4h
+++ ~It does not matter, he will not get away with it. When I find him, and I will find him, I am going to kill him.~ + LT4j
+++ ~I do not want to talk about it.~ EXIT
+END
+
+IF ~~ LT4b
+SAY ~Do you know why? There was obviously something he wanted from you.~
+++ ~Why would you say that? Maybe he just takes pleasure in torture.~ + LT4c
+++ ~I have an idea but I cannot be certain until I find him.~ + LT4g
+++ ~I know what he wanted, I am just not ready to talk about it. I hope you understand.~ + LT4h
+++ ~Of course I know why, but it is none of your business.~ + LT4i
+++ ~I have no idea but I will do worse to him when I find him.~ + LT4j
+++ ~It does not concern you.~ EXIT
+END
+
+IF ~~ LT4c
+SAY ~Maybe. but that does not make any sense. There is always a purpose to torturing someone.~
++ ~!Alignment(Player1,MASK_EVIL)~ + ~Ah yes, you know all about that do not you? You have made it clear just how much you enjoy that sort of thing.~ + LT4d
+++ ~If he had a purpose, he did not tell me what is was.~ + LT4g
+++ ~I have an idea but I cannot be certain until I find him.~ + LT4g
+++ ~I know what he wanted, I am just not ready to talk about it. I hope you understand.~ + LT4h
+++ ~Of course I know why but it is none of your business.~ + LT4i
+++ ~I have no idea but I will do worse to him when I find him.~ + LT4j
+++ ~It does not concern you.~ EXIT
+END
+
+IF ~~ LT4d
+SAY ~I never said I enjoyed it, I said I was good at it. Sometimes it is necessary but I do not take pleasure in it.~
+++ ~Torture is never necessary, it is cruel and terrifying. I have the scars and the nightmares to prove it.~ + LT4e
+++ ~Torture is sometimes necessary, but I suppose I feel better knowing your not as sick and twisted as he is. I like being able to trust those I travel with.~ + LT4n
+++ ~There are other things you are good at, things you can be proud of. Torture should not be one of them.~ EXIT
+END
+
+IF ~~ LT4e
+SAY ~I... I never thought about it from that point of view. I was taught to only use it when there was no other way to convince a slave to do as they were told.~
+= ~If it went that far, it was their doing and they deserved what they got.~
+++ ~And do you still believe that?~ + LT4f
+END
+
+IF ~~ LT4f
+SAY ~I... I do not know but it matters little, I will be returning home once my mission is done and that is they way things are done there.~
+= ~This matter of the torture still troubles me, there must have been a reason for it.~
+++ ~If he had a reason, he did not tell me what is was.~ + LT4g
+++ ~I have an idea but I cannot be certain until I find him.~ + LT4g
+++ ~I know what he wanted, I am just not ready to talk about it. I hope you understand.~ + LT4h
+++ ~Of course I know why but it is none of your business.~ + LT4i
+++ ~I have no idea but I will do worse to him when I find him.~ + LT4j
+++ ~It does not concern you.~ EXIT
+END
+
+IF ~~ LT4g
+SAY ~I assume then that you were able to escape before you could find out?~
+++ ~There was an explosion and Irenicus left, I assume to find out what was going on. Imoen was able to escape and opened my cage for me.~ + LT4k
+++ ~Thanks to Imoen, she ran in and opened the cage. Once I freed the others, we got out there as fast as we could.~ + LT4k
+++ ~It is a bit foggy but, someone caused an explosion to distract Irenicus long enough for us to escape.~ + LT4l
+++ ~We got out, the exit lies in the Promenade. Irenicus caught up to us and tried to stop us, that's when the Cowled Wizards showed up.~ + LT4k
+++ ~Nothing gets past you, does it?~ EXIT
+END
+
+IF ~~ LT4h
+SAY ~I understand, I cannot imagine what you must have went through.~
+IF ~~ EXIT
+END
+
+IF ~~ LT4i
+SAY ~As you wish.~
+IF ~~ EXIT
+END
+
+IF ~~ LT4j
+SAY ~I fully agree with you there. I would not mind torturing him myself for what he has done.~
+IF ~~ THEN + LT4g
+END
+
+IF ~~ LT4k
+SAY ~You were fortunate to escape when you did. From what you have told me so far, it would have gotten much worse for you if you had not.~
+= ~I am sorry that your freedom came with such a heavy price.~
+IF ~~ EXIT
+END
+
+IF ~~ LT4l
+SAY ~Very interesting...you were fortunate that someone was able to come to your aid. I am sorry that your freedom came with such a heavy price.~
+IF ~~ EXIT
+END
+
+IF ~~ LT4m
+SAY ~I... I am sorry for your loss. You must have been through a terrible ordeal.~
+IF ~~ THEN + LT4b
+END
+
+IF ~~ LT4n
+SAY ~I told you already that I would never harm you unless you forced me to.~
+IF ~~ EXIT
+END 
+
+IF ~Global("KKNLovTalk","GLOBAL",10)~ THEN BEGIN LT5
+SAY ~I must ask you something that has been bothering me.~
+++ ~What is it?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",11) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT5a
+++ ~If this more of your "women are superior" talk, save it.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",11) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT5w
+++ ~You can always ask, but keep in mind I may not always answer.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",11) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT5z
+++ ~I am not interested in hearing anything you have to say.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",11) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT5w
+++ ~I do not have time right now.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",11) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ LT5a
+SAY ~I have heard whispers, fearful ones directed at you. They say you are a bhaalspawn, what does that mean?~
+++ ~It means my father is Bhaal, the God of Murder.~ + LT5b
+++ ~I have no idea why anyone would say that. I would not believe everything you hear.~ + LT5v
+++ ~A bhaalspawn is a child of Bhaal, the God of Murder. It is his blood that flows through my veins.~ + LT5b
+++ ~I would rather not discuss it.~ EXIT
+END
+
+IF ~~ LT5b
+SAY ~Bhaal? How can that be...~
+++ ~I was even more surprised to find that out than you are, trust me.~ + LT5c
+++ ~I assume your not familiar with the prophecy of Alaundo?~ + LT5t
+++ ~Does that bother you?~ + LT5u
+++ ~Let's just go, shall we?~ EXIT
+END
+
+IF ~~ LT5c
+SAY ~It must have been difficult to deal with as a child.~
+++ ~I was not told until recently.~ + LT5d
+++ ~My foster father kept that from me as a child. The old fool ended up telling me in a letter that I found after he died.~ + LT5e
+++ ~My foster father, Gorion, never told me. I guess he wanted me to have a normal childhood.~ + LT5r
+++ ~I would rather not discuss it.~ EXIT
+END
+
+IF ~~ LT5d
+SAY ~I do not understand. If your birth mother kept that from you all this time, why tell you now?~
+++ ~I was not raised by my mother, I was raised by my foster father, Gorion. And he did not tell me, I found a letter he had written to me before he died.~ + LT5e
+++ ~I do not know who my mother is. my foster father, Gorion, raised me. I assume he did not tell me because he wanted me to have a normal childhood.~ + LT5r
+++ ~Why would you assume I was raised by my mother?~ + LT5s
+++ ~I assume your not familiar with the prophecy of Alaundo?~ + LT5t
+++ ~It does not matter, let's go.~ EXIT
+END
+
+IF ~~ LT5e
+SAY ~What happened to your birth mother? And please explain "foster father", it is a term I am unfamiliar with.~
+++ ~I have no idea, I never knew her. A foster father is a man who assumes the role of a father when your real one is gone.~ + LT5f
+++ ~She obviously abandoned me, I have no memory of her. And a foster father is not much different from a father, just a replacement.~ + LT5q
+++ ~A foster father is not much different from a father, I assume you know what father means.~ + LT5f
+++ ~I do not know what happened to her and I do not care. Gorion was the only parent I needed. He is my real father, as far as I am concerned.~ + LT5q
+++ ~I do not want to talk about this anymore. Let's go.~ EXIT
+END
+
+IF ~~ LT5f
+SAY ~I am sorry, but I do not know what "father" means either. I can only assume you mean the man who assisted your mother when she decided to become pregnant.~
+= ~You talk as if a father has another purpose besides the obvious one.~
+++ ~Usually he does, but I assume in your case, he does not. Is your father a slave?~ + LT5g
+++ ~Normally children are raised by both parents. But because my mother left and my father was Bhaal, Gorion took me in, and took care of me.~ + LT5g
+++ ~They do but I hated it, I am glad the old fool is dead and I am finally free to do as I wish.~ + LT5n
+++ ~Enough of this, we should get going.~ EXIT
+END
+
+IF ~~ LT5g
+SAY ~There are no men in my tribe except slaves. Our tribe would die out without children, so they serve in that task as well.~
+++ ~Do you at least know which slave is your father?~ + LT5h
+++ ~I am sorry, I cannot imagine what it must be like to grow up without a father.~ + LT5k
+++ ~Your lucky you did not have to put up with one like I did.~ + LT5m
+++ ~I do not want to talk about this anymore. Let's go.~ EXIT
+END 
+
+IF ~~ LT5h
+SAY ~The female children are never told but, it usually is not hard to figure out. If you care to, that is. Inherited features, even certain traits give it away.~
+IF ~~ THEN + LT5l
+END
+
+IF ~~ LT5i
+SAY ~It must be hard for you to keep it under control as you do. You are unlike any male I have ever met before and you have earned my respect.~
+IF ~~  EXIT
+END
+
+IF ~~ LT5j
+SAY ~Power can be a dangerous thing when used for evil, <CHARNAME>. I hope you come to realize the folly of that goal before it is too late.~
+IF ~~  EXIT
+END
+
+IF ~~ LT5k
+SAY ~That is because you had one and know the difference. For my people, it is a normal way of life. You cannot miss what you never had, and never knew existed.~
+= ~We are all aware that a slave aided in our birth, but never which one. It usually is not hard to figure out. If you care to, that is. Inherited features, even certain traits give it away.~
+IF ~~ THEN + LT5l
+END
+
+IF ~~ LT5l
+SAY ~Is it like that for you, with Bhaal being your father?~
+++ ~The blood lust is always there, and a constant struggle. But I have managed to keep it under control, so far.~ + LT5i
+++ ~Certainly, there is no doubt his blood flows through my veins. I can feel the power, the lust for blood in battle.~ + LT5i
+++ ~Of course and I am glad of it. I have a destiny to fulfill, to sit on his throne one day and I need all the power I can get.~ + LT5j
+++ ~I will let you find that out for yourself.~ EXIT
+END
+
+IF ~~ LT5m
+SAY ~Perhaps...It is impossible to say since I never had one. We are all aware that a slave aided in our birth, but never which one. It usually is not hard to figure out. If you care to, that is. Inherited features, even certain traits give it away.~
+IF ~~ THEN + LT5l
+END
+
+IF ~~ LT5n
+SAY ~And what is it that you wish to do?~
+++ ~Fulfill my destiny of course. Sit on my father's throne and rule in his place.~ + LT5j
+++ ~All I want is a normal life, though it seems impossible with this prophecy hanging over my head and everyone trying to kill me.~ + LT5o
+++ ~I want to keep traveling, helping people and seeing new places.~ + LT5p
+++ ~I do not know yet, but I like being able to make my own decisions and seeing where they take me.~ + LT5p
+++ ~Catch up with the others, they are starting to get impatient.~ EXIT
+END
+
+IF ~~ LT5o
+SAY ~I do not know of this prophecy but I have no doubt it is of evil intent, but never give up hope. Anything is possible when we rule our destinies instead of letting them rule us.~
+= ~You are unlike any man I have ever met before and you have earned my respect.~
+IF ~~ EXIT
+END
+
+IF ~~ LT5p
+SAY ~Just avoid Narfell, unless you do not mind freezing to death in the winter.~
+IF ~~ EXIT
+END
+
+IF ~~ LT5q
+SAY ~That sounds much like what happens in my tribe. Male children are raised as slaves so, they have no memory of who their birth mother is either.~
+= ~But this other role...~
+IF ~~ THEN + LT5f
+END
+
+IF ~~ LT5r
+SAY ~I do not know what a normal childhood is by your definition, but this man must have cared for you greatly.~
+IF ~~ THEN + LT5e
+END
+
+IF ~~ LT5s
+SAY ~I assumed that is how it is done where you are from. In my tribe, male children are raised by slaves because they will become slaves themselves.~
+= ~And a dead God cannot raise you....I...~
+IF ~~ THEN + LT5f
+END
+
+IF ~~ LT5t
+SAY ~I do not. But any prophecy connected to Bhaal can only end in death and destruction. You are fortunate that you were not raised by such an evil being.~
+IF ~~ THEN + LT5f
+END
+
+IF ~~ LT5u
+SAY ~I...I do not know yet. It would depend on how much of his influence lies within you, and so far I have seen nothing to convince me that you have an evil nature.~
+IF ~~ THEN + LT5c
+END
+
+IF ~~ LT5v
+SAY ~There must be some truth to it, if so many believe it to be so.~
+++ ~Fine. If you must know, it means my father is Bhaal, the God of Murder.~ + LT5b
+++ ~Well there is not, so just let it go.~ EXIT
+END
+
+IF ~~ LT5w
+SAY ~I make a real effort to be nice to you, and you still provoke me. Perhaps we can move past all of that and start over?~
+++ ~You are right, I am sorry. What did you want to know?~ + LT5a
+++ ~Maybe but you deserved that and more.~ + LT5x
+++ ~Being nice to a male? It must be painful for you. I find it hard to believe that the effort is genuine so, what is it that you want?~ + LT5y
+++ ~Not interested. Get moving or go away.~ EXIT
+END
+
+IF ~~ LT5x
+SAY ~I do not wish to argue over who is right or wrong, I only wanted to ask you something.~
+++ ~You are right, I am sorry. What did you want to know?~ + LT5a
+++ ~Being nice to a male? It must be painful for you. I find it hard to believe that the effort is genuine so, what is it that you want?~ + LT5y
+++ ~Not interested. Get moving or go away.~ EXIT
+END
+
+IF ~~ LT5y
+SAY ~Believe what you wish, but I must know...~
+IF ~~ THEN + LT5a
+END
+
+IF ~~ LT5z
+SAY ~Fair enough. Though I do hope you answer because it has been troubling me....~
+IF ~~ THEN + LT5a
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",12)~ THEN BEGIN LT6
+SAY ~You mentioned that Gorion died, might I ask what happened to him.~
+++ ~Gorion was murdered a year ago, when he and I left our home in Candlekeep.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",13) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT6a
+++ ~He's dead, leave it at that.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",13) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT6g
+++ ~It is a painful subject, I would rather not talk about it.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",13) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~  + LT6h
+++ ~It does not concern you, let's get going.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",13) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~  EXIT
+END 
+
+IF ~~ LT6a
+SAY ~I... I am sorry to hear that <CHARNAME>. Do you know who did such a terrible thing?~
+++ ~Thank you, I miss him a lot. And yes, the monster's name was Sarevok.~ + LT6b
+++ ~Yes I do and he was dealt with.~ + LT6i
+++ ~Thank you, it is been very hard on me without him. He was murdered by a fiend named Sarevok.~ + LT6b
+++ ~It is not any of your business.~ EXIT 
+END
+
+IF ~~ LT6b
+SAY ~I assume since you know the vile creature's name, that he was punished.~
+++ ~I killed him. And I know his name because he is my brother, well half-brother. A fact I am not proud of.~ + LT6c
+++ ~He left me no choice but to kill him, and his name is Sarevok.~ + LT6c
+++ ~Yes he was punished, I killed that bastard, and I enjoyed it. Unfortunately, he is my brother.~ + LT6j
+++ ~I would really rather not talk about it. We should really catch up to the others.~ EXIT
+END
+
+IF ~~ LT6c
+SAY ~Murderers deserve nothing less than death, I am glad he no longer lives.~
+++ ~My thoughts exactly, he was too dangerous to be allowed to live. I just wish Gorion had not faced him alone, but he insisted.~ + LT6d
+++ ~I did not kill him because he killed Gorion, I killed him because he was a Child of Bhaal also.~ + LT6g
+++ ~Yes, and the rest does not matter anymore. Let's go.~ EXIT
+END
+
+IF ~~ LT6d
+SAY ~It was brave of him to face so many alone, so that you could get away safely. He must have loved you a great deal.~
+++ ~Gorion was a mage of great skill, I honestly expected him to defeat Sarevok easily.~ + LT6e
+++ ~Yes, it was but, I have no doubt that he expected to put and end to Sarevok that day. Sadly, it did not work out that way.~ + LT6e
+++ ~Gorion was like that, he always let me know he loved me and protected me too much sometimes. I still cannot believe he's dead.~ + LT6f
+++ ~It was foolish of him to even try. That over-bearing moron got what he deserved.~ + LT6k
+++ ~It is too painful to talk about right now. Perhaps we should get going.~ EXIT
+END
+
+IF ~~ LT6e 
+SAY ~It is not easy to kill a powerful mage, do you know what went wrong?~
+++ ~It seems Sarevok had a high resistance to magic. Gorion's spells did not even affect him so he did not stand a chance at defeating him.~ + LT6f
+++ ~Sarevok had no reason to fear Gorion and he knew it, his resistance to magic made him a formidable foe.~ + LT6f
++ ~Class(Player1,MAGE_ALL)~ + ~I found out the hard way that magic does not affect him. But in the end, it did not matter if he died by magic or blade. Only that he died.~ + LT6l
+++ ~How could I when I told you I was not there. Let's go.~ EXIT
+END
+
+IF ~~ LT6f
+SAY ~I am sorry you lost Gorian, <CHARNAME>, but I am glad you were able to kill his murderer. I am sure Gorion would be very proud of you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ LT6g
+SAY ~You sound as if you are glad Gorion died, surely that is not so.~
+++ ~I am sorry, it just is not easy to talk about. He was murdered a year ago and it is still quite painful.~ + LT6a
+++ ~I am, he lied to me about who I am... I am glad to rid of the old fool.~ + LT6k
+++ ~Believe what you will. We have to get to Irenicus, that is what matters now.~ EXIT
+END
+
+IF ~~ LT6h
+SAY ~I understand but sometimes it helps to have an ear. I am here if you change your mind.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ LT6i
+SAY ~So you killed him, I hope. Was it someone you knew?~
+++ ~I killed him, yes. And I know his name because he is my brother, well half-brother. A fact I am not proud of.~ + LT6c
+++ ~He left me no choice but to kill him and his name is Sarevok.~ + LT6c
+++ ~I killed that bastard and I enjoyed it. Unfortunately, he is my brother.~ + LT6c
+++ ~I would really rather not talk about it. We should really catch up to the others.~ EXIT
+END
+
+IF ~~ LT6j
+SAY ~I too would have enjoyed giving a murderer what they deserve. I do hope you did not witness the murder.~
+++ ~Thankfully, I did not see it. Gorion told me to run when Sarevok and two of his henchmen showed up.~ + LT6d
+++ ~Sadly no, Gorion ordered me to run when Sarevok and two of his henchmen showed up.~ + LT6d
+++ ~I wish I had been there, Gorion would still be alive. Taking on all three villians was madness. But no, I was told to run.~ + LT6m
+++ ~None of it matters now, let's be off.~ EXIT
+END
+
+IF ~~ LT6k
+SAY ~That is horrible, <CHARNAME>. There is no honor in murder and no one deserves to die that way.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ LT6l
+SAY ~He deserved no less, and I am glad you survived the ordeal.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ LT6m
+SAY ~I understand your wanting to be there but, I must confess, I am glad you were not.~
+IF ~~ THEN + LT6d
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",14)~ THEN BEGIN LT7
+SAY ~Tell me about your home.~ 
+++ ~I no longer have a home.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",15) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT7a
+++ ~I grew up in Candlekeep. I was raised by monks.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",15) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT7d
+++ ~Imoen and I grew up in Candlekeep. We had a normal childhood, I suppose for children being raised by monks.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",15) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT7n
+++ ~I do not want to talk about it.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",15) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ THEN LT7a
+SAY ~Why not? You do not want to return, after all this is over?~
+++ ~I went back to Candlekeep, not too long ago. The monks informed me that I am no longer welcome there because of what I am.~ + LT7b
+++ ~The monks fear me now, being a Child of Bhaal.~ + LT7i
+++ ~The monks never wanted me there. They only let me because of Gorion.~ + LT7j
+++ ~No, I hated that place. Let's go.~ EXIT
+END
+
+IF ~~ THEN LT7b
+SAY ~Because of you being a Child of Bhaal?~ 
+IF ~~ THEN + LT7i 
+END
+
+IF ~~ THEN LT7i
+SAY ~That is unjust of them. They raised you, and know you to be a good man.~
+++ ~They have the right to feel as they do. I never intended to live there forever, anyway.~ + LT7d
+++ ~They are wise to fear me, and I will make them pay for how they treated me.~ + LT7e
+++ ~I really do not care what they think. We need to catch up with the others.~ EXIT
+END
+
+IF ~~ THEN LT7d
+SAY ~Was your childhood unpleasant there?~
+++ ~No, the monks were nice enough to me. Imoen made it enjoyable, she was always playing jokes on them.~ + LT7f
+++ ~Extremely, and Imoen made it worse. The little prankster was always getting us in trouble.~ + LT7g
+++ ~I liked it well enough. I loved to read and the library is quite large.~ + LT7h
+++ ~It does not matter anymore.~ EXIT
+END
+
+IF ~~ THEN LT7e
+SAY ~I hope you do not mean that.~ 
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7f
+SAY ~I am sure she had a good reason, I cannot imagine being raised in such a place.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7g
+SAY ~I imagine it was difficult for both of you. Being raised by a male would be bad enough...~
+= ~But, monks would be much worse, I think.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7h
+SAY ~I enjoy reading myself. I always managed to find a book or two at our yearly festival.~
+= ~But nothing like the amount you are used to.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7j
+SAY ~They must have known all along about your heritage, and chose not to tell you.~
+++ ~They did. As soon as Gorion died, they had no reason to allow me back there.~ + LT7k
+++ ~Exactly, and when that fool Gorion was killed, they turned their backs on me.~ + LT7m
+++ ~They will regret that decision once I take the throne.~ + LT7e
+++ ~Most likely, but it does not matter now.~ EXIT
+END
+
+IF ~~ THEN LT7k
+SAY ~They should have had faith in you, that you would do what was right.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7m
+SAY ~I cannot say that I blame them. Not when you intend to use the throne for evil.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7n
+SAY ~I cannot imagine growing up in the confines of a keep. Though I am sure it made the winters bearable.~
+++ ~It was not so bad. The monks were strict at times, but they had reason to be. The winters aren't bad at all.~ + LT7o
+++ ~It was fascinating to me. The towers, fortress.. a lot to explore. The winters were rough for you?~ + LT7p
+++ ~I cannot imagine growing up outside without the protection of walls.~ + LT7q
+++ ~I have no desire to discuss Candlekeep.~ EXIT
+END
+
+IF ~~ THEN LT7o
+SAY ~Strict or not, you were fortunate. Surviving the frigid winters in Narfell is difficult.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7p
+SAY ~I can see why you enjoyed it.~
+= ~The frigid winters in Narfell are difficult to survive. It is especially dangerous for our elders and small babies.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT7q
+SAY ~I see your point. We both grew up in very different ways.~
+IF ~~ THEN EXIT
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",16)~ THEN BEGIN LT8
+SAY ~What? Why are you looking at me like that?~
+++ ~I just realized something, you stopped calling me male.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",17) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT8a
+++ ~Is it my imagination, or are you actually nice to me now?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",17) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT8n
+++ ~No reason. Get moving.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",17) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ THEN LT8a
+SAY ~I... I suppose I did.~
+++ ~What changed? Decided I would make a poor slave?~ + LT8b
+++ ~Well, I am glad. It was getting old, and I was tired of hearing it.~ + LT8f
+++ ~Thank the gods for small favors. Shall we go?~ EXIT
+END
+
+IF ~~ THEN LT8b
+SAY ~I have come to realize that you are right. No one deserves that.~
+++ ~Glad to see you understand that now. What changed your mind?~ + LT8c
+++ ~No they do not. The best part of life, is being able to choose how we live it.~ + LT8g
+++ ~Exactly, lets get going.~ EXIT
+END
+
+IF ~~ THEN LT8c
+SAY ~You did. Traveling with you, watching these people go about their lives.~
+= ~Even those who have little, they seem content.~
+++ ~Some are, some are not. But, they free to live their lives.~ + LT8d
+++ ~I cannot take credit for that, you only came with me because of your own mission.~ + LT8h
+++ ~I suppose so. We should get going, though.~ EXIT
+END
+
+IF ~~ THEN LT8d
+SAY ~I see that now. I suppose I did all along, it is just difficult to admit.~
+= ~It goes against everything I have been taught, the only way I have ever lived.~
+++ ~Understandable. I have to say, I like the new you.~ + LT8e
+++ ~You have a good heart, Navarra, I knew you would understand.~ + LT8i
+++ ~I am glad you finally came to your senses. I was getting tired of your attitude.~  + LT8j
+++ ~Glad to hear it, fall back in line.~ EXIT
+END
+
+IF ~~ THEN LT8e
+SAY ~I did not come to realize all of this for you, I did it for me. But, thank you.~
+IF ~~ EXIT
+END
+
+IF ~~ THEN LT8f
+SAY ~I know, and I am sorry about that. It was not easy for me, change does not happen overnight.~
+++ ~Very true, but at least it finally did. What changed your mind?~ + LT8c
+++ ~I see your point, and I am grateful the whining will finally stop.~ + LT8j
+++ ~I accept your apology, I guess. Now, get moving.~ EXIT
+END
+
+IF ~~ THEN LT8g
+SAY ~I see that now. I suppose I have you to thank for that.~
+++ ~Me? How so?~ + LT8k
+++ ~Nice to see you actually listened to me.~ + LT8m
+++ ~You are welcome. Now, we have things to do.~ EXIT
+END
+
+IF ~~ THEN LT8h
+SAY ~In part, yes. But, you played a bigger part in this than you realize.~
+= ~This would not have been possible, if I had not met you. Of course, admitting it was difficult.~
+= ~It goes against everything I have been taught, it is the only way I have ever lived.~
+++ ~Understandable. I have to say, I like the new you.~ + LT8e
+++ ~You have a good heart, Navarra, I knew you would understand.~ + LT8i
+++ ~I am glad you finally came to your senses. I was getting tired of your attitude.~ + LT8j
+++ ~Glad to hear it, fall back in line.~ EXIT
+END
+
+IF ~~ THEN LT8i
+SAY ~Thank you, <CHARNAME>. It means a lot to hear you say that.~
+IF ~~ EXIT
+END
+
+IF ~~ THEN LT8j
+SAY ~I am going to pretend I did not hear that.~
+IF ~~ EXIT
+END
+
+IF ~~ THEN LT8k
+SAY ~You mean aside from the lectures? Traveling with you has forced me to see the good, not just the bad.~
+= ~I see men playing with their children, walking hand in hand with their wives.~
+= ~Not because they have to, but because they want to. I have never experienced such things.~
+++ ~Understandable, it must seem strange to you. I am glad, however, that you prefer this life to the one you grew up in.~ + LT8l
+++ ~I have to say, I like the new you.~ + LT8e
+++ ~You have a good heart, Navarra, I knew you would understand.~ + LT8i
+++ ~Very insightful, indeed. Let's go.~ EXIT
+END
+
+IF ~~ THEN LT8l
+SAY ~A bit strange, but it feels right. This is way I want to live from now on.~
+IF ~~ EXIT
+END
+
+IF ~~ THEN LT8m
+SAY ~I listened, even if I did not like what I heard.~ 
+= ~But, it was traveling with you that forced me to see the good, not just the bad.~
+= ~I see men playing with their children, walking hand in hand with their wives.~
+= ~Not because they have to, but because they want to. I have never experienced such things.~
+++ ~Understandable, it must seem strange to you. I am glad, however, that you prefer this life to the one you grew up in.~ + LT8l
+++ ~I have to say, I like the new you.~ + LT8e
+++ ~You have a good heart, Navarra, I knew you would understand.~ + LT8i
+++ ~Very insightful, indeed. Let's go.~ EXIT
+END
+
+IF ~~ THEN LT8n
+SAY ~I suppose I am. It is your fault, you know.~
+++ ~My fault?~ + LT8o
+++ ~I am sorry?~ + LT8q
+++ ~Whatever, get moving.~ EXIT
+END
+
+IF ~~ THEN LT8o
+SAY ~I have come to realize that you are right. No one deserves to be a slave.~
+++ ~I am glad you see that now. But, what did I do to cause this revelation?~ + LT8k
+++ ~No they do not. The best part of life, is being able to choose how we live it.~ + LT8p
+++ ~Exactly, lets get going.~ EXIT
+END
+
+IF ~~ THEN LT8p
+SAY ~I see that now. Though admitting it was difficult.~
+= ~It goes against everything I have been taught, the only way I have ever lived.~
+++ ~Understandable. I have to say, I like the new you.~ + LT8e
+++ ~You have a good heart, Navarra, I knew you would understand.~ + LT8i
+++ ~Nice to see you actually listened to me.~ + LT8m
+++ ~Glad to hear it, fall back in line.~ EXIT
+END
+
+IF ~~ THEN LT8q
+SAY ~You have no reason to be. Thanks to you...~
+IF ~~ THEN + LT8o
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",18)~ THEN BEGIN LT9
+SAY ~It is a lovely day, is it not?~
+++ ~That it is.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",19) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT9a
+++ ~Not something you are used to?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",19) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT9m
+++ ~Well enough, I suppose. We should get going, before the day is over.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",19) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ THEN LT9a
+SAY ~I have not seen any snow at all, this entire time. It is wonderful.~
+++ ~Neither have I, though I would not mind it.~ + LT9b
+++ ~It is nice, but there is beauty in all things, even snow.~ + LT9h
+++ ~Agreed. I am not fond of snow, or freezing to death.~ + LT9j
+++ ~Let us hope it stays that way. We should catch up with the others now.~ EXIT
+END
+
+IF ~~ THEN LT9b  
+SAY ~You say that now, until you are knee deep in it. Freezing to death.~
+++ ~You mention the cold often, but Narfell cannot be all bad.~ + LT9c
+++ ~Point made. You make Narfell sound like a frozen wasteland.~ + LT9i
+++ ~No thank you. Let's go.~ EXIT
+END
+
+IF ~~ THEN LT9c   
+SAY ~The land is infertile, and unforgiving. It is a daily war against the cold, and the monsters.~
+++ ~It sounds horrible. The monsters invade your homes as well?~ + LT9d
+++ ~No wonder you like it so much here. If you cannot grow anything, how do you survive?~ + LT9k
+++ ~I am sorry I asked. Shall we go?~ EXIT
+END
+
+IF ~~ THEN LT9d
+SAY ~We do not have homes. We are always moving, following the herds of reindeer and wild oxen.~
+= ~We have to, to have fresh meat. We erect waymeets come nightfall.~
+++ ~It sounds like a very hard way to live. Waymeets? I am not familiar with the those.~ + LT9e 
+++ ~So you constantly move around? On foot?~ + LT9l
+++ ~It sounds lonely. We go, I suppose.~ EXIT
+END
+
+IF ~~ THEN LT9e
+SAY ~Only the strongest of us have any hope of survival.~
+= ~Waymeets.. I guess you could call them temporary tent villages.~
+= ~Much like the ones we use in the summer, just on a smaller scale.~
+++ ~What makes the summer different?~ + LT9f
+++ ~Why do you use bigger tents in the summer?~ + LT9g
+++ ~Not sure why you would live like that, but whatever. Get moving.~ EXIT
+END
+
+IF ~~ THEN LT9f
+SAY~ Once a year, we all gather at Bildoobaris for a tenday-long Trade Fair.~ 
+= ~We trade our horses with merchants from outlying areas. Tents for as far as the eye can see.~
+IF ~~ EXIT
+END
+
+IF ~~ THEN LT9g
+SAY ~We do not use bigger tents, we use more.~
+IF ~~ THEN + LT9f
+END
+
+IF ~~ THEN LT9h
+SAY ~That is true. There were days that I would wake before anyone else, and gaze out across the plains.~
+= ~It made me wonder how something so beautiful could be so deadly.~
+++ ~It can be, I agree. But, Narfell cannot be all bad.~ + LT9c
+++ ~You make Narfell sound like a frozen wasteland.~ + LT9i
+++ ~I see your point. I think we should get going, now.~ EXIT
+END
+
+IF ~~ THEN LT9i
+SAY ~Only until the snow thaws. The rest of the time...~
+IF ~~ THEN + LT9c
+END
+
+IF ~~ THEN LT9j
+SAY ~No one is, I am sure. It is not much better when the snow thaws.~
+IF ~~ THEN + LT9c
+END
+
+IF ~~ THEN LT9k
+SAY ~Fortunately, there are large herds of reindeer and wild oxen. We Have plenty of food to survive.~
+= ~The downside, we have to follow the herds to have fresh meat. We erect waymeets come nightfall.~
+++ ~It sounds like a very hard way to live. Waymeets? I am not familiar with the those.~ + LT9e 
+++ ~So you constantly move around? On foot?~ + LT9l
+++ ~It sounds lonely. We go, I suppose.~ EXIT
+END
+
+IF ~~ THEN LT9l
+SAY ~Thankfully, no. We breed the finest horses you will ever find.~
+IF ~~ THEN + LT9f
+END
+
+IF ~~ THEN LT9m
+SAY ~No, not like this. During winter, it is a frozen wasteland. When the snow thaws..~
+IF ~~ THEN + LT9c
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",20)~ THEN BEGIN LT10
+SAY ~May I ask you something?~
+++ ~Of course, what would you like to know?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",21) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT10a
+++ ~I suppose, what is it?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",21) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT10a
+++ ~I am not in the mood, go away.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",21) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ THEN LT10a
+SAY ~What brought you to Amn? Why no settle down in Baldur's Gate?~
+++ ~I was asked if I would be willing to investigate a war between the thieves, and an unknown guild. I came to discover it was vampires.~ +  LT10b
+++ ~I was asked to check into a problem here in Amn, and I had nothing better to do.~ +  LT10b
+++ ~I hated Baldur's gate, end of story.~ EXIT 
+END
+
+IF ~~ THEN LT10b
+SAY ~You had no desire to return home, to Candlekeep?~
+++ ~I did, but I was not trusted. Much less liked by them anymore.~ + LT10c
+++ ~I am no longer welcome there. Knowing that, and being so close to Candlekeep, I had to get away.~ +  LT10h
+++ ~They fear me now, being a bhaalspawn. They only let me live there because of Gorion.~ +  LT10c
+++ ~None. After the way they treated me, I will never go there again.~ + LT10c
+++ ~I doubt I can call any place home, until the prophecy is fulfilled.~ +  LT10o
+++ ~I really do not want to talk about it. Now get moving.~ EXIT 
+END
+
+IF ~~ THEN LT10c
+SAY ~I heard some call you the Hero of the Sword Coast. That you saved them from Sarevok, and they treated you like that?~
+++ ~That hardly matters to them. I am a Bhaalspawn too, and that is all they see when they look at me.~ +  LT10d
+++ ~Not everyone, but most. They would not allow themselves to see the man, the hero. Just a Bhaalspawn.~ +  LT10d
+++ ~Some did, but that matters little at this point. I suggest we get back to the others now.~ EXIT 
+END
+
+IF ~~ THEN LT10d
+SAY ~People can be such fools! It is good that you came here, You have done much to help those in need.~
+++ ~That means a lot, coming from you. And yet, I cannot help feeling that coming here was a terrible mistake. Imoen would not have been taken, the others would still be alive...~ +  LT10e
+++ ~I try to help, but I feel the stares of some even here. It seems I cannot escape it no matter what I do.~ +  LT10u
+++ ~I appreciate that, thank you. Shall we catch up with the others?~ EXIT 
+END
+
+IF ~~ THEN LT10e
+SAY ~That not your fault, <CHARNAME>. You did the right thing, offering to help with a worthy cause.~
+= ~They followed you because they believed in you.~
+++ ~I know, but it is difficult to not feel responsible for their fates. It is me Irenicus was after.~ +  LT10f
+++ ~I know that you are right, but that does not make it any easier to accept.~ +  LT10f
+++ ~I am well aware of that. And I struggle, everyday to find a way to live with the knowledge that two of my friends were murdered, just because they were with m~ +  LT10o
+++ ~I am sorry, I cannot do this right now.~ EXIT 
+END
+
+IF ~~ THEN LT10f
+SAY ~That is perfectly understandable. You care about your friends, a great deal.~
+= ~Just do not let the guilt consume you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN LT10h
+SAY ~No longer welcome, in your own home? But why?~
+++ ~I cannot say for sure, but they refused to let me back in, unless I donated an expensive book.~ +  LT10i
+++ ~I can only assume they knew of my heritage, and only allowed me to live there because of Gorion. I tried to go back after he died, but was refused unless I donated an expensive book.~ +  LT10l
+++ ~I do not know, nor do I care. I have no desire to be there, since I am not wanted.~ +  LT10m
+++ ~It no longer matters.~ EXIT 
+END
+
+IF ~~ THEN LT10i
+SAY ~A book? Why demand a book to be allowed to come home?.~
+++ ~They require donations of books by visitors. The only family I have ever known is behind those walls. And yet they turned their backs on me, as if I were a stranger.~ + LT10j
+++ ~They demand books to gain entry, but, after everyone treated me like a part of their family for so many years... it was no longer home.~ + LT10l
+++ ~I does not matter, there is no point dwelling on what I cannot change.~ +  LT10k
+++ ~It is no longer important. We should go.~ EXIT 
+END
+
+IF ~~ THEN LT10j
+SAY ~Perhaps it was. If they really cared about you, you would still be welcome there.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN LT10k
+SAY ~I agree. I know it does not make it easier, but I am here for you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN LT10l
+SAY ~That makes sense, but it was a horrible thing to do to you. I had to be hard for you, to be turned away by those you thought loved and cared about you.~
+++ ~It still is, at times. I was very happy there. Now it seems like it was all a lie.~ +  LT10j
+++ ~It was at first, but I have come to accept it. It no longer bothers me.~ + LT10n
+++ ~It was, but there is no point in dwelling on what I cannot change.~ + LT10k
+++ ~It is no longer important. We should go.~ EXIT 
+END
+
+IF ~~ THEN LT10m
+SAY ~No one wants that. Just know that you are wanted here.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN LT10n
+SAY ~I am glad to hear that. I am here for you, however, should you need to talk.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN LT10o
+SAY ~Nothing I can say will make it easier on you. But know thst we are all here for you, no matter what may happen.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN LT10u
+SAY ~Some people fear what they do not understand. Do not let them upset you, <CHARNAME>.~ 
+= ~Those who care about you, know you are good person.~
+IF ~~ THEN EXIT 
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",22)~ THEN BEGIN LT11
+SAY ~(Everyone has stopped for the night, and Navarra sees <CHARNAME> standing alone by the fire.)~
+= ~(She decides to walk over to him.)~
+= ~Would you like some company?~
+++ ~I would love some company, as long as it is you.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",23) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT11a
+++ ~I am a bit tired, but sure, for a few minutes.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",23) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT11k
+END
+
+IF ~~ THEN LT11a
+SAY ~(blushes). It will take some time to get used to this.~
+++ ~Does it still make you uncomfortable?~ + LT11b
+++ ~You misunderstand me, I enjoy your company, but that is all. There is nothing else between us.~ + LT11j
+END
+
+IF ~~ THEN LT11b
+SAY ~Maybe a little, but I am excited to see where this will take us.~
+++ ~So am I. (<CHARNAME> twines his fingers in yours, and looks deeply into your eyes.) Which is why I need to know something.~ + LT11c
+++ ~This? I do not know what you think this is, but we are only friends.~ + LT11j
+++ ~So am I. But, I think we need to take this slow. Take some time to get to know the new you.~ + LT11g
+END
+
+IF ~~ THEN LT11c
+SAY ~(being this close to <CHARNAME> makes your heart beat faster, your breath more rapid.)~
+= ~You... you want to know how I feel about you, do you not? Looking into your eyes, I find myself feeling things I have never felt before.~
+= ~I... I love you.~
+++ ~I know, I can see it in your eyes. And, I love you too.~ + LT11d
+++ ~Love? I care for you, but we need to slow down a bit.~ + LT11g
+++ ~Love? I just wanted to sleep with you, nothing more.~ + LT11i
+END
+
+IF ~~ THEN LT11d 
+SAY ~I am so very happy to hear that. Would you... would you like to continue his conversation in my tent?~
+++ ~That is a wonderful idea.~ + LT11e
+++ ~I prefer my own. Meet me there?~ + LT11f
+++ ~It is too soon for that, I am sorry.~ + LT11g
+++ ~I changed my mind, I think we should end this.~ + LT11h
+END
+
+IF ~~ THEN LT11e
+SAY ~Meet you there.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",2) RestParty()~ EXIT
+END
+
+IF ~~ THEN LT11f
+SAY ~Absolutely.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",2) RestParty()~ EXIT
+END
+
+IF ~~ THEN LT11g
+SAY ~I understand, goodnight.~
+IF ~~ THEN DO ~RestParty()~ EXIT
+END
+
+IF ~~ THEN LT11h
+SAY ~What? I love you, but I do not want you? Fine, goodnight.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3) RestParty()~ EXIT
+END
+
+IF ~~ THEN LT11i
+SAY ~No thank you, I would rather sleep with Edwin. Goodnight.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3) RestParty()~ EXIT
+END
+
+IF ~~ THEN LT11j
+SAY ~I see. Goodnight.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3) RestParty()~ EXIT
+END
+
+IF ~~ THEN LT11k
+SAY ~I was thinking about what you said, And I have come to realize that I love you.~
+++ ~I know, I can see it in your eyes. And, I love you too.~ + LT11d
+++ ~Love? I care for you, but we need to slow down a bit.~ + LT11g
+++ ~Love? I just wanted to sleep with you, nothing more.~ + LT11i
+END
+
+IF ~Global("KKNLovTalk","GLOBAL",24)~ THEN BEGIN LT12
+SAY ~Have you ever thought about having children, <CHARNAME>?~
+++ ~I have thought about it, I would like to have children. What about you?~ DO ~SetGlobal("KKNLovTalk","GLOBAL",25) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT12a
+++ ~Not really, I am not sure if I want children.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",25) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT12u
+++ ~No, I do not like kids.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",25) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ + LT12v
+++ ~None of your business, get going.~ DO ~SetGlobal("KKNLovTalk","GLOBAL",25) RealSetGlobalTimer("KKNLovTalkTime","GLOBAL",NAV_TIME)~ EXIT
+END
+
+IF ~~ THEN LT12a
+SAY ~I thought about it, as well. But every time I watched a baby die, I just do not believe I can.~
+++ ~And if you did not have to worry about that, would you then?~ + LT12b
+++ ~That is a terrible thing to have to witness. But, do not let it keep you from having children. Not if you really want them.~ + LT12i
+++ ~Understandable. We should get going.~ EXIT
+END
+
+IF ~~ THEN LT12b
+SAY ~Of course, without question. Though that is just wishful thinking.~
+++ ~Because you intend to return to Narfell?~ + LT12c
+++ ~It does not have to be, the future is never certain.~ + LT12j
+++ ~Just do what makes you happy. Shall we go?~ EXIT
+END
+
+IF ~~ THEN LT12c  
+SAY ~I told you, only to return the sword. I will not remain without you.~
+++ ~I know, but what if I decided to stay. Would that be so bad?~ + LT12d
+++ ~Maybe Amana was right about one thing, the tribe does not have to live in Narfell.~ + LT12e
+++ ~And what of the slaves?~ + LT12t
+++ ~Understandable. We should get going.~ EXIT
+END
+
+IF ~~ THEN LT12d  
+SAY ~Why would you want to? That is no life for anyone to have to endure.~
+= ~Not because of slavery. I intend to set them all free, and outlaw it forever.~
+++ ~I am very happy to hear that. Will your mother agree to that?~ + LT12e
+++ ~That is wonderful news, indeed. But, is that even possible?~ + LT12e
+++ ~Glad to hear it, let's go.~ EXIT
+END
+
+IF ~~ THEN LT12e
+SAY ~Perhaps, I suspect it may be a bit difficult to persuade her.~
+++ ~Because you are refusing to take her place?~ + LT12f
+++ ~She could insist you take her place in order to achieve that.~ + LT12o
+++ ~Time will tell. But for now, we need to get going.~ EXIT
+END
+
+IF ~~ THEN LT12f
+SAY ~It may come to that. I hope it does not, I will still refuse.~
+= ~I will have to make her see reason.~
+++ ~Maybe Amana was right about one thing, the tribe does not have to live in Narfell.~ + LT12g
+++ ~Do not refuse because of me, too much good can be done if you accept.~ + LT12s
+++ ~I hope you are right. We should catch up with the others.~ EXIT
+END
+
+IF ~~ THEN LT12g
+SAY ~I never thought about that. I was too angry with her to look at it that way.~
+= ~The way she did it was wrong.~
+++ ~True, but you could do it the right way.~ + LT12h
+++ ~I agree, but she convinced the others they could live elsewhere. I am sure you could, too.~ + LT12p
+++ ~I know. There could be another way, just think about it. For now, we should go.~ EXIT
+END
+
+IF ~~ THEN LT12h
+SAY ~It is possible, I will have to think on it.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT12i
+SAY ~That is the very reason, I could not go through that again.~
+++ ~Because you intend to return to Narfell?~ + LT12c
+++ ~It does not have to be, the future is never certain.~ + LT12j
+++ ~Just do what makes you happy. Shall we go?~ EXIT
+END
+
+IF ~~ THEN LT12j
+SAY ~No, it really is not. I have come to realize that, but it changes nothing.~
+++ ~Because you intend to return to Narfell?~ + LT12c
+++ ~Nonsense, it changes everything. As long as you are willing to make the change.~ + LT12k
+++ ~If you say so, we need to go.~ EXIT
+END
+
+IF ~~ THEN LT12k
+SAY ~Are you implying that my deranged sister was right? Mother would never agree to that.~
+= ~I must make her see reason about the slaves. She may grant one boon, but not two.~
+= ~I intend to set them all free, and outlaw slavery forever.~
+++ ~I am very happy to hear that. You think she will deny your requests?~ + LT12l
+++ ~That is wonderful news, indeed. But, she may insist you take her place, before freeing them.~ + LT12o
+++ ~I believe she was right about one thing, you do not have to live in Narfell.~ + LT12g
+++ ~Glad to hear it, let's go.~ EXIT
+END
+ 
+IF ~~ THEN LT12l
+SAY ~It is possible, the men do a great deal to aid in the tribes survival.~ 
+= ~But it should be voluntary. Not because they fear torture, or even death.~
+= ~Leaving Narfell is not an option she would consider.~ 
+++ ~One victory at a time, then. If the slaves are freed, that is a huge one.~ + LT12m
+++ ~I suppose we will just have to wait and see. I know you will do the right thing.~ + LT12n
+++ ~She may surprise you. Until then, we have things to do.~ EXIT
+END
+
+IF ~~ THEN LT12m
+SAY ~I agree. I just hope she is willing to see reason.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT12n
+SAY ~Thank you, my love. I am glad I have you by my side.~ 
+= ~I do not believe that I could do it without you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT12o
+SAY ~She might, she did not become chieftain by playing nice.~ 
+= ~Regardless, I must make her see reason. The men do a great deal to aid in the tribes survival.~ 
+= ~But it should be voluntary. Not because they fear torture, or even death.~
+= ~Leaving Narfell, however, is not an option she would consider.~ 
+++ ~One victory at a time, then. If the slaves are freed, that is a huge one.~ + LT12m
+++ ~I suppose we will just have to wait and see. I know you will do the right thing.~ + LT12n
+++ ~She may surprise you. Until then, we have things to do.~ EXIT
+END
+
+IF ~~ THEN LT12p
+SAY ~Possibly, but I would have to become chieftain to accomplish that.~
+= ~Leaving Narfell is not an option she would consider.~ 
+++ ~Would it be so bad?~ + LT12q
+++ ~I see your point. If you do not want that life, you should not have to.~ + LT12r
+++ ~We should continue this later, there is too much to do.~ EXIT
+END
+
+IF ~~ THEN LT12q
+SAY ~It would be, if you were not with me.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT12r
+SAY ~All I want, my love, is to be with you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN LT12s
+SAY ~How can you say that? Everything that I am, everything that I do is because of you.~
+= ~There has to be a way to accomplish these things, without losing you,~
+++ ~I apologize, you are right. Maybe Amana was right about one thing, the tribe does not have to live in Narfell.~ + LT12g
+++ ~I am sorry, I only want you to be happy. Would becoming chieftain be so bad?~ + LT12q
+++ ~You will think of something, let's go.~ EXIT
+END
+
+IF ~~ THEN LT12t
+SAY ~I intend to set them all free, and outlaw slavery forever.~
+++ ~I am very happy to hear that. Will your mother agree to that?~ + LT12e
+++ ~That is wonderful news, indeed. But, is that even possible?~ + LT12e
+++ ~Glad to hear it, let's go.~ EXIT
+END
+
+IF ~~ THEN LT12u
+SAY ~I thought about it. But every time I watched a baby die, I just do not believe I can.~
+++ ~And if you did not have to worry about that, would you then?~ + LT12b
+++ ~That is a terrible thing to have to witness. But, do not let it keep you from having children. Not if you really want them.~ + LT12i
+++ ~Understandable. We should get going.~ EXIT
+END
+
+IF ~~ THEN LT12v
+SAY ~It saddens me to hear that. I hope you change your mind, in the future.~
+IF ~~ THEN EXIT
+END
+
+IF ~Global("KKMEDTalk","LOCALS",1)~ THEN BEGIN MTED
+SAY ~Something on your mind, <CHARNAME>?~
++ ~Global("KKEDRomanceActive","GLOBAL",1) !Global("KKEDSex","GLOBAL",1)~ + ~There is something I would like to ask you.~ DO ~SetGlobal("KKMEDTalk","LOCALS",2)~ + MTEDa
++ ~Global("KKEDRomanceActive","GLOBAL",1) Global("KKEDSex","GLOBAL",1)~ + ~There is something I would like to ask you.~ DO ~SetGlobal("KKMEDTalk","LOCALS",2)~ + MTEDe
++ ~!Global("KKEDRomanceActive","GLOBAL",1) !Global("KKEDRomanceActive","GLOBAL",1)~ + ~No, now keep moving.~ DO ~SetGlobal("KKMEDTalk","LOCALS",2)~ EXIT
+END
+
+IF ~~ THEN MTEDa
+SAY ~What is it you would like to know?~
+++ ~Is there something going on between you and Edwin?~ + MTEDb
+++ ~Nevermind. I do not want to know.~ + MTEDg
+END
+
+IF ~~ THEN MTEDb
+SAY ~Not really. At first, I needed a slave, and discovered he was easy to manipulate. Now, we have become friends.~
+++ ~Just friends, nothing more?~ + MTEDc
+++ ~Edwin is evil, and dangerous. You need to avoid him.~ + MTEDh
+END
+
+IF ~~ THEN MTEDc
+SAY ~No, not yet anyway. Why?~
+++ ~Because I like you and would like to get to know you better.~ + MTEDd
+++ ~I am concerned about you, and your choice of friends. Be careful around him.~ + MTEDk
+END
+
+IF ~~ THEN MTEDd
+SAY ~I... I was not aware... I mean, I had hoped, but...~
+++ ~Why did you not say anything?~ + MTEDf
+++ ~You should have told me, instead of letting me think you wanted Edwin.~ + MTEDm
+END
+
+IF ~~ THEN MTEDe
+SAY ~Of course, what is it?~
+++ ~Is there something going on between you and Edwin?~ + MTEDn
+++ ~You and Edwin have gotten very close lately. Do you love him?~ + MTEDr
+++ ~Nevermind. I do not want to know.~ + MTEDg
+END
+
+IF ~~ THEN MTEDf
+SAY ~I did not know how, without looking like a fool. This is all new to me, these feelings I have never felt before.~
+= ~I was afraid of what you must think of me, given how I have treated you.~
+= ~I... I cannot do this right now.~ 
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN MTEDg
+SAY ~As you wish.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN MTEDh
+SAY ~I have seen no evidence of that.~ 
+IF ~~ THEN + MTEDl
+END
+
+IF ~~ THEN MTEDi
+SAY ~That is because you are a male.~
+IF ~~ THEN + MTEDp
+END
+
+IF ~~ THEN MTEDj
+SAY ~I told you, we are friends. Why?~
+++ ~Because I like you and would like to get to know you better.~ + MTEDd
+++ ~I would not want to see you get hurt. We should get going, there is much to do.~ + MTEDg
+END
+
+IF ~~ THEN MTEDk
+SAY ~Nonsense.~ 
+IF ~~ THEN + MTEDl
+END
+
+IF ~~ THEN MTEDl
+SAY ~He is actually sweet.~
+++ ~Sweet? Edwin?? I have known him a lot longer than you have, and he is far from sweet.~ + MTEDi
+++ ~Edwin is very loyal to those he cares about, but sweet is a bit hard to believe.~ + MTEDo
+++ ~I could not have heard you correctly... Perhaps we should discuss this later.~ + MTEDg
+END
+
+IF ~~ THEN MTEDm
+SAY ~I did no such thing! If that is what you thought, that is on you.~
+= ~As you why I did not tell you,~
+IF ~~ THEN + MTEDf
+END
+
+IF ~~ THEN MTEDn
+SAY ~I assume you mean are we sharing a bed, yes.~
+++ ~Then you have feelings for him?~ + MTEDq
+++ ~Why would you do such a thing? Edwin is evil and dangerous.~ + MTEDy
+++ ~I am sorry I asked. Get moving.~ + MTEDg
+END
+
+IF ~~ THEN MTEDo
+SAY ~Why? He shows loyalty to you, and friendship as he would do towards a man.~ 
+IF ~~ THEN + MTEDp
+END
+
+IF ~~ THEN MTEDp
+SAY ~Or maybe you want him to be sweet to you?~
+++ ~What! NO!! Absolutely not! What I want to know is, do you have feelings for him?~ + MTEDj
+++ ~Very funny. Now please answer my question.~ + MTEDj
+++ ~Nevermind, forget I asked.~ + MTEDg
+END
+
+IF ~~ THEN MTEDq
+SAY ~Feelings, like friends? Because that is what we are.~
+++ ~So, you are saying that you do not love him?~ + MTEDr
+++ ~Friends who share a bed. It means nothing to you?~ + MTEDx
+++ ~Nevermind, forget I asked.~ + MTEDg
+END
+
+IF ~~ THEN MTEDr
+SAY ~Love? I have never experienced such a thing. We are just sharing a bed.~
+++ ~How can you make it sound so meaningless?~ + MTEDs
+++ ~I see. Does Edwin find it just as meaningless as you do?~ + MTEDw
+++ ~I cannot even look at you right now. Just go away.~ + MTEDg
+END
+
+IF ~~ THEN MTEDs
+SAY ~Because it is. It is no different than when my slave was alive. Now he is dead, and cannot tend to me.~
+= ~Can you honestly say you have never shared a bed with someone just because you wanted to?~
+++ ~You have a point.~ + MTEDt
+++ ~No. I would rather wait until I find someone special. Someone I could have a future with.~ + MTEDv
+++ ~That is none of your business, fall back in line.~ + MTEDg
+END
+
+IF ~~ THEN MTEDt
+SAY ~Then why you care?~
+++ ~Because I like you and would like to get to know you better.~ + MTEDd
+++ ~I cared until I found out you were sleeping with him. I do not want someone who has been with Edwin.~ + MTEDu
+++ ~I would not want to see you get hurt. We should get going, there is much to do.~ + MTEDg
+END
+
+IF ~~ THEN MTEDu
+SAY ~I understand. I care for him too much, anyway.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3)~ EXIT
+END
+
+IF ~~ THEN MTEDv
+SAY ~If that is true, then why do you care about this so much?~
+++ ~Because I like you and would like to get to know you better.~ + MTEDd
+++ ~I cared until I found out you were sleeping with him. I do not want someone who has been with Edwin.~ + MTEDu
+++ ~I would not want to see you get hurt. We should get going, there is much to do.~ + MTEDg
+END
+
+IF ~~ THEN MTEDw
+SAY ~I assume so, he has not said otherwise. Why? Why do you care about this so much?~
+++ ~Because I like you and would like to get to know you better.~ + MTEDd
+++ ~I cared until I found out you were sleeping with him. I do not want someone who has been with Edwin.~ + MTEDu
+++ ~I would not want to see you get hurt. We should get going, there is much to do.~ + MTEDg
+END
+
+IF ~~ THEN MTEDx
+SAY ~Of course not. It is no different than when my slave was alive. Now he is dead, and cannot tend to me.~
+= ~Can you honestly say you have never shared a bed with someone just because you wanted to?~
+++ ~You have a point.~ + MTEDt
+++ ~No. I would rather wait until I find someone special. Someone I could have a future with.~ + MTEDv
+++ ~That is none of your business, fall back in line.~ + MTEDg
+END
+
+IF ~~ THEN MTEDy
+SAY ~I have seen no evidence that he is anything other than sweet.~
+++ ~Sweet? Edwin?? I have known him a lot longer than you have, and he is far from sweet.~ + MTEDz
+++ ~Edwin is very loyal to those he cares about, but sweet is a bit hard to believe.~ + MTEDo
+++ ~I could not have heard you correctly... Perhaps we should discuss this later.~ + MTEDg
+END
+
+IF ~~ THEN MTEDz
+SAY ~Regardless of what you think, we are just sharing a bed.~
+++ ~So, you are saying that you do not love him?~ + MTEDr
+++ ~Friends who share a bed. It means nothing to you?~ + MTEDx
+++ ~Nevermind, forget I asked.~ + MTEDg
+END
+
+IF ~Global("KKNFTalk","GLOBAL",2)~ THEN BEGIN FT1
+SAY ~Tell me of this mage you spoke of, <CHARNAME>. I admit to being curious.~
+++ ~His name is Irenicus. He mentioned something about unlocking my power, as if that was an excuse for torturing me. He also killed two of my companions.~ DO ~SetGlobal("KKNFTalk","GLOBAL",3) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  + FT1a
+++ ~His name is Irenicus and he is quite powerful. From the things I saw in the dungeon he held me in, he is not above using torture to get what he wants. He also murdered two of my companions.~ DO ~SetGlobal("KKNFTalk","GLOBAL",3) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  + FT1a
+++ ~I would really rather not talk about it right now, I am sorry.~ DO ~SetGlobal("KKNFTalk","GLOBAL",3) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT1t
+++ ~It is not any of your business.~ DO ~SetGlobal("KKNFTalk","GLOBAL",3) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ EXIT 
+END
+
+IF ~~ THEN FT1a
+SAY ~How dare he! Powerful or not, slaves deserve instant death for even daring to touch one of their betters. But torture.... fear not, I will remove his head personally.~ 
+++ ~Slave? I seriously doubt that he is anyone's slave. Besides, slavery is illegal in Athkatla.~  + FT1b
+++ ~Irenicus is too powerful and too dangerous for that, slaves that cannot be controlled are useless. That and he has committed too many horrors to be allowed to live.~  + FT1g
+++ ~Slavery is illegal in Athkatla, Navarra. Please do not make me regret bringing you along.~ + FT1i
+++ ~I do not care to continue this discussion. Let's go.~  EXIT
+END
+
+IF ~~ THEN FT1b
+SAY ~Illegal? That makes no sense... what else are males good for other than begetting offspring?~ 
+++ ~You must be joking...right? I do not know what it is like where you come from but here, men are treated as equals and contribute much in many ways.~  + FT1w
+++ ~I wonder that myself sometimes. Having slaves to pamper you and serve of you.. now that would be nice.~ + FT1za
+++ ~It seems you have a lot to learn about the way the things work around here.~ + FT1c
+++ ~Yes, illegal. And that includes you so do not get any ideas. I will not tolerate it.~ EXIT
+END
+
+IF ~~ THEN FT1g
+SAY ~And he will die, I promise you that. We seem to be like minded about slaves, <CHARNAME>, have you owned slaves as well?~
+++ ~While I agree with you as far as slaves that cannot be controlled are useless, I would never own another person. It is wrong to rob someone of thier freedom.~ + FT1h
+++ ~Sadly, I have not and most likely never will. The best I can hope for is finding a man who will do it willingly.~ + FT1o
+++ ~Certainly not. I do hope, however, that I get to torture Irenicus before he dies.~ + FT1p
+++ ~Maybe, maybe not. But it does not matter, we need to get going and find Imoen.~ EXIT
+END
+
+IF ~~ THEN FT1w
+SAY ~It would seem so..... I assumed from what I saw in the Promenade that slaves were common here.~ 
+++ ~What would make you think that? I did not notice anyone being treated that way.~ + FT1x
+++ ~I did notice a few questionable characters but I am not sure what would lead you to that conclusion. Or maybe it is because I already knew it was illegal here.~ + FT1y
+++ ~I suppose I can see why you would draw that conclusion but you should be careful calling people that in the future.~ + FT1z
+++ ~If you say so. I think it is time we get going.~ EXIT
+END
+
+IF ~~ THEN FT1i
+SAY ~Do not make me regret trusting you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1t
+SAY ~Fair enough, I am here if you wish to talk about it.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1c
+SAY ~It would seem so...I will have to think on this.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1h
+SAY ~You have no idea what you are missing. It is quite enjoyable.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1o
+SAY ~There is no shortage of weak-willed fools around. I am confident we will both find willing slaves, I will enjoy the hunt for one.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1p
+SAY ~I too shall take great pleasure in the torture. Even if I only get to watch.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1x
+SAY ~Nor did I but there are many shady things going on in this city, and slavery is a very profitable trade.~ 
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1y
+SAY ~I noticed many since I arrived here and there is plenty of coin to be made with slaves. Too bad it is illegal.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1z
+SAY ~Agreed. I have no fear of insulting anyone or provoking a fight but we both have more important matters at hand.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1za
+SAY ~It is nice indeed, though I have always had slaves and never had to do many things myself. Not having one now has left me in a terrible position.~
+++ ~Surely you did some things for yourself like getting dressed or bathing... something.~ + FT1zb
+++ ~Well then, no time like the present to learn and I will be more than happy to help you in anyway I can.~  + FT1zc
+++ ~Who knows.. maybe you will find some weak-willed man along the way that you can convince to be your willing slave.~  + FT1zd
+++ ~Guess you will figure it soon enough. I think it is time we get going.~ EXIT
+END
+
+IF ~~ THEN FT1zb
+SAY ~Not really, no. But I had better find a solution fast, my blade needs sharpening.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1zc
+SAY ~Thank you. Oh and when we make camp, my blade needs sharpening.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT1zd
+SAY ~I had not thought of that! I hope I find someone soon, my blade needs sharpening .~
+IF ~~ THEN EXIT
+END
+
+IF ~Global("KKNFTalk","GLOBAL",4)~ THEN BEGIN FT2
+SAY ~I would like to talk to you more about what happened with the mage. I can still see shadows of pain on your face.~
+++ ~I was kept in a cage and tortured, the pain was unbearable and I passed out from it. I do remember there was an explosion..~ DO ~SetGlobal("KKNFTalk","GLOBAL",5) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  + FT2a
+++ ~It is not easy to talk about, being kept in a cage... the bastard murdered two of my friends!~ DO ~SetGlobal("KKNFTalk","GLOBAL",5) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  + FT2d
+++ ~I do not remember much, the cage... torture and then an explosion. It was very unnerving.~ DO ~SetGlobal("KKNFTalk","GLOBAL",5) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT2g
+++ ~I would rather not discuss it.~ DO ~SetGlobal("KKNFTalk","GLOBAL",5) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  EXIT 
+END
+
+IF ~~ THEN FT2a
+SAY ~Why would he do such a thing? I find it odd he would kidnap a random stranger and do things like that without reason. And what of the explosion?~
+++ ~He claimed to know me though I do not see how. But, after the explosion, Imoen showed up and opened my cage.~ + FT2b
+++ ~He said he was doing it unlock my power, whatever that means. The explosion was odd but it distracted him long enough for Imoen to open my cage and we escaped.~  + FT2h
+++ ~I do not know but I intend to find out. He has forced me to go after him by taking Imoen.~  + FT2l
+++ ~I will not have the answers until I find him. Standing here will not get us any closer so let's just go.~  EXIT 
+END
+
+IF ~~ THEN FT2b
+SAY ~Very odd indeed. No idea what caused the explosion and how it is that Imoen was free to help you?~
+++ ~I have no idea, it is all very confusing. All I know is, he has forced me to go after him by taking Imoen and murdering two of my friends.~ + FT2c
+++ ~I do not know, it is all so upsetting. I miss the friends I lost by his hand and feel responsible for their deaths.~  + FT2c
+++ ~He's a madman, he probably kidnapped the wrong person by mistake. It is just sad that he killed two of my friends before Imoen helped me escape.~  + FT2c
+++ ~It is still too painful to talk about, I am sorry.~  EXIT 
+END
+
+IF ~~ THEN FT2c
+SAY ~I am sorry about your friends, it is hard to lose people you care about. And fear not, we will find Imoen and exact revenge on him.~
+++ ~Thank you, I miss them terribly. I cannot help but feel like it is my fault they are dead.~  + FT2d
+++ ~Their deaths are unimportant, they annoyed me when they were around anyway. It is Irenicus I want to get my hands on, we have much to discuss...like removing his head.~  + FT2m
+++ ~I do not care if we find Imoen or not, ordering me around in that dungeon as if she had the right to do so! The mage however, I will tear him to pieces.~  + FT2n
+++ ~Agreed. But not by standing here chatting. Let's get back to it.~  EXIT 
+END
+
+IF ~~ THEN FT2d
+SAY ~I fail to see how it was your fault, it was not you who did the killing. Focus on the revenge you will soon claim, it will give you strength.~
+++ ~I may not have struck the blow, by they died because I put them in harms way because they were with me. And revenge is not what this is about, it is justice for the crimes Irenicus committed.~  + FT2e
+++ ~No, I did not kill them, though I thought about it a couple times. I see your point, I am not to blame for any of it. And yes, thinking of what I will do to that fool when I find him is all I am focusing on.~  +FT2g
+++ ~You are right of course, I should not waste my time feeling sorry for the loss of those I did not even like. I just want that mage dead, and maybe a little torture first to repay him.~  +FT2o
+++ ~I suppose so. Either way, we should catch up with the others.~  EXIT 
+END
+
+IF ~~ THEN FT2e
+SAY ~They willingly followed you, <CHARNAME>, they knew the risks involved by doing so. And calling it revenge or justice, it is still what you should be concentrating on.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT2g
+SAY ~I find that all very disturbing. How did you escape, the explosion?~
+++ ~The explosion was a welcomed distraction, it allowed Imoen time to open my cage.~  + FT2p
+++ ~So do I. Too bad it did not kill that bastard mage at the same time. But, Imoen showed up, opened my cage and we got out of there.~  + FT2p 
+++ ~That and painful... sad... Let's just get going.~  EXIT 
+END
+
+IF ~~ THEN FT2o
+SAY ~That is a terrible thing to say about your companions <CHARNAME>, their deaths served no purpose.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT2p
+SAY ~But I am curious as to what caused the explosion in the first place, it sounds like a trap.~
+++ ~Oh I am sure it is a trap, he wants me back in his grasp. He claims he was trying to unlock a hidden power within me. And the explosion was very odd.~  + FT2b
+++ ~Well of course it is a trap! What I find odd is that explosion... I know that idiot did not cause it.~  + FT2b
+++ ~And he better hope he's prepared because I intend to his his trap blow up in his face. Too bad that mysterious explosion did not do that already.~  + FT2b
+++ ~I know it is. And I cannot wait to see what's in store, so let's get to it.~  EXIT 
+END
+
+IF ~~ THEN FT2l
+SAY ~I myself am curious to know also and I agree, it seems he took her for that very reason. I sense a trap waiting for you.~
+++ ~Oh I am sure it is a trap, he wants me back in his grasp. He claims he was trying to unlock a hidden power within me. And the explosion was very odd.~  + FT2b
+++ ~Well of course it is a trap! What I find odd is that explosion... I know that idiot did not cause it.~  + FT2b
+++ ~And he better hope he's prepared, because I intend to his his trap blow up in his face. Too bad that mysterious explosion did not do that already.~  + FT2b
+++ ~I know it is. And I cannot wait to see what's in store, so let's get to it.~  EXIT 
+END
+
+IF ~~ THEN FT2h
+SAY ~You have a power that you do not know about and he has to be the one to unlock it? That sounds as odd as the explosion, as you say. I am just glad you managed to get away from that fiend.~
+++ ~That is what he claims but it makes no sense to me. And yes, I am very glad to be away from that nightmare, though it will take time for the scars to go away.~  + FT2i
+++ ~Who knows? He sounded like a babbling madman to me, he is probably just insane. Though I am glad to have escaped, the explosion troubles me. I want to know who caused it.~  + FT2q
+++ ~I plan to ask him about that before I kill him. If I do have such a power, it will be useful. Especially if it helps me kill my enemies faster.~  + FT2r
+++ ~We will not find any answers here, it is time we were off.~  EXIT 
+END
+
+IF ~~ THEN FT2i
+SAY ~I find it strange as well. Scars? Are you injured badly?~
+++ ~More emotional scars than anything else. I have been having nightmares even since I got out of there.~  + FT2j
+++ ~Not so badly that I cannot do what must be done, though I am a bit sore. The emotion scars are another matter, the nightmares are horrible.~ + FT2j
+++ ~That is none of your business.~  EXIT 
+END
+
+IF ~~ THEN FT2j
+SAY ~ I.. I am sorry to hear you are having nightmares, it must have been terrible for you. If there is anything I can do, do not hesitate to ask. As far as the physical scars, I have an ointment that will greatly help.~
+++ ~The nightmares I will have to deal with myself, but I will gladly accept the ointment, and thank you.~  + FT2k
+++ ~I do not need your sympathy or anything else from you, except your loyalty. You will do well to remember that.~ + FT2t
+++ ~I will be fine, the nightmares and the pain fuel my anger, and keep me focused on the kill. And make no mistake, I will kill him, slowly.~  + FT2u
+++ ~Save your pity for someone who might actually believe it is real. Let's go.~  EXIT 
+END
+
+IF ~~ THEN FT2k
+SAY ~You are most welcome.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT2m
+SAY ~No death is unimportant, <CHARNAME>. There is no honor in a pointless death. As for Irenicus, his death is justified and he deserves that fate.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT2n
+SAY ~That is a terrible thing to say about the woman who saved you, <CHARNAME>, she was probably scared.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT2q
+SAY ~I myself am curious to know also, I sense a trap waiting for you.~
+++ ~Oh I am sure it is a trap, he wants me back in his grasp. He claims he was trying to unlock a hidden power within me. And the explosion was very odd.~  + FT2b
+++ ~Well of course it is a trap! What I find odd is that explosion... I know that idiot did not cause it.~  + FT2b
+++ ~And he better hope he's prepared, because I intend to his his trap blow up in his face. Too bad that mysterious explosion did not do that already.~  + FT2b
+++ ~I know it is. And I cannot wait to see what's in store, so let's get to it.~  EXIT 
+END
+
+IF ~~ THEN FT2r 
+SAY ~Be careful what you wish for.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT2s
+SAY ~Scars? Are you injured badly?~
+++ ~More emotional scars than anything else. I have been having nightmares even since I got out of there.~  + FT2j
+++ ~Not so badly that I cannot do what must be done, though I am a bit sore. The emotion scars are another matter, the nightmares are horrible.~  + FT2j
+++ ~That is none of your business.~  EXIT 
+END
+
+IF ~~ THEN FT2t
+SAY ~So be it, you will hear nothing from me.~
+IF ~~ THEN DO ~SetGlobal("KKNavarFriendActive","GLOBAL",3)~ EXIT
+END
+
+IF ~~ THEN FT2u
+SAY ~Smart woman, you will need that in the days to come.~ 
+IF ~~ THEN EXIT
+END
+
+IF ~Global("KKNFTalk","GLOBAL",6)~ THEN BEGIN FT3
+SAY ~I have heard whispers, fearful ones directed at you. They say you are a bhaalspawn, what does that mean?~
+++ ~It means my father is Bhaal, the God of Murder.~ DO ~SetGlobal("KKNFTalk","GLOBAL",7) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT3b
+++ ~I have no idea why anyone would say that. I would not believe everything you hear.~ DO ~SetGlobal("KKNFTalk","GLOBAL",7) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT3v
+++ ~A bhaalspawn is a child of Bhaal, the God of Murder. It is his blood that flows through my veins.~ DO ~SetGlobal("KKNFTalk","GLOBAL",7) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT3b
+++ ~I would rather not discuss it.~ DO ~SetGlobal("KKNFTalk","GLOBAL",7) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  EXIT 
+END
+
+IF ~~ FT3b
+SAY ~Bhaal? How can that be...~
+++ ~I was even more surprised to find that out than you are, trust me.~ + FT3c
+++ ~I assume your not familiar with the prophecy of Alaundo?~ + FT3t
+++ ~Does that bother you?~ + FT3u
+++ ~Let's just go, shall we?~ EXIT
+END
+
+IF ~~ FT3c
+SAY ~It must have been difficult to deal with as a child.~
+++ ~I was not told until recently.~ + FT3d
+++ ~My foster father kept that from me as a child. The old fool ended up telling me in a letter that I found after he died.~ + FT3e
+++ ~My foster father, Gorion, never told me. I guess he wanted me to have a normal childhood.~ + FT3r
+++ ~I would rather not discuss it.~ EXIT
+END
+
+IF ~~ FT3d
+SAY ~I do not understand. If your birth mother kept that from you all this time, why tell you now?~
+++ ~I was not raised by my mother, I was raised by my foster father, Gorion. And he did not tell me, I found a letter he had written to me before he died.~ + FT3e
+++ ~I do not know who my mother is. my foster father, Gorion, raised me. I assume he did not tell me because he wanted me to have a normal childhood.~ + FT3r
+++ ~Why would you assume I was raised by my mother?~ + FT3s
+++ ~I assume your not familiar with the prophecy of Alaundo?~ + FT3t
+++ ~It does not matter, let's go.~ EXIT
+END
+
+IF ~~ FT3e
+SAY ~What happened to your birth mother? And please explain "foster father", it is a term I am unfamiliar with.~
+++ ~I have no idea, I never knew her. A foster father is a man who assumes the role of a father when your real one is gone.~ + FT3f
+++ ~She obviously abandoned me, I have no memory of her. And a foster father is not much different from a father, just a replacement.~ + FT3q
+++ ~A foster father is not much different from a father, I assume you know what father means.~ + FT3f
+++ ~I do not know what happened to her and I do not care. Gorion was the only parent I needed. He is my real father, as far as I am concerned.~ + FT3q
+++ ~I do not want to talk about this anymore. Let's go.~ EXIT
+END
+
+IF ~~ FT3f
+SAY ~I am sorry, but I do not know what "father" means either. I can only assume you mean the man who assisted your mother when she decided to become pregnant.~
+= ~You talk as if a father has another purpose besides the obvious one.~
+++ ~Usually he does, but I assume in your case, he does not. Is your father a slave?~ + FT3g
+++ ~Normally children are raised by both parents. But because my mother left and my father was Bhaal, Gorion took me in, and took care of me.~ + FT3g
+++ ~They do but I hated it, I am glad the old fool is dead and I am finally free to do as I wish.~ + FT3n
+++ ~Enough of this, we should get going.~ EXIT
+END
+
+IF ~~ FT3g
+SAY ~There are no men in my tribe except slaves. Our tribe would die out without children, so they serve in that task as well.~
+++ ~Do you at least know which slave is your father?~ + FT3h
+++ ~I am sorry, I cannot imagine what it must be like to grow up without a father.~ + FT3k
+++ ~Your lucky you did not have to put up with one like I did.~ + FT3m
+++ ~I do not want to talk about this anymore. Let's go.~ EXIT
+END 
+
+IF ~~ FT3h
+SAY ~The female children are never told but, it usually is not hard to figure out. If you care to, that is. Inherited features, even certain traits give it away.~
+IF ~~ THEN + FT3l
+END
+
+IF ~~ FT3i
+SAY ~It must be hard for you to keep it under control as you do. You have my respect.~
+IF ~~  EXIT
+END
+
+IF ~~ FT3j
+SAY ~Power can be a dangerous thing when used for evil, <CHARNAME>. I hope you come to realize the folly of that goal before it is too late.~
+IF ~~  EXIT
+END
+
+IF ~~ FT3k
+SAY ~That is because you had one and know the difference. For my people, it is a normal way of life. You cannot miss what you never had, and never knew existed.~
+= ~We are all aware that a slave aided in our birth, but never which one. It usually is not hard to figure out. If you care to, that is. Inherited features, even certain traits give it away.~
+IF ~~ THEN + FT3l
+END
+
+IF ~~ FT3l
+SAY ~Is it like that for you, with Bhaal being your father?~
+++ ~The blood lust is always there, and a constant struggle. But I have managed to keep it under control, so far.~ + FT3i
+++ ~Certainly, there is no doubt his blood flows through my veins. I can feel the power, the lust for blood in battle.~ + FT3i
+++ ~Of course and I am glad of it. I have a destiny to fulfill, to sit on his throne one day and I need all the power I can get.~ + FT3j
+++ ~I will let you find that out for yourself.~ EXIT
+END
+
+IF ~~ FT3m
+SAY ~Perhaps...It is impossible to say since I never had one. We are all aware that a slave aided in our birth, but never which one. It usually is not hard to figure out. If you care to, that is. Inherited features, even certain traits give it away.~
+IF ~~ THEN + FT3l
+END
+
+IF ~~ FT3n
+SAY ~And what is it that you wish to do?~
+++ ~Fulfill my destiny of course. Sit on my father's throne and rule in his place.~ + FT3j
+++ ~All I want is a normal life, though it seems impossible with this prophecy hanging over my head and everyone trying to kill me.~ + FT3o
+++ ~I want to keep traveling, helping people and seeing new places.~ + FT3p
+++ ~I do not know yet, but I like being able to make my own decisions and seeing where they take me.~ + FT3p
+++ ~Catch up with the others, they are starting to get impatient.~ EXIT
+END  
+
+IF ~~ FT3o
+SAY ~I do not know of this prophecy but I have no doubt it is of evil intent, but never give up hope. Anything is possible when we rule our destinies, instead of letting them rule us.~
+= ~You have my respect.~
+IF ~~ EXIT
+END
+
+IF ~~ FT3p
+SAY ~Just avoid Narfell, unless you do not mind freezing to death in the winter.~
+IF ~~ EXIT
+END
+
+IF ~~ FT3q
+SAY ~That sounds much like what happens in my tribe. Male children are raised as slaves so, they have no memory of who their birth mother is either.~
+= ~But this other role...~
+IF ~~ THEN + FT3f
+END
+
+IF ~~ FT3r
+SAY ~I do not know what a normal childhood is by your definition, but this man must have cared for you greatly.~
+IF ~~ THEN + FT3e
+END
+
+IF ~~ FT3s
+SAY ~I assumed that is how it is done where you are from. In my tribe, male children are raised by slaves because they will become slaves themselves.~
+= ~And a dead God cannot raise you....I...~
+IF ~~ THEN + FT3f
+END
+
+IF ~~ FT3t
+SAY ~I do not. But any prophecy connected to Bhaal can only end in death and destruction. You are fortunate that you were not raised by such an evil being.~
+IF ~~ THEN + FT3f
+END
+
+IF ~~ FT3u
+SAY ~I...I do not know yet. It would depend on how much of his influence lies within you, and so far I have seen nothing to convince me that you have an evil nature.~
+IF ~~ THEN + FT3c
+END
+
+IF ~~ FT3v
+SAY ~There must be some truth to it, if so many believe it to be so.~
+++ ~Fine. If you must know, it means my father is Bhaal, the God of Murder.~ + FT3b
+++ ~Well there is not, so just let it go.~ EXIT
+END
+
+IF ~Global("KKNFTalk","GLOBAL",8)~ THEN BEGIN FT4
+SAY ~You mentioned that Gorian was murdered, do you know by who?~
+++ ~Gorion was murdered a year ago, when he and I left our home in Candlekeep.~ DO ~SetGlobal("KKNFTalk","GLOBAL",9) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT4a
+++ ~He's dead, leave it at that.~ DO ~SetGlobal("KKNFTalk","GLOBAL",9) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT4g
+++ ~It is a painful subject, I would rather not talk about it.~DO ~SetGlobal("KKNFTalk","GLOBAL",9) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  + FT4h
+++ ~It does not concern you, let's get going.~ DO ~SetGlobal("KKNFTalk","GLOBAL",9) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~  EXIT
+END 
+
+IF ~~ FT4a
+SAY ~I... I am sorry to hear that <CHARNAME>. Do you know who did such a terrible thing?~
+++ ~Thank you, I miss him a lot. And yes, the monster's name was Sarevok.~ + FT4b
+++ ~Yes I do and he was dealt with.~ + FT4i
+++ ~Thank you, it is been very hard on me without him. He was murdered by a fiend named Sarevok.~ + FT4b
+++ ~It is not any of your business.~ EXIT 
+END
+
+IF ~~ FT4b
+SAY ~I assume since you know the vile creature's name, that he was punished.~
+++ ~I killed him. And I know his name because he is my brother, well half-brother. A fact I am not proud of.~ + FT4c
+++ ~He left me no choice but to kill him, and his name is Sarevok.~ + FT4c
+++ ~Yes he was punished, I killed that bastard, and I enjoyed it. Unfortunately, he is my brother.~ + FT4j
+++ ~I would really rather not talk about it. We should really catch up to the others.~ EXIT
+END
+
+IF ~~ FT4c
+SAY ~Murderers deserve nothing less than death, I am glad he no longer lives.~
+++ ~My thoughts exactly, he was too dangerous to be allowed to live. I just wish Gorion had not faced him alone, but he insisted.~ + FT4d
+++ ~I did not kill him because he killed Gorion, I killed him because he was a Child of Bhaal also.~ + FT4g
+++ ~Yes, and the rest does not matter anymore. Let's go.~ EXIT
+END
+
+IF ~~ FT4d
+SAY ~It was brave of him to face so many alone so that you could get away safely. He must have loved you a great deal.~
+++ ~Gorion was a mage of great skill, I honestly expected him to defeat Sarevok easily.~ + FT4e
+++ ~Yes, it was but, I have no doubt that he expected to put and end to Sarevok that day. Sadly, it did not work out that way.~ + FT4e
+++ ~Gorion was like that. He always let me know he loved me, and protected me too much sometimes. I still cannot believe he's dead.~ + FT4f
+++ ~It was foolish of him to even try. That over-bearing moron got what he deserved.~ + FT4k
+++ ~It is too painful to talk about right now. Perhaps we should get going.~ EXIT
+END
+
+IF ~~ FT4e 
+SAY ~It is not easy to kill a powerful mage, do you know what went wrong?~
+++ ~It seems Sarevok had a high resistance to magic. Gorion's spells did not even affect him so he did not stand a chance at defeating him.~ + FT4f
+++ ~Sarevok had no reason to fear Gorion and he knew it, his resistance to magic made him a formidable foe.~ + FT4f
++ ~Class(Player1,MAGE_ALL)~ + ~I found out the hard way that magic does not affect him. But in the end, it did not matter if he died by magic or blade. Only that he died.~ + FT4l
+++ ~How could I when I told you I was not there. Let's go.~ EXIT
+END
+
+IF ~~ FT4f
+SAY ~I am sorry you lost Gorian, <CHARNAME>, but I am glad you were able to kill his murderer. I am sure Gorion would be very proud of you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ FT4g
+SAY ~You sound as if you are glad Gorion died, surely that is not so.~
+++ ~I am sorry, it just is not easy to talk about. He was murdered a year ago and it is still quite painful.~ + FT4a
+++ ~I am, he lied to me about who I am... I am glad to rid of the old fool.~ + FT4k
+++ ~Believe what you will. We have to get to Irenicus, that is what matters now.~ EXIT
+END
+
+IF ~~ FT4h
+SAY ~I understand but sometimes it helps to have an ear. I am here if you change your mind.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ FT4i
+SAY ~So you killed him, I hope. Was it someone you knew?~
+++ ~I killed him, yes. And I know his name because he is my brother, well half-brother. A fact I am not proud of.~ + FT4c
+++ ~He left me no choice but to kill him and his name is Sarevok.~ + FT4c
+++ ~I killed that bastard and I enjoyed it. Unfortunately, he is my brother.~ + FT4c
+++ ~I would really rather not talk about it. We should really catch up to the others.~ EXIT
+END
+
+IF ~~ FT4j
+SAY ~I too would have enjoyed giving a murderer what they deserve. I do hope you did not witness the murder.~
+++ ~Thankfully, I did not see it. Gorion told me to run when Sarevok and two of his henchmen showed up.~ + FT4d
+++ ~Sadly no, Gorion ordered me to run when Sarevok and two of his henchmen showed up.~ + FT4d
+++ ~I wish I had been there, Gorion would still be alive. Taking on all three villians was madness. But no, I was told to run.~ + FT4m
+++ ~None of it matters now, let's be off.~ EXIT
+END
+
+IF ~~ FT4k
+SAY ~That is horrible, <CHARNAME>. There is no honor in murder and no one deserves to die that way.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ FT4l
+SAY ~He deserved no less, and I am glad you survived the ordeal.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ FT4m
+SAY ~I understand your wanting to be there but, I must confess, I am glad you were not.~
+IF ~~ THEN + FT4d
+END
+
+IF ~Global("KKNFTalk","GLOBAL",10)~ THEN BEGIN FT5
+SAY ~I would very much like to hear about your home.~ 
+++ ~I no longer have a home.~ DO ~SetGlobal("KKNFTalk","GLOBAL",11) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT5a
+++ ~I grew up in Candlekeep. I was raised by monks.~ DO ~SetGlobal("KKNFTalk","GLOBAL",11) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT5d
+++ ~Imoen and I grew up in Candlekeep. We had a normal childhood, I suppose for children being raised by monks.~ DO ~SetGlobal("KKNFTalk","GLOBAL",11) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ + FT5n
+++ ~I do not want to talk about it.~ DO ~SetGlobal("KKNFTalk","GLOBAL",11) RealSetGlobalTimer("KKFemaleTalkTime","GLOBAL",1800)~ EXIT
+END
+
+IF ~~ THEN FT5a
+SAY ~Why not? You do not want to return, after all this is over?~
+++ ~I went back to Candlekeep, not too long ago. The monks informed me that I am no longer welcome there because of what I am.~ + FT5b
+++ ~The monks fear me now, being a Child of Bhaal.~ + FT5i
+++ ~The monks never wanted me there. They only let me because of Gorion.~ + FT5j
+++ ~No, I hated that place. Let's go.~ EXIT
+END
+
+IF ~~ THEN FT5b
+SAY ~Because of you being a Child of Bhaal?~ 
+IF ~~ THEN + FT5i 
+END
+
+IF ~~ THEN FT5i
+SAY ~That is unjust of them. They raised you, and know you to be a good man.~
+++ ~They have the right to feel as they do. I never intended to live there forever, anyway.~ + FT5d
+++ ~They are wise to fear me, and I will make them pay for how they treated me.~ + FT5e
+++ ~I really do not care what they think. We need to catch up with the others.~ EXIT
+END
+
+IF ~~ THEN FT5d
+SAY ~Was your childhood unpleasant there?~
+++ ~No, the monks were nice enough to me. Imoen made it enjoyable, she was always playing jokes on them.~ + FT5f
+++ ~Extremely, and Imoen made it worse. The little prankster was always getting us in trouble.~ + FT5g
+++ ~I liked it well enough. I loved to read and the library is quite large.~ + FT5h
+++ ~It does not matter anymore.~ EXIT
+END
+
+IF ~~ THEN FT5e
+SAY ~I hope you do not mean that.~ 
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5f
+SAY ~I am sure she had a good reason, I cannot imagine being raised in such a place.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5g
+SAY ~I imagine it was difficult for both of you. Being raised by a male would be bad enough...~
+= ~But, monks would be much worse, I think.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5h
+SAY ~I enjoy reading myself. I always managed to find a book or two at our yearly festival.~
+= ~But nothing like the amount you are used to.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5j
+SAY ~They must have known all along about your heritage, and chose not to tell you.~
+++ ~They did. As soon as Gorion died, they had no reason to allow me back there.~ + FT5k
+++ ~Exactly, and when that fool Gorion was killed, they turned their backs on me.~ + FT5m
+++ ~They will regret that decision once I take the throne.~ + FT5e
+++ ~Most likely, but it does not matter now.~ EXIT
+END
+
+IF ~~ THEN FT5k
+SAY ~They should have had faith in you, that you would do what was right.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5m
+SAY ~I cannot say that I blame them. Not when you intend to use the throne for evil.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5n
+SAY ~I cannot imagine growing up in the confines of a keep. Though I am sure it made the winters bearable.~
+++ ~It was not so bad. The monks were strict at times, but they had reason to be. The winters aren't bad at all.~ + FT5o
+++ ~It was fascinating to me. The towers, fortress.. a lot to explore. The winters were rough for you?~ + FT5p
+++ ~I cannot imagine growing up outside without the protection of walls.~ + FT5q
+++ ~I have no desire to discuss Candlekeep.~ EXIT
+END
+
+IF ~~ THEN FT5o
+SAY ~Strict or not, you were fortunate. Surviving the frigid winters in Narfell is difficult.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5p
+SAY ~I can see why you enjoyed it.~
+= ~The frigid winters in Narfell are difficult to survive. It is especially dangerous for our elders and small babies.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN FT5q
+SAY ~I see your point. We both grew up in very different ways.~
+IF ~~ THEN EXIT
+END
+
+IF ~Global("KKNavarRSoulTalk","LOCALS",1)~  THEN BEGIN KKNSoul1
+SAY ~<CHARNAME>... What has happened to you?~
+++ ~I cannot say for certain. I would have never thought it possible, but somehow Irenicus has taken my soul, and Imoen's as well. It seems she is a child of Bhaal also.~ DO ~SetGlobal("KKNavarRSoulTalk","LOCALS",2)~ + KKNSoul1a
+++ ~Irenicus cast a spell. I am fine, do not worry. We need to get out of here, quickly.~ DO ~SetGlobal("KKNavarRSoulTalk","LOCALS",2)~ + KKNSoul1b
+++ ~Now is not the time to talk, I have to get Imoen out of here.~ DO ~SetGlobal("KKNavarRSoulTalk","LOCALS",2)~ + KKNSoul1c
+END
+
+IF ~~ THEN KKNSoul1a
+SAY ~How dare he! Lean on me, if you need to, but we have to get out of here.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN KKNSoul1b
+SAY ~No, you are not. You will be, of that I can promise you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN KKNSoul1c
+SAY ~Indeed, forgive me. We will talk about this once we are all safely away from this place.~
+IF ~~ THEN EXIT 
+END
+
+IF ~Global("KKNavarCSoulTalk","LOCALS",1)~ THEN BEGIN KKNSoul2
+SAY ~What has happened to you, my love. You do not look well.~
+++ ~I cannot say for certain. I would have never thought it possible, but somehow Irenicus has taken my soul, and Imoen's as well. It seems she is a child of Bhaal also.~ DO ~SetGlobal("KKNavarCSoulTalk","LOCALS",2)~ + KKNSoul2a
+++ ~I do not know how, but Irenicus cast a spell. He took my soul... I am alright, but we need to get out here.~ DO ~SetGlobal("KKNavarCSoulTalk","LOCALS",2)~ + KKNSoul2e
+++ ~Now is not the time to talk, I have to get Imoen out of here.~ DO ~SetGlobal("KKNavarCSoulTalk","LOCALS",2)~ + KKNSoul2d
+END
+
+IF ~~ THEN KKNSoul2a
+SAY ~I will kill him, slowly! Come, my love, we must hurry. Are you able?~
+++ ~I have to be. We are all in danger.~ + KKNSoul2b
+++ ~I have to, for everyone's sake as well as my own.~ + KKNSoul2c
+++ ~Do not worry, just please keep Imoen safe.~ + KKNSoul2d
+END
+
+IF ~~ THEN KKNSoul2b
+SAY ~We can take care of ourselves, it is our turn to take care of you. I refuse to lose you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN KKNSoul2c
+SAY ~I will protect you, I promise you. I cannot, will not let you die.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN KKNSoul2d
+SAY ~For you, I would give my life to protect her. But do not tell me not to worry, we are in this together.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN KKNSoul2e
+SAY ~No, you are not. I will make sure that you are, however, or did trying. I cannot live without you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~Global("KKNavarFSoulTalk","LOCALS",1)~  THEN BEGIN KKNSoul3
+SAY ~You look pale as a ghost my friend, What happened to you?~
+++ ~I cannot say for certain. I would have never thought it possible, but somehow Irenicus has taken my soul, and Imoen's as well. It seems she is a child of Bhaal also.~ DO ~SetGlobal("KKNavarFSoulTalk","LOCALS",2)~ + KKNSoul3a
+++ ~I do not know how, but Irenicus cast a spell. He took my soul... I am alright, but we need to get out here.~ DO ~SetGlobal("KKNavarFSoulTalk","LOCALS",2)~ + KKNSoul3b
+++ ~Now is not the time to talk, I have to get Imoen out of here.~ DO ~SetGlobal("KKNavarFSoulTalk","LOCALS",2)~ + KKNSoul3c
+END
+
+IF ~~ THEN KKNSoul3a
+SAY ~How dare he! We must get out of here.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN KKNSoul3b
+SAY ~No, you are not, but you will be, Just let us, your friends help you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ THEN KKNSoul3c
+SAY ~I understand, just try not to worry. You both will be safe, shortly.~
+IF ~~ THEN EXIT 
+END
+
+IF ~Global("KKNavarFlirt","GLOBAL",2)~ THEN BEGIN  KKNF0
+SAY ~(Navarra's thoughts seem to be focused on you to<DAYNIGHT>.)~
+IF ~~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ EXIT 
+IF ~RandomNum(14,1) AreaType(DUNGEON) !AreaCheck("AR2100")~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF1 
+IF ~RandomNum(14,2) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF2a 
+IF ~RandomNum(14,3) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF3 
+IF ~RandomNum(14,4) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF4 
+IF ~RandomNum(14,5) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF5 
+IF ~RandomNum(14,6) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF6 
+IF ~RandomNum(14,7) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF7 
+IF ~RandomNum(14,8) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF8  
+IF ~RandomNum(14,9) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF9 
+IF ~RandomNum(14,10) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF10
+IF ~RandomNum(14,11) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF11
+IF ~RandomNum(14,12) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt","GLOBAL",0)~ + KKNF12
+END
+
+IF ~~ KKNF1 
+SAY ~(Navarra sneaks up behind you and taps you on the shoulder.)~ 
+= ~Are you having fun yet?~
+++ ~Fun? It is dark, dank and probably infested with who knows what.~ + KKNF1a
+++ ~Absolutely. I cannot wait to see what we find down here.~ + KKNF1b
+++ ~Of Course! Nothing better than a good fight.~ + KKNF1c
+++ ~Be quiet! Are you trying to get us killed?~ EXIT
+END
+
+IF ~~ KKNF1a 
+SAY ~Exactly. And that is what makes it fun.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF1b
+SAY ~That makes two of us.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF1c
+SAY ~My thoughts exactly.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF2a
+SAY ~Do not worry, I will protect you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF3
+SAY ~(Navarra gently squeezes your hand. After a moment she reluctantly lets go.)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF4
+SAY ~Be on your guard in here, <CHARNAME>. Someone or something has been through here recently.~
+++ ~I see that, some of the tracks are definitely made by made by a humanoid.~ + KKNF4a
+++ ~How can you tell?~ + KKNF4b
+++ ~I would prefer a someone than a something.~ + KKNF4c
+END
+
+IF ~~ KKNF4a
+SAY ~You are as perceptive as you are handsome. (Navarra kneels down to examine the tracks more closely.)~
+= ~Indeed, at least one person has been through here. It is the other tracks that concern me.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF4b
+SAY ~The lack of cobwebs for one thing. And these tracks- there are so many it is hard to tell if they are from people or something else.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF4c
+SAY ~Either one is fine by me. It is difficult to fight, however, with your hand touching me there.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF5
+SAY ~(You notice Navarra walking up beside you. She quickly kisses you on the cheek and walks away)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF6
+SAY ~I would venture through a hundred dungeons, as long as it was with you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF7
+SAY ~(Navarra smiles at you.) I will aid you any way that I can, but it is difficult with you so close to me.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF8
+SAY ~I am very glad that I decided to come with you. Life is definitely interesting with you in it.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF9
+SAY ~You look very handsome to<DAYNIGHT>.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF10
+SAY ~(You notice Navarra walking up beside you. She quickly kisses you on the cheek and walks away)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF11
+SAY ~(Navarra gently squeezes your hand. After a moment she reluctantly lets go.)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF12
+SAY ~Just admiring the view.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNFhurt1
+SAY ~You are bleeding, we need to stop and bandage that.~
+++ ~It is just a scratch, I will be fine.~ + KKNFhurt1a
+++ ~Am I? It cannot be too bad since I did not notice.~ + KKNFhurt1a
+++ ~I know but it needs to be done quickly, we cannot risk standing around in here for too long.~ + KKNFhurt1c
++ ~InParty("ANOMEN")~ + ~No need to worry, Anomen can heal me.~ + KKNFhurt1e
++ ~InParty("Viconia")~ + ~No need to worry, Viconia can heal me.~ + KKNFhurt1e
+END
+
+IF ~~ KKNFhurt1a
+SAY ~You cannot be too careful with even minor wounds in a nasty place like this. There is a risk of infection and I do not want to see anything bad happen to you.~
+++ ~I appreciate you worrying about me but I'm fine.~ + KKNFhurt1b
+++ ~Then it needs to be done quickly, we cannot risk standing around in here for too long.~ + KKNFhurt1c
++ ~InParty("ANOMEN")~ + ~No need to worry, Anomen can heal me.~ + KKNFhurt1e
++ ~InParty("Viconia")~ + ~No need to worry, Viconia can heal me.~ + KKNFhurt1e
+END
+
+IF ~~ KKNFhurt1b
+SAY ~I cannot help it, I care about you too much not to worry.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNFhurt1c
+SAY ~(bandages your wound, slowly at first, as if mesmerized by the sight of your exposed skin. After a few moments, she realizes where she is and finishes up quickly.)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNFhurt1e
+SAY ~Good idea, that would be faster and safer at this point. I could not forgive myself if anything bad happened to you...~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNFhurt2
+SAY ~(rushes to your side.) Lean on me if you need to, I will get you out of here safely. I promise you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~Global("KKNavarFlirt2","GLOBAL",2)~ THEN BEGIN KKNF2
+SAY ~(Navarra's feelings for you are obvious, so it is no surprise her thoughts are on you to<DAYNIGHT>.)~
+IF ~~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ EXIT 
+IF ~AreaType(DUNGEON) HPPercentLT(Myself,50)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNFhurt3
+IF ~RandomNum(14,1) AreaType(DUNGEON) !AreaCheck("AR2100")~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF1 
+IF ~RandomNum(14,2) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF2b 
+IF ~RandomNum(14,4) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF4 
+IF ~RandomNum(14,5) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF5 
+IF ~RandomNum(14,6) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF6 
+IF ~RandomNum(14,7) AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF7 
+IF ~RandomNum(14,8) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF8a 
+IF ~RandomNum(14,9) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF9a 
+IF ~RandomNum(14,10) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF10
+IF ~RandomNum(14,11) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF11a
+IF ~RandomNum(14,13) !AreaType(DUNGEON)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNF12
+IF ~AreaType(DUNGEON) HPPercentLT(Myself,50)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNFhurt3
+IF ~AreaType(DUNGEON) HPPercentLT(Myself,50)~ THEN DO ~SetGlobal("KKNavarFlirt2","GLOBAL",0)~ + KKNFhurt4
+END
+
+IF ~~ KKNF2b 
+SAY ~Whatever we face in here, we face together my love.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF8a 
+SAY ~(Navarra slips her hand in yours, squeezes gently, then lets go.)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF9a 
+SAY ~(Navarra walks up beside you and kisses you on the cheek.) I love you, <CHARNAME>.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNF11a 
+SAY ~(Navarra twines her fingers in yours and continues walking, with a contented smile on her face.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ KKNFhurt3
+SAY ~(rushes to your side and wraps her free arm around your waist, pulling you close to her.)~
+= ~Lean on me if you need to, I will get you out of here safely, my love. I promise you.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNFhurt4
+SAY ~You are bleeding, love, we need to stop and bandage that.~
+++ ~It is just a scratch, I will be fine.~ + KKNFhurt4a
+++ ~Am I? It cannot be too bad since I did not notice.~ + KKNFhurt4a
+++ ~I know but it needs to be done quickly, we cannot risk standing around in here for too long.~ + KKNFhurt4c
++ ~InParty("ANOMEN")~ + ~No need to worry, Anomen can heal me.~ + KKNFhurt4e
++ ~InParty("Viconia")~ + ~No need to worry, Viconia can heal me.~ + KKNFhurt4e
+END
+
+IF ~~ KKNFhurt4a
+SAY ~You cannot be too careful with even minor wounds in a nasty place like this. There is a risk of infection and I do not want to see anything bad happen to you.~
+++ ~I appreciate you worrying about me but I am fine.~ + KKNFhurt4b
+++ ~Then it needs to be done quickly, we cannot risk standing around in here for too long.~ + KKNFhurt4c
++ ~InParty("ANOMEN")~ + ~No need to worry, Anomen can heal me.~ + KKNFhurt4e
++ ~InParty("Viconia")~ + ~No need to worry, Viconia can heal me.~ + KKNFhurt4e
+END
+
+IF ~~ KKNFhurt4b
+SAY ~I cannot help it, I care about you too much not to worry.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNFhurt4c
+SAY ~(bandages your wound, slowly at first, as if mesmerized by the sight of your exposed skin. After a few moments, she realizes where she is and finishes up quickly.)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ KKNFhurt4e
+SAY ~Good idea, that would be faster and safer at this point. I could not forgive myself if anything bad happened to you...~
+IF ~~ THEN EXIT 
+END
+
+IF ~IsGabber(Player1)
+CombatCounter(0) Global("KKMTalk","GLOBAL",3)~ THEN BEGIN earlyflirts
+SAY ~Yes?~
+
+IF ~RandomNum(4,1)~ THEN REPLY ~How are you?~ + How1
+IF ~RandomNum(4,2)~ THEN REPLY ~How are you?~ + How2
+IF ~RandomNum(4,3)~ THEN REPLY ~How are you?~ + How3
+IF ~RandomNum(4,4)~ THEN REPLY ~How are you?~ + How4
+IF ~RandomNum(4,1)~ THEN REPLY ~I am glad you are here.~ + here1
+IF ~RandomNum(4,2)~ THEN REPLY ~I am glad you are here.~ + here2
+IF ~RandomNum(4,3)~ THEN REPLY ~I am glad you are here.~ + here3
+IF ~RandomNum(4,1)~ THEN REPLY ~Something on your mind?~ + mind1
+IF ~RandomNum(4,2)~ THEN REPLY ~Something on your mind?~ + mind2
+IF ~RandomNum(4,3)~ THEN REPLY ~Something on your mind?~ + mind3
+IF ~RandomNum(4,4)~ THEN REPLY ~Something on your mind?~ + mind4
+IF ~RandomNum(4,1)~ THEN REPLY ~(Smile at Navarra)~ + smile1a
+IF ~RandomNum(4,2)~ THEN REPLY ~(Smile at Navarra)~ + smile2a
+IF ~RandomNum(4,3)~ THEN REPLY ~(Smile at Navarra)~ + smile3a
+IF ~RandomNum(4,4)~ THEN REPLY ~(Smile at Navarra)~ + smile4a
+IF ~AreaCheck("AR0300") Global("NavarDocks","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + docks
+IF ~AreaCheck("AR0202") Global("NavarEyeCult","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + cult
+IF ~AreaCheck("AR0400") Global("NavarSlums","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + slums
+IF ~AreaCheck("AR0404") Global("NavarSewers","LOCALS",0)~ THEN REPLY ~Have you ever been down here?~ + sewers
+IF ~AreaCheck("AR0411") Global("NavarSphere","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + sphere
+IF ~AreaCheck("AR0800") Global("NavarGraveyard","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + grave
+IF ~AreaCheck("AR0900") Global("NavarTemple","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + temple
+IF ~AreaCheck("AR1000") Global("NavarGovernment","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + government
+IF ~AreaCheck("AR1100") Global("NavarUmarHills","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + umar
+IF ~AreaCheck("AR1200") Global("NavarWindspearHills","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + wind
+IF ~AreaCheck("AR1300") Global("NavarDearniseKeep","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + keep
+IF ~AreaCheck("AR1600") Global("NavarBrynnlaw","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + brynn
+IF ~AreaCheck("AR1700") !Global("KKMissingWarriors","GLOBAL",5) Global("NavarSmallTeeth","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + small
+IF ~AreaCheck("AR1800") Global("NavarNorthForest","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + north
+IF ~AreaCheck("AR1900") Global("NavarDruidGrove","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + druid
+IF ~AreaCheck("AR2100") Global("NavarUnderdark","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + under
+IF ~AreaCheck("AR2200") Global("NavarUstNatha","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + ust
+IF ~Global("NavarChild","LOCALS",0)~ THEN REPLY ~What was your childhood like?~ + child
+++ ~Navarra, there is something wrong with you voice.~ + KKNavFIX
+IF ~Global("KKNavarRomanceActive","GLOBAL",2)~ THEN + PID2 
+++ ~(Leave Navarra alone.)~
+EXIT
+END
+
+IF ~~ THEN BEGIN KKNavFIX
+SAY ~My throat has been feeling a bit dry lately. My apologies.~
+IF ~~ THEN DO ~StartCutScene("KKNavarFix")~ EXIT
+END
+
+IF ~~ How1
+SAY ~I am fine, thanks for asking.~
+IF ~~ THEN EXIT
+END
+
+IF ~~  How2
+SAY ~Tolerant of following a male, for now.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ How3
+SAY ~How do you think I am doing! My slave is dead and I need a new one.~
+IF ~~ THEN EXIT
+END
+
+IF ~~  How4
+SAY ~Very well, the weather, even when it is raining, it is much better than home.~
+IF ~~ THEN EXIT
+END
+
+IF ~~  child
+SAY ~The struggle to survive in the frigid weather was a challenge. Some children are not as lucky as I was.~
+= ~It was not all bad, though, I really enjoyed learning to fight.~
+IF ~~ THEN DO ~SetGlobal("NavarChild","LOCALS",1)~ EXIT
+END
+
+IF ~~ THEN BEGIN DumpNavarra                                                                                                          
+SAY ~I knew I should not have trusted you.~
+IF ~~ THEN DO ~SetGlobal("KKNavarRomanceActive","GLOBAL",3)~ EXIT                                                                                                                      
+END 
+
+IF ~~ here1
+SAY ~I suppose helping you is not as bad as I thought it would be.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ here2
+SAY ~Somehow, I doubt that, male.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ here3
+SAY ~So am I, <CHARNAME>, we both have important missions. I am certain working together was a wise decision. .~
+IF ~~ THEN EXIT
+END
+
+IF ~~ here4
+SAY ~You must be joking.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ mind1
+SAY ~Not really. Just a bit overwhelmed by everything I have seen so far.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ mind2
+SAY ~If I wanted you to know, I would tell you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ mind3
+SAY ~A bit tired is all. I will be fine.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ mind4
+SAY ~You. You are a puzzling male. I cannot decide if you really are different, or just pretending to be.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile1a
+SAY ~What? Do I have something in my teeth?.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile2a
+SAY ~(Navarra looks at you with a confused look on her face.)~
+= ~What are you up to, <CHARNAME>?~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile3a
+SAY ~(Navarra smiles back at you.)~
+= ~It is a lovely day today, is it not?~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile4a
+SAY ~You have a nice smile, you should do it more often.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ docks
+SAY ~No, I do not. It does not appear to be a safe area, however, I suggest we be on our guard here.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ cult
+SAY ~I have never been down here, but do not worry. I will protect you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ slums
+SAY ~Only that I was told to avoid it.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ sewers
+SAY ~If I did, I would not have came here. The air is foul.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ sphere
+SAY ~Sadly, no. I cannot wait to discover what lies within.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ grave
+SAY ~There are restless spirits here, and worse. Be cautious.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ temple
+SAY ~I only came here once, but did not remain long. Tempus is not worshipped here.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ government
+SAY ~I came in hopes of gaining information about my missing friends. The cowled males are insufferable!.~ 
+= ~Not only did they know nothing, but threatened to have me arrested for asking where I could by a slave.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ umar
+SAY ~I do not, but it seems very serene. Beautiful trees... nothing like Narfell. I like it very much.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ wind
+SAY ~No and I do not like it. Something vile is going on here. Please be careful.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ keep
+SAY ~I have never been here, nor heard of it. I am sorry.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ brynn
+SAY ~I was told, by a patron at the inn where you found me, that it is a pirate town.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ small
+SAY ~Nothing at all, I am afraid.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ north
+SAY ~You do not want to be here, <CHARNAME>. There is evil here.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ druid
+SAY ~It is an evil place, I am told. I never came here, with good reason.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ under
+SAY ~Nothing, but it looks dangerous.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ ust
+SAY ~Only what Viconia told me. That is where she is from, and it is evil.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ PID2
+SAY ~(Navarra smiles.) What is it, my love?~
+
+IF ~RandomNum(3,1)~ THEN REPLY ~I love you.~ + love1
+IF ~RandomNum(3,2)~ THEN REPLY ~I love you..~ + love2
+IF ~RandomNum(3,3)~ THEN REPLY ~I love you..~ + love3
+IF ~RandomNum(4,2)~ THEN REPLY ~I'm glad you are here.~ + here2
+IF ~RandomNum(4,4)~ THEN REPLY ~I'm glad you are here.~ + here4
+IF ~HPPercentLT(Myself,90) RandomNum(5,1)~ THEN REPLY ~you are bleeding. Can I help?~ + KKNFhurt1
+IF ~HPPercentLT(Myself,90) RandomNum(5,2)~ THEN REPLY ~you are bleeding. Can I help?~ + KKNFhurt2
+IF ~HPPercentLT(Myself,90) RandomNum(5,3)~ THEN REPLY ~you are bleeding. Can I help?~ + KKNFhurt3
+IF ~HPPercentLT(Myself,90) RandomNum(5,4)~ THEN REPLY ~you are bleeding. Can I help?~ + KKNFhurt4
+IF ~AreaCheck("AR0300") Global("NavarDocks","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + docks
+IF ~AreaCheck("AR0202") Global("NavarEyeCult","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + cult
+IF ~AreaCheck("AR0400") Global("NavarSlums","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + slums
+IF ~AreaCheck("AR0404") Global("NavarSewers","LOCALS",0)~ THEN REPLY ~Have you ever been down here?~ + sewers
+IF ~AreaCheck("AR0411") Global("NavarSphere","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + sphere
+IF ~AreaCheck("AR0800") Global("NavarGraveyard","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + grave
+IF ~AreaCheck("AR0900") Global("NavarTemple","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + temple
+IF ~AreaCheck("AR1000") Global("NavarGovernment","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + government
+IF ~AreaCheck("AR1100") Global("NavarUmarHills","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + umar
+IF ~AreaCheck("AR1200") Global("NavarWindspearHills","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + wind
+IF ~AreaCheck("AR1300") Global("NavarDearniseKeep","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + keep
+IF ~AreaCheck("AR1600") Global("NavarBrynnlaw","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + brynn
+IF ~AreaCheck("AR1700") !Global("KKMissingWarriors","GLOBAL",5) Global("NavarSmallTeeth","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + small
+IF ~AreaCheck("AR1800") Global("NavarNorthForest","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + north
+IF ~AreaCheck("AR1900") Global("NavarDruidGrove","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + druid
+IF ~AreaCheck("AR2100") Global("NavarUnderdark","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + under
+IF ~AreaCheck("AR2200") Global("NavarUstNatha","LOCALS",0)~ THEN REPLY ~Do you know anything about this place?~ + ust
+IF ~OR(2) Global("KKNavRomanceActive","GLOBAL",1) Global("KKNavRomanceActive","GLOBAL",2) Global("NavarraChild","LOCALS",0)~ THEN REPLY ~What was your childhood like?~ + child
+IF ~Global("KKNavSex","GLOBAL",1) RandomNum(2,1)~ THEN REPLY ~I want you, right now.~ + want2
+IF ~Global("KKNavSex","GLOBAL",1) RandomNum(2,2)~ THEN REPLY ~I want you, right now.~ + want2a
+IF ~Global("KKNavRomanceActive","GLOBAL",2)~ THEN REPLY ~(flirt with him)~ + flirt2
+++ ~Navarra, I love you dearly, but please stop flirting with me.~ DO ~SetGlobal("KKNavarraFlirtsActive","GLOBAL",0)~ EXIT
+++ ~Navarra, there is something wrong with you voice.~ + lateNavFIX
+++ ~(Leave Navarra alone.)~
+EXIT
+END
+
+IF ~~ THEN BEGIN lateNavFIX
+SAY ~Sorry love, I think I may be coming down with something.~
+IF ~~ THEN DO ~StartCutScene("KKNavFIX")~ EXIT
+END
+
+IF ~~ nibble1
+SAY ~(you gently, teasingly nibble her ear. Navarra closes her eyes briefly then pulls away from you.)~
+= ~That... perhaps we should continue this in private.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ nibble2
+SAY ~(you gently, teasingly nibble her ear lobe, then trail feather-light kisses down her neck.)~
+= ~It is time for us to make camp, is it not?~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ kiss1
+SAY ~(lean closer to Navarra but before you can kiss him, he sweeps you into his arms and kisses you deeply.)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ kiss2
+SAY ~(you give him a quick kiss on the lips and just as you start to turn away, he cups your face in his hands. Within seconds, he is kissing you deeply, his tongue delving into every corner of your mouth.)~
+= ~That's much better.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ love1
+SAY ~I love you. too.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ love2
+SAY ~(Navarra smiles softly)~
+= ~I never thought I would say this to anyone, but I love you. too.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ love3
+SAY ~I love you. too. More than you will ever know.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ hand1
+SAY ~(you reach over and hold Navarra's hand, raise it to your lips and being gently trailing kisses from the tips of her fingers to her wrist. Navarra's eyes widen, her body visibly shaking.)~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ hand2
+SAY ~(you reach over and hold her hand. Navarra smiles and raises your hand to her lips, gently nibbles the tips of your fingers.)~
+= ~I am going to enjoy continuing this tonight.~
+IF ~~ THEN EXIT 
+END
+
+IF ~~ want2
+SAY ~And I you, my love. But this is not the time, nor the place.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ want2a
+SAY ~You read my mind, handsome.~
+IF ~~ THEN DO ~RestParty()~ EXIT
+END
+
+IF ~~ flirt
+SAY ~Yes?~
+
+IF ~RandomNum(3,1)~ THEN REPLY ~(Blow a kiss)~ + blow1
+IF ~RandomNum(3,2)~ THEN REPLY ~(Blow a kiss)~ + blow2
+IF ~RandomNum(3,3)~ THEN REPLY ~(Blow a kiss)~ + blow3
+IF ~RandomNum(2,1)~ THEN REPLY ~(Hug her)~ + hug1
+IF ~RandomNum(2,2)~ THEN REPLY ~(Hug her)~ + hug2
+IF ~RandomNum(3,1)~ THEN REPLY ~(Wink at her)~ + wink1
+IF ~RandomNum(3,2)~ THEN REPLY ~(Wink at her)~ + wink2
+IF ~RandomNum(3,3)~ THEN REPLY ~(Wink at her)~ + wink3
+IF ~RandomNum(3,1)~ THEN REPLY ~[Grin at her)~ + grin1
+IF ~RandomNum(3,2)~ THEN REPLY ~[Grin at her)~ + grin2
+IF ~RandomNum(3,3)~ THEN REPLY ~[Grin at her)~ + grin3
+IF ~RandomNum(3,1)~ THEN REPLY ~(Gaze at her)~ + gaze1
+IF ~RandomNum(3,2)~ THEN REPLY ~(Gaze at her)~ + gaze2
+IF ~RandomNum(3,3)~ THEN REPLY ~(Gaze at her)~ + gaze3
+IF ~RandomNum(4,1)~ THEN REPLY ~(Smile at her)~ + smile1
+IF ~RandomNum(4,2)~ THEN REPLY ~(Smile at her)~ + smile2
+IF ~RandomNum(4,3)~ THEN REPLY ~(Smile at her)~ + smile3
+IF ~RandomNum(4,4)~ THEN REPLY ~(Smile at her)~ + smile4
+IF ~RandomNum(4,1)~ THEN REPLY ~(Hold her hand)~ + handhold1
+IF ~RandomNum(4,2)~ THEN REPLY ~(Hold her hand)~ + handhold2
+IF ~RandomNum(4,3)~ THEN REPLY ~(Hold her hand)~ + handhold3
+IF ~RandomNum(4,4)~ THEN REPLY ~(Hold her hand)~ + handhold4
+IF ~RandomNum(3,1)~ THEN REPLY ~(Kiss her on the cheek)~ + cheek1
+IF ~RandomNum(3,2)~ THEN REPLY ~(Kiss her on the cheek)~ + cheek2
+IF ~RandomNum(3,3)~ THEN REPLY ~(Kiss her on the cheek)~ + cheek3
+IF ~Global("KKNavSex","GLOBAL",1)~ THEN REPLY ~I want you, right now.~ + want
+++ ~(Leave Navarra alone.)~
+EXIT
+END
+
+
+IF ~~ hug1
+SAY ~(you wrap your arms around her waist and hug her tightly.)~
+= ~What was that for?~
+++ ~You looked like you needed a hug.~ + hug1a
+++ ~Sorry, but I needed that.~ + hug1b
++ ~Global("KKNavSex","GLOBAL",1)~ + ~Do I need a reason?~ + hug1c
+END
+
+IF ~~ hug1a
+SAY ~How dare you touch me without asking, male?~
+IF ~~ THEN EXIT
+END
+
+IF ~~ hug1b
+SAY ~You should be sorry! But, in all fairness, it was rather nice.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ hug1c
+SAY ~Never. There is no place I would rather be, than in your arms.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ hug2
+SAY ~(wraps her arms you, laying her head on your chest.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ blow1
+SAY ~(Navarra looks behind her to see if it was meant for someone else. Realizing it was not, she shakes her head and turns away.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ blow2
+SAY ~(Navarra smiles widely and blows you a kiss in return.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ blow3
+SAY ~Really, <CHARNAME>, I do not know what is wrong with you, but stop it.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ gaze1
+SAY ~(Navarra notices you looking at him, rolls her eyes and turns away.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ gaze2
+SAY ~Your gaze is unsettling, <CHARNAME>.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ gaze3
+SAY ~(Navarra notices your gaze, smiles slightly and turns away but not soon enough to hide the fact that she is blushing.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~  grin1
+SAY ~What? Do I have something stuck in my teeth?~
+IF ~~ THEN EXIT
+END
+
+IF ~~ grin2
+SAY ~(looks at you, puzzled by your attention.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ grin3
+SAY ~(grins back at you and blushes.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ cheek1
+SAY ~(Navarra blushes and smiles.)~
+= ~I do not know why you did that, but I would not object if you did it again.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ cheek2
+SAY ~(Navarra touches her cheek where you kissed her and smiles.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ cheek3
+SAY ~(You lean over to kiss Navarra's cheek just as she turns her head towards you. She quickly moves away from you, clearly confused.)~
+= ~What are doing! Do not assume you can do whatever you wish to me.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ wink1
+SAY ~(grins and winks back at you.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ wink2
+SAY ~What is wrong with you?~
+IF ~~ THEN EXIT
+END
+
+IF ~~ wink3
+SAY ~You are very strange, <CHARNAME>.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ handhold1
+SAY ~(Navarra looks down at your hand in hers, starts to pull away, but changes her mind.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ handhold2
+SAY ~Let go of me, <CHARNAME>! The only thing that belongs in my hands is my sword. And I need both of them for that.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ handhold3
+SAY ~(Navarra raises your hand to her lips and kisses the back of it.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ handhold4
+SAY ~(Navarra twines her fingers in yours and continues walking, with a contented smile on her face.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile1
+SAY ~You should do that more often. You have a nice smile.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile2
+SAY ~(Navarra looks very uncomfortable with your attention and turns away.)~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile3
+SAY ~(Navarra smiles back at you.)~
+= ~Lovely day, is it not?~
+IF ~~ THEN EXIT
+END
+
+IF ~~ smile4
+SAY ~(Navarra looks confused by your attention as if trying to decide if the smile is as innocent as it looks.)~
+= ~Dare I ask the reason behind it?~
+IF ~~ THEN EXIT
+END
+
+IF ~~ want
+SAY ~Right now, in fact.~
+IF ~~ THEN DO ~RestParty()~ EXIT
+END
+
+IF ~~ flirt2
+SAY ~Yes?~
+
+IF ~RandomNum(2,1)~ THEN REPLY ~(Kiss her.)~ + kiss1
+IF ~RandomNum(2,2)~ THEN REPLY ~(Kiss her.)~ + kiss2
+IF ~RandomNum(2,1)~ THEN REPLY ~(Nibble her ear.)~ + nibble1
+IF ~RandomNum(2,2)~ THEN REPLY ~(Nibble her ear.)~ + nibble2
+IF ~RandomNum(4,1)~ THEN REPLY ~(Hold her hand)~ + hand1
+IF ~RandomNum(4,2)~ THEN REPLY ~(Hold her hand)~ + hand2
+IF ~RandomNum(4,3)~ THEN REPLY ~(Hold her hand)~ + handhold3
+IF ~RandomNum(4,4)~ THEN REPLY ~(Hold her hand)~ + handhold4
+IF ~RandomNum(2,1)~ THEN REPLY ~(Hug her)~ + hug1
+IF ~RandomNum(2,2)~ THEN REPLY ~(Hug her)~ + hug2
+IF ~RandomNum(3,1)~ THEN REPLY ~[Grin at her)~ + grin1
+IF ~RandomNum(3,2)~ THEN REPLY ~[Grin at her)~ + grin2
+IF ~RandomNum(3,3)~ THEN REPLY ~[Grin at her)~ + grin3
+IF ~RandomNum(3,1)~ THEN REPLY ~(Gaze at her)~ + gaze1
+IF ~RandomNum(3,2)~ THEN REPLY ~(Gaze at her)~ + gaze2
+IF ~RandomNum(3,3)~ THEN REPLY ~(Gaze at her)~ + gaze3
+END
+END

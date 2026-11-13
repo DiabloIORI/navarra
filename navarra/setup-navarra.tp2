@@ -1,0 +1,330 @@
+BACKUP ~Navarra/backup~
+AUTHOR ~Kitanna (kitannadk@yahoo.com)~
+README ~Navarra/readme-navarra.html~
+
+ALWAYS
+
+  ACTION_IF NOT VARIABLE_IS_SET bg2_chapter THEN BEGIN // check to make this happen only once per install
+
+    ACTION_IF GAME_IS ~eet~ BEGIN
+      OUTER_SET bg2_chapter = 12
+    END ELSE BEGIN
+      OUTER_SET bg2_chapter = 0
+    END
+    OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+      OUTER_SET bg2_chapter = bg2_chapter + 1
+      OUTER_SPRINT name_source ~bg2_chapter_%i%~
+      OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+    END
+  END
+
+END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Navarra                                           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN ~Navarra for BG2~
+
+APPEND ~STATE.IDS~
+~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+
+//This is IDS patching for non-ToB  installs
+
+APPEND ~ACTION.IDS~ ~31 SpellRES(S:RES*,O:Target*)~
+             UNLESS ~31 SpellRES(S:RES\*,O:Target\*)~
+APPEND ~ACTION.IDS~ ~95 SpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~95 SpellPointRES(S:RES\*,P:Target\*)~
+APPEND ~ACTION.IDS~ ~113 ForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~113 ForceSpellRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~114 ForceSpellPointRES(S:RES*,P:Target)~
+             UNLESS ~114 ForceSpellPointRES(S:RES\*,P:Target)~
+APPEND ~ACTION.IDS~ ~147 RemoveSpellRES(S:RES*)~
+             UNLESS ~147 RemoveSpellRES(S:RES\*)~
+APPEND ~ACTION.IDS~ ~160 ApplySpellRES(S:RES*,O:Target)~
+             UNLESS ~160 ApplySpellRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~181 ReallyForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~181 ReallyForceSpellRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~191 SpellNoDecRES(S:RES*,O:Target*)~
+             UNLESS ~191 SpellNoDecRES(S:RES\*,O:Target\*)~
+APPEND ~ACTION.IDS~ ~192 SpellPointNoDecRES(S:RES*,P:Target*)~
+             UNLESS ~192 SpellPointNoDecRES(S:RES\*,P:Target\*)~
+APPEND ~ACTION.IDS~ ~240 ReallyForceSpellDeadRES(S:RES*,O:Target)~
+             UNLESS ~240 ReallyForceSpellDeadRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~318 ForceSpellRangeRES(S:RES*,O:Target)~
+             UNLESS ~318 ForceSpellRangeRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~319 ForceSpellPointRangeRES(S:RES*,P:Target)~
+             UNLESS ~319 ForceSpellPointRangeRES(S:RES\*,P:Target)~
+APPEND ~ACTION.IDS~ ~337 ReallyForceSpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~337 ReallyForceSpellPointRES(S:RES\*,P:Target\*)~
+
+APPEND ~TRIGGER.IDS~ ~0x00A1 SpellCastOnMeRES(S:Spell*,O:Caster*)~
+              UNLESS ~0x00A1 SpellCastOnMeRES(S:Spell\*,O:Caster\*)~
+APPEND ~TRIGGER.IDS~ ~0x0091 SpellCastRES(S:Spell*,O:Object*)~
+              UNLESS ~0x0091 SpellCastRES(S:Spell\*,O:Object\*)~
+APPEND ~TRIGGER.IDS~ ~0x00A6 SpellCastPriestRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A6 SpellCastPriestRES(S:Spell\*,O:Object\*)~
+APPEND ~TRIGGER.IDS~ ~0x00A7 SpellCastInnateRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A7 SpellCastInnateRES(S:Spell\*,O:Object\*)~
+APPEND ~TRIGGER.IDS~ ~0x4031 HaveSpellRES(S:Spell*)~
+              UNLESS ~0x4031 HaveSpellRES(S:Spell\*)~
+APPEND ~TRIGGER.IDS~ ~0x40D5 ActuallyInCombat()~
+              UNLESS ~0x40D5 ActuallyInCombat()~
+
+      ACTION_IF FILE_EXISTS_IN_GAME ~saradush.mve~ THEN BEGIN
+  COPY_EXISTING ~interdia.2da~ ~override~
+    SET_2DA_ENTRY 17 1 2 ~BIMOEN2~ // fixes ToB version
+    BUT_ONLY_IF_IT_CHANGES
+END ELSE BEGIN
+  APPEND ~interdia.2da~ ~IMOEN       BIMOEN2~ // fixes SoA version
+    UNLESS ~BIMOEN2~
+END              
+              
+COPY ~Navarra/CRE/KKNavar.cre~ ~override/KKNavar.cre~
+  ADD_CRE_ITEM ~helm01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+  ADD_CRE_ITEM ~LEAT02~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~
+  ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP TWOHANDED
+  SAY NAME1 ~Navarra~
+  SAY NAME2 ~Navarra~
+  WRITE_ASCII 0x248 ~KKNavar~ #8 // assign override script
+  WRITE_ASCII 0x2cc ~KKNavar~ #8 // assign pre-joining dialogue file
+  WRITE_ASCII 0x280 ~KKNavar~ #32 // assign DV
+  WRITE_ASCII 0x34  ~KKNavS~ #8     // assign small portrait
+  WRITE_ASCII 0x3c  ~KKNavL~ #8     // assign medium portrait
+SAY MORALE ~我从没想过会说这种话，但这对我来说太过分了。我需要些帮助。~
+SAY HAPPY ~我很高兴在这里。~
+SAY UNHAPPY_ANNOYED ~你的行为已经开始让我烦了。~
+SAY UNHAPPY_SERIOUS ~你要是继续这样，我就别无选择，只能离开。~
+SAY UNHAPPY_BREAKING ~你的蠢行我受够了！~
+SAY LEADER ~你总算明白这里谁才是更好的领袖了。~
+SAY TIRED ~你不觉得我们该停下来休息了吗？累成这样，别指望我还能有最佳状态。~
+SAY BORED ~我们有比在这儿站一整天更要紧的事。~
+SAY BATTLE_CRY1 ~该死的时候了！~
+SAY BATTLE_CRY2 ~该见点血了！~
+SAY BATTLE_CRY3 ~死吧！~
+SAY BATTLE_CRY4 ~该死的时候了！~
+SAY DAMAGE ~你会后悔当初没杀了我！~
+SAY DYING ~如果这就是我的终点……至少是死在战斗中。~
+SAY HURT ~这里帮个忙，我受伤了。~
+SAY AREA_FOREST ~这里是天堂！我可以永远住在这里。~
+SAY AREA_CITY ~我永远习惯不了这种又脏又臭的城市。~
+SAY AREA_DUNGEON ~我希望你不打算在这里待太久，我更喜欢能看清敌人从哪儿来……在外面。~
+SAY AREA_DAY ~啊，又是个好日子！比我从前称作家的冰封荒原好多了。~
+SAY AREA_NIGHT ~夜里赶路不安全，外面有些东西能在你看见它之前就杀了你。~
+SAY SELECT_COMMON1 ~什么？~
+SAY SELECT_COMMON2 ~你想干什么？~ 
+SAY SELECT_COMMON3 ~我想我别无选择。~ 
+SAY SELECT_COMMON4 ~现在又想干什么？~ 
+SAY SELECT_COMMON5 ~怎么了？~ 
+SAY SELECT_COMMON6 ~我听见了，只是不喜欢被人呼来喝去。~ 
+SAY SELECT_ACTION1 ~随便吧。~
+SAY SELECT_ACTION2 ~好。~ 
+SAY SELECT_ACTION3 ~我想你自己动手这个念头从没出现过吧。~ 
+SAY SELECT_ACTION4 ~既然非做不可。~ 
+SAY SELECT_ACTION5 ~一点也不难~ 
+SAY SELECT_ACTION6 ~行！我不做你就不肯放过我。~ 
+SAY SELECT_ACTION7 ~我看起来像你的奴隶吗？~
+SAY SELECT_RARE1 ~我准备好了。~ 
+SAY SELECT_RARE2 ~好啦好啦，我这就去。~ 
+SAY CRITICAL_HIT ~我太喜欢血的味道了！~ 
+SAY CRITICAL_MISS ~反正你都要死了，不如别再躲了。~ 
+SAY TARGET_IMMUNE ~想要件像样的武器也这么难吗？~ 
+SAY INVENTORY_FULL ~自己的破烂自己背。我是技艺高超的战士，不是奴隶。~
+SAY BIO ~纳瓦拉带着疑虑打量你片刻，才决定开口。「我出生在纳尔费尔，那是个寒冷的地方，住着许多人类蛮族部落，别的就没什么了。目前你只需要知道这些，也许日后我会说得更多。」~
+
+COPY ~Navarra/Song/KKNblank.mus~ ~music~
+
+    COPY_EXISTING ~songlist.2da~ ~override~
+
+    SET_2DA_ENTRY 0 2 3 ~KKNBLANK.MUS~
+    
+LAF HANDLE_AUDIO END
+
+INCLUDE ~Navarra/lib/KKNids.tph~
+INCLUDE ~Navarra/lib/KKNtimes.tph~ 
+
+PRINT ~选择纳瓦拉的对话计时器：
+（请注意，只有计时对话会受此影响）~  
+
+PRINT ~请从下列选项中选择一项：~ 
+
+OUTER_SPRINT ~Navartimer~ ~placeholder_value~
+OUTER_WHILE (!(IS_AN_INT ~Navartimer~) OR (~Navartimer~ > 0x6) OR (~Navartimer~ < 0x1)) BEGIN
+  PRINT ~请输入 1、2、3、4、5 或 6，然后按回车。
+[1] 对话之间至少间隔 1 小时真实时间
+[2] 对话之间至少间隔 45 分钟真实时间
+[3] 对话之间至少间隔 30 分钟真实时间
+[4] 对话之间至少间隔 15 分钟真实时间
+[5] 对话之间至少间隔 1 小时 30 分钟真实时间
+[6] 对话之间间隔 2 小时真实时间~ 
+  ACTION_READLN ~Navartimer~
+END
+      ACTION_IF ("Navartimer" = 1) THEN BEGIN
+      APPEND ~gtimes.ids~ ~3600 Nav_TIME~
+      PRINT ~速度：对话之间至少间隔 1 小时真实时间~ 
+      END
+      ACTION_IF ("Navartimer" = 2) THEN BEGIN
+      APPEND ~gtimes.ids~ ~2700 Nav_TIME~
+      PRINT ~速度：对话之间至少间隔 45 分钟真实时间~ 
+      END
+      ACTION_IF ("Navartimer" = 3) THEN BEGIN
+      APPEND ~gtimes.ids~ ~1800 Nav_TIME~
+      PRINT ~速度：对话之间至少间隔 30 分钟真实时间~ 
+      END
+      ACTION_IF ("Navartimer" = 4) THEN BEGIN
+      APPEND ~gtimes.ids~ ~900 Nav_TIME~
+      PRINT ~速度：对话之间至少间隔 15 分钟真实时间~ 
+      END
+      ACTION_IF ("Navartimer" = 5) THEN BEGIN
+      APPEND ~gtimes.ids~ ~5400 Nav_TIME~
+      PRINT ~速度：对话之间至少间隔 1 小时 30 分钟真实时间~ 
+      END
+      ACTION_IF ("Navartimer" = 6) THEN BEGIN
+      APPEND ~gtimes.ids~ ~7200 Nav_TIME~
+      PRINT ~速度：对话之间至少间隔 2 小时真实时间~ 
+      END           
+
+COMPILE ~NAVARRA/Scripts/KKNavar.baf~
+        ~NAVARRA/Scripts/KKAmana.baf~
+        ~NAVARRA/Scripts/KKTress.baf~
+        ~NAVARRA/Scripts/KKCelin.baf~
+        ~NAVARRA/Scripts/KKDelia.baf~
+        ~NAVARRA/Scripts/KKShael.baf~
+        ~NAVARRA/Scripts/KKShael2.baf~
+        ~NAVARRA/Scripts/KKNavd.baf~
+        ~NAVARRA/Scripts/KKAman01.baf~
+        ~NAVARRA/Scripts/KKNAR0809.baf~
+        ~NAVARRA/Scripts/KKNar0500.baf~
+        ~NAVARRA/Scripts/KKNar1700.baf~ 
+        ~NAVARRA/Scripts/KKNAR0709.baf~
+        ~NAVARRA/Scripts/KKNAR2401.baf~
+        ~NAVARRA/Scripts/KKVMPNAV.baf~
+        ~NAVARRA/Scripts/KKNavFix.baf~
+        
+COMPILE ~NAVARRA/Dialogues/KKNav.d~
+        ~NAVARRA/Dialogues/KKNavJ.d~
+        ~NAVARRA/Dialogues/KKNavB.d~
+        ~NAVARRA/Dialogues/KKBarbs.d~
+        ~NAVARRA/Dialogues/KKBarbTalk.d~
+        ~NAVARRA/Dialogues/KKShael.d~
+        ~NAVARRA/Dialogues/kknavrom_ed.d~
+        ~NAVARRA/Dialogues/KKVMPNAV.d~   
+        
+        
+EXTEND_TOP ~AR0709.bcs~ ~Navarra/Scripts/KKNAR0709.baf~  
+EXTEND_TOP ~AR1700.bcs~ ~Navarra/Scripts/KKNar1700.baf~
+EXTEND_TOP ~AR0500.bcs~ ~NAVARRA/Scripts/KKNar0500.baf~
+EXTEND_TOP ~AR2401.bcs~ ~NAVARRA/Scripts/KKNar2401.baf~
+
+APPEND ~pdialog.2da~
+~KKNavar 	KKNavP 	KKNavJ 	KKNavD 	KKNav25P 	KKNav25J 		KKNav25D 	KKNav25~
+UNLESS ~KKNavar~
+
+APPEND ~interdia.2da~
+~KKNavar 	KKNavB      KKNav25B~
+UNLESS ~KKNavar~
+
+ACTION_IF GAME_IS ~bg2ee~ BEGIN
+  COPY ~Navarra/PortraitsEE~ ~override~
+END ELSE BEGIN
+  COPY ~Navarra/Portraits~ ~override~
+END
+
+COPY ~Navarra/CRE/KKAmana.cre~ ~override/KKAmana.cre~
+ADD_CRE_ITEM ~helm01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+  ADD_CRE_ITEM ~LEAT12~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~
+  ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP TWOHANDED
+  ADD_CRE_ITEM ~kknavswd~ #0 #0 #0 ~IDENTIFIED~ ~INV15~
+  SAY NAME1 ~Amana~
+  SAY NAME2 ~Amana~
+  WRITE_ASCII 0x248 ~KKAmana~ #8 // assign override script
+  WRITE_ASCII 0x2cc ~KKAmana~ #8 // assign pre-joining dialogue file
+  WRITE_ASCII 0x280 ~KKAmana~ #32 // assign DV
+  WRITE_ASCII 0x34  ~KKAmanaS~ #8 // assign small portrait
+  
+COPY ~Navarra/CRE/KKTress.cre~ ~override/KKTress.cre~
+ADD_CRE_ITEM ~helm01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+  ADD_CRE_ITEM ~LEAT12~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~
+  ADD_CRE_ITEM ~SW1H05~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP TWOHANDED
+  SAY NAME1 ~Tressa~
+  SAY NAME2 ~Tressa~
+  WRITE_ASCII 0x248 ~KKTress~ #8 // assign override script
+  WRITE_ASCII 0x2cc ~KKTress~ #8 // assign pre-joining dialogue file
+  WRITE_ASCII 0x280 ~KKAmana~ #32 // assign DV
+  WRITE_ASCII 0x34  ~KKTressS~ #8     // assign small portrait
+  
+COPY ~Navarra/CRE/KKShael.cre~ ~override/KKShael.cre~
+ADD_CRE_ITEM ~helm01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+  ADD_CRE_ITEM ~LEAT12~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~
+  ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP TWOHANDED
+  SAY NAME1 ~Shaelah~
+  SAY NAME2 ~Shaelah~
+  WRITE_ASCII 0x248 ~KKShael~ #8 // assign override script
+  WRITE_ASCII 0x2cc ~KKShael~ #8 // assign pre-joining dialogue file
+  WRITE_ASCII 0x280 ~KKAmana~ #32 // assign DV
+  WRITE_ASCII 0x34  ~KKShaelS~ #8     // assign small portrait  
+  
+COPY ~Navarra/CRE/KKDelia.cre~ ~override/KKDelia.cre~
+ADD_CRE_ITEM ~helm01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+  ADD_CRE_ITEM ~LEAT12~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~
+  ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP TWOHANDED
+  SAY NAME1 ~Deliah~
+  SAY NAME2 ~Deliah~
+  WRITE_ASCII 0x248 ~KKDelia~ #8 // assign override script
+  WRITE_ASCII 0x2cc ~KKDelia~ #8 // assign pre-joining dialogue file
+  WRITE_ASCII 0x280 ~KKAmana~ #32 // assign DV
+  WRITE_ASCII 0x34  ~KKDeliaS~ #8     // assign small portrait
+  
+COPY ~Navarra/CRE/KKCelin.cre~ ~override/KKCelin.cre~
+ADD_CRE_ITEM ~helm01~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+  ADD_CRE_ITEM ~LEAT12~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~BRAC03~ #0 #0 #0 ~IDENTIFIED~ ~GLOVES~
+  ADD_CRE_ITEM ~SW1H05~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP 
+  SAY NAME1 ~Celinda~
+  SAY NAME2 ~Celinda~
+  WRITE_ASCII 0x248 ~KKCelin~ #8 // assign override script
+  WRITE_ASCII 0x2cc ~KKCelin~ #8 // assign pre-joining dialogue file
+  WRITE_ASCII 0x280 ~KKAmana~ #32 // assign DV
+  WRITE_ASCII 0x34  ~KKCelinS~ #8     // assign small portrait    
+  
+COPY ~Navarra/CRE/KKVMPNAV.cre~ ~override/KKVMPNAV.cre~
+  SAY NAME1 ~Navarra~
+  SAY NAME2 ~Navarra~
+ADD_CRE_ITEM ~KKNavBDY~ #0 #0 #0 ~IDENTIFIED~ ~QITEM2~
+EXTEND_TOP ~CLEANSE.bcs~ ~Navarra/Scripts/KKNCLEANSE.baf~
+EXTEND_TOP ~VAMPAMB.bcs~ ~Navarra/Scripts/KKNVAMPAMB.baf~
+EXTEND_TOP ~BODHIAMB.bcs~ ~Navarra/Scripts/KKNBODHIAMB.baf~
+COMPILE ~Navarra/Scripts/KKVMPNAV.baf~
+COMPILE ~Navarra/Scripts/KKNCUT01.baf~
+EXTEND_BOTTOM ~AR0809.bcs~ ~Navarra/Scripts/KKNAR0809.baf~
+
+COPY ~Navarra/Items/KKNavBDY.itm~ ~override/KKNavBDY.itm~
+SAY NAME1 ~Navarra's Body~
+SAY NAME2 ~Navarra's Body~
+SAY UNIDENTIFIED_DESC ~纳瓦拉被波迪抓走并感染了吸血鬼之症，你不得不亲手杀了她。也许有办法让她复活，但你不清楚那会是什么办法。~
+SAY DESC ~纳瓦拉被波迪抓走并感染了吸血鬼之症，你不得不亲手杀了她。也许有办法让她复活，但你不清楚那会是什么办法。~
+
+COPY ~Navarra/Items/KKNavSwd.itm~ ~override/KKNavSwd.itm~
+SAY NAME1 ~Blade of Tempus~
+SAY NAME2 ~Blade of Tempus~
+SAY UNIDENTIFIED_DESC ~这是属于族长奥萨雷娜的剑。
+ 
+可使用者：
+纳瓦拉~
+
+SAY DESC ~坦帕斯之刃
+这把巨剑属于族长奥萨雷娜，是北方部落蛮族剑的附魔版本。它在战斗中被锻造，浸过勇敢阵亡者的血，蛮族诸神赋予这剑的附魔不可思议。
+ 
+可使用者：
+纳瓦拉~

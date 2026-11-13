@@ -1,0 +1,11 @@
+//Extends cut218g.bcs //
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("KKAmana")  //
+    CreateVisualEffectObject("SPFLESHS",Myself)
+    Wait(1)
+    ChangeAnimation("HGWRA02")
+END 
