@@ -245,7 +245,7 @@ IF ~Global("KKNavSaradushTalk","LOCALS",1)~ THEN BEGIN KKNSDT
 SAY ~你似乎对刚才那里发生的事很难受。~
 ++ ~我还是不敢相信发生的事。那么多人……我忍不住觉得自己有责任。~ DO ~SetGlobal("KKNavSaradushTalk","LOCALS",2)~ + KKNSDTa
 ++ ~我当然难受。那么多无谓的死亡……本不该那样的。~ DO ~SetGlobal("KKNavSaradushTalk","LOCALS",2)~ + KKNSDTd
-++ ~雅加苏拉……那些毁灭……我脑子里挥不去那些画面。~ DO ~SetGlobal("KKNavSaradushTalk","LOCALS",2)~ + KKNSDTa
+++ ~雅加-苏拉……那些毁灭……我脑子里挥不去那些画面。~ DO ~SetGlobal("KKNavSaradushTalk","LOCALS",2)~ + KKNSDTa
 ++ ~我现在不想谈这个。~ DO ~SetGlobal("KKNavSaradushTalk","LOCALS",2)~ EXIT
 END
 
